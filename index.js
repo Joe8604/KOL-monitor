@@ -540,6 +540,72 @@ async function monitorAddresses() {
     }
 }
 
+// 获取代币市值
+async function getTokenMarketCap(connection, tokenMint) {
+    try {
+        // 1. 获取代币供应量
+        logger.info(`获取代币 ${tokenMint} 的供应量信息...`);
+        const mintInfo = await connection.getParsedAccountInfo(new PublicKey(tokenMint));
+
+        if (!mintInfo.value) {
+            throw new Error(`无法获取代币 ${tokenMint} 的信息`);
+        }
+
+        const supply = mintInfo.value.data.parsed.info.supply;
+        const decimals = mintInfo.value.data.parsed.info.decimals;
+        const totalSupply = supply / Math.pow(10, decimals);
+        logger.info(`代币供应量: ${totalSupply} (原始值: ${supply}, 小数位: ${decimals})`);
+
+        // 2. 获取代币价格
+        const BIRDEYE_API_URL = 'https://public-api.birdeye.so';
+        const BIRDEYE_API_KEY = process.env.BIRDEYE_API_KEY;
+
+        if (!BIRDEYE_API_KEY) {
+            throw new Error('未设置 BIRDEYE_API_KEY 环境变量');
+        }
+
+        const response = await fetch(`${BIRDEYE_API_URL}/defi/price?address=${tokenMint}`, {
+            method: 'GET',
+            headers: {
+                'accept': 'application/json',
+                'x-chain': 'solana',
+                'X-API-KEY': BIRDEYE_API_KEY
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`Birdeye API 请求失败: ${response.status}`);
+        }
+
+        const data = await response.json();
+        logger.info(`Birdeye API 响应数据: ${JSON.stringify(data)}`);
+
+        if (!data.success || !data.data?.value) {
+            throw new Error('无法获取代币价格');
+        }
+
+        const price = data.data.value;
+        const priceChange24h = data.data.priceChange24h;
+        const updateTime = data.data.updateHumanTime;
+
+        // 3. 计算市值
+        const marketCap = (price * totalSupply) / 1e6; // 转换为 M
+        logger.info(`代币信息: 价格=$${price}, 供应量=${totalSupply}, 市值=$${marketCap}M`);
+
+        return {
+            price: price,
+            supply: totalSupply,
+            marketCap: marketCap.toFixed(2),
+            priceChange24h: priceChange24h,
+            updateTime: updateTime
+        };
+
+    } catch (error) {
+        logger.error(`获取代币市值失败: ${error.message}`);
+        return null;
+    }
+}
+
 // 发送通知
 async function sendNotifications(txInfo) {
     const MAX_RETRIES = 3;
@@ -579,6 +645,19 @@ async function sendNotifications(txInfo) {
                 minimumFractionDigits: 0,
                 maximumFractionDigits: 9
             })} ${isBuy ? '(买入)' : '(卖出)'}\n`;
+
+            // 获取代币市值信息
+            const connection = await createConnection();
+            const marketData = await getTokenMarketCap(connection, txInfo.tokenContract);
+            
+            if (marketData) {
+                message += `\n代币市值信息：\n`;
+                message += `- 当前价格：$${marketData.price}\n`;
+                message += `- 24h涨跌幅：${marketData.priceChange24h.toFixed(2)}%\n`;
+                message += `- 总供应量：${marketData.supply.toLocaleString()}\n`;
+                message += `- 市值：$${marketData.marketCap}M\n`;
+                message += `- 数据更新时间：${marketData.updateTime}\n`;
+            }
         }
 
         logger.info('通知消息内容:', message);
