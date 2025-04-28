@@ -303,3 +303,22 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
 2025-04-28 11:42:18 [ERROR]: Bot 状态检查失败: 400: Bad Request: chat not found
 2025-04-28 18:07:00 [ERROR]: HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
 2025-04-28 18:07:00 [ERROR]: HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-04-28 19:34:21 [ERROR] 获取代币市值信息失败: Request failed with status code 404
+2025-04-28 19:35:37 [ERROR] 获取代币信息失败: Client network socket disconnected before secure TLS connection was established
+2025-04-28 19:36:11 [ERROR] 获取代币信息失败: Request failed with status code 401
+2025-04-28 19:36:11 [ERROR] API 响应状态: 401
+2025-04-28 19:36:11 [ERROR] API 响应数据: {"success":false,"message":"Unauthorized"}
+2025-04-28 19:37:43 [ERROR] 获取代币信息失败: 429 Too Many Requests:  {"jsonrpc":"2.0","error":{"code": 429, "message":"Too many requests for a specific RPC call"}, "id": "7fa96000-686f-415e-9d14-9b54d3242a92" } 
+
+2025-04-28 19:38:49 [ERROR] 获取代币信息失败: 429 Too Many Requests:  {"jsonrpc":"2.0","error":{"code": 429, "message":"Too many requests for a specific RPC call"}, "id": "7b937dac-bf0d-4237-904e-e4235494f59f" } 
+
+2025-04-28 19:45:20 [ERROR] 获取代币市值信息失败: Request failed with status code 404
+2025-04-28 19:45:20 [ERROR] API 响应状态: 404
+2025-04-28 19:45:20 [ERROR] API 响应数据: {"id":"8129565fe27f45c8a55281db75854711","success":false}
+2025-04-28 19:45:45 [ERROR] 获取代币市值信息失败: Client network socket disconnected before secure TLS connection was established
+2025-04-28 19:58:23 [ERROR] API 响应状态: 404
+2025-04-28 19:58:23 [ERROR] API 响应数据: {"success":false,"message":"Not found"}
+2025-04-28 20:00:38 [ERROR] API 响应状态: 401
+2025-04-28 20:00:38 [ERROR] API 响应数据: {"success":false,"message":"Unauthorized"}
+2025-04-28 20:20:28 [ERROR] API 响应状态: 401
+2025-04-28 20:20:28 [ERROR] API 响应数据: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}

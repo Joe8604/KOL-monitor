@@ -2,16 +2,12 @@ import { Telegraf } from 'telegraf';
 import { startMonitoring } from './solana.js';
 import logger from './logger.js';
 import config from './config.js';
-import { HttpsProxyAgent } from 'https-proxy-agent';
 import { sleep } from './utils.js';
 
 let bot;
 let botConnected = false;
 const MAX_RETRIES = 3;
 const RETRY_DELAY = 2000; // 2 seconds
-
-const proxyUrl = process.env.PROXY_URL;
-const agent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : null;
 
 // 重试函数
 async function withRetry(fn, maxRetries = MAX_RETRIES, delay = RETRY_DELAY) {
@@ -35,17 +31,12 @@ export async function initializeBot() {
         logger.info('Initializing Telegram bot...');
         logger.info('Bot Token:', config.telegram.botToken ? 'set' : 'not set');
         logger.info('Chat ID:', config.telegram.chatId ? 'set' : 'not set');
-        logger.info('Proxy URL:', proxyUrl ? 'set' : 'not set');
 
         if (!config.telegram.botToken || !config.telegram.chatId) {
             throw new Error('Telegram bot token or chat ID not configured');
         }
 
-        bot = new Telegraf(config.telegram.botToken, {
-            telegram: {
-                agent: agent
-            }
-        });
+        bot = new Telegraf(config.telegram.botToken);
         
         // Command handlers
         bot.command('start', async (ctx) => {

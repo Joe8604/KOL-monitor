@@ -15,12 +15,7 @@ import dns from 'dns';
 import net from 'net';
 import https from 'https';
 import http from 'http';
-import { HttpsProxyAgent } from 'https-proxy-agent';
 import logger from './logger.js';
-
-// 配置代理
-const proxyUrl = process.env.PROXY_URL;
-let agent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : null;
 
 // 测试DNS解析
 export async function testDNS(hostname) {
@@ -98,13 +93,6 @@ export async function testHTTPS(hostname) {
                         'Connection': 'keep-alive'
                     }
                 };
-
-                // 如果设置了代理，使用代理连接
-                if (process.env.PROXY_URL) {
-                    const proxyUrl = new URL(process.env.PROXY_URL);
-                    logger.info(`通过代理 ${proxyUrl.hostname}:${proxyUrl.port} 连接...`);
-                    options.agent = new HttpsProxyAgent(process.env.PROXY_URL);
-                }
 
                 const req = https.request(options, (res) => {
                     logger.info(`HTTPS状态码: ${res.statusCode}`);
@@ -383,5 +371,15 @@ export async function checkTokenStatus(token) {
                 return false;
             }
         }
+    }
+}
+
+export async function sendRequest(url, options = {}) {
+    try {
+        const response = await fetch(url, options);
+        return response.data;
+    } catch (error) {
+        logger.error('请求失败:', error.message);
+        throw error;
     }
 } 

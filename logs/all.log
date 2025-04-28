@@ -14349,3 +14349,1341 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
 2025-04-28 18:50:27 ℹ️ [INFO] 已订阅地址 AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm 的交易日志，订阅 ID: 1
 2025-04-28 18:50:28 ℹ️ [INFO] 已订阅地址 GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW 的交易日志，订阅 ID: 2
 2025-04-28 18:50:29 ℹ️ [INFO] 已订阅地址 6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP 的交易日志，订阅 ID: 3
+2025-04-28 18:50:30 ℹ️ [INFO] 已订阅地址 EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE 的交易日志，订阅 ID: 4
+2025-04-28 18:50:31 ℹ️ [INFO] 等待 1 秒后继续下一批订阅...
+2025-04-28 18:50:32 ℹ️ [INFO] 已订阅地址 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi 的交易日志，订阅 ID: 5
+2025-04-28 18:50:33 ℹ️ [INFO] 已订阅地址 Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu 的交易日志，订阅 ID: 6
+2025-04-28 18:50:34 ℹ️ [INFO] 已订阅地址 Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd 的交易日志，订阅 ID: 7
+2025-04-28 18:50:36 ℹ️ [INFO] 已订阅地址 71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC 的交易日志，订阅 ID: 8
+2025-04-28 18:50:37 ℹ️ [INFO] 已订阅地址 CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT 的交易日志，订阅 ID: 9
+2025-04-28 18:50:38 ℹ️ [INFO] 等待 1 秒后继续下一批订阅...
+2025-04-28 18:50:39 ℹ️ [INFO] 已订阅地址 8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd 的交易日志，订阅 ID: 10
+2025-04-28 18:50:40 ℹ️ [INFO] 已订阅地址 G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc 的交易日志，订阅 ID: 11
+2025-04-28 18:50:41 ℹ️ [INFO] 已订阅地址 3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1 的交易日志，订阅 ID: 12
+2025-04-28 18:50:42 ℹ️ [INFO] 已订阅地址 Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH 的交易日志，订阅 ID: 13
+2025-04-28 18:50:43 ℹ️ [INFO] 监控程序正在运行...
+2025-04-28 18:51:43 ℹ️ [INFO] 连接测试成功，节点版本:
+2025-04-28 18:52:43 ℹ️ [INFO] 连接测试成功，节点版本:
+2025-04-28 19:25:47 [INFO] === 启动监控程序 ===
+2025-04-28 19:25:47 [INFO] 
+检查 Bot 状态...
+2025-04-28 19:25:47 [INFO] 
+检查Token状态 (第 1 次尝试)...
+2025-04-28 19:25:47 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 19:25:47 [INFO] DNS解析结果: 157.240.3.8
+2025-04-28 19:25:47 [INFO] 测试网络延迟...
+2025-04-28 19:25:47 [INFO] 网络延迟: 24ms
+2025-04-28 19:25:47 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 19:25:47 [INFO] TCP连接成功，本地端口: 63430
+2025-04-28 19:25:47 [INFO] 测试HTTPS连接...
+2025-04-28 19:25:47 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:25:48 [INFO] HTTPS状态码: 302
+2025-04-28 19:25:48 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:25:48 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 19:25:48 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 19:25:48 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 19:25:48 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:25:50 [INFO] HTTPS状态码: 200
+2025-04-28 19:25:50 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:25:50 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 19:25:50 [INFO] 尝试使用端点: https://api.telegram.org
+2025-04-28 19:25:51 [INFO] Token状态: ✅ 有效
+2025-04-28 19:25:51 [INFO] Bot信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-04-28 19:25:51 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 19:25:51 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 19:25:51 [INFO] DNS解析结果: 157.240.3.8
+2025-04-28 19:25:51 [INFO] 测试网络延迟...
+2025-04-28 19:25:51 [INFO] 网络延迟: 3ms
+2025-04-28 19:25:51 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 19:25:51 [INFO] TCP连接成功，本地端口: 63450
+2025-04-28 19:25:51 [INFO] 测试HTTPS连接...
+2025-04-28 19:25:51 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:25:52 [INFO] HTTPS状态码: 302
+2025-04-28 19:25:52 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:25:52 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 19:25:52 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 19:25:52 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 19:25:52 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:25:53 [INFO] HTTPS状态码: 200
+2025-04-28 19:25:53 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:25:53 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 19:25:53 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 19:25:53 [INFO] 使用 API 端点: https://api.telegram.org
+2025-04-28 19:25:55 [INFO] Bot 信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-04-28 19:25:55 [INFO] 检查群组 1584537074...
+2025-04-28 19:25:55 [INFO] 群组 1584537074 信息: {
+  "id": 1584537074,
+  "first_name": "Joe",
+  "last_name": "S",
+  "username": "joe2140",
+  "type": "private",
+  "can_send_gift": true,
+  "active_usernames": [
+    "joe2140"
+  ],
+  "has_private_forwards": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": true,
+    "limited_gifts": true,
+    "unique_gifts": true,
+    "premium_subscription": true
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 1
+}
+2025-04-28 19:25:56 [INFO] 测试消息已发送到群组 1584537074: 494
+2025-04-28 19:25:56 [INFO] 检查群组 -4627711652...
+2025-04-28 19:25:56 [INFO] 群组 -4627711652 信息: {
+  "id": -4627711652,
+  "title": "KOL监控",
+  "type": "group",
+  "invite_link": "https://t.me/+GAP7ZyfNF-AxNGRl",
+  "permissions": {
+    "can_send_messages": true,
+    "can_send_media_messages": true,
+    "can_send_audios": true,
+    "can_send_documents": true,
+    "can_send_photos": true,
+    "can_send_videos": true,
+    "can_send_video_notes": true,
+    "can_send_voice_notes": true,
+    "can_send_polls": true,
+    "can_send_other_messages": true,
+    "can_add_web_page_previews": true,
+    "can_change_info": true,
+    "can_invite_users": true,
+    "can_pin_messages": true,
+    "can_manage_topics": true
+  },
+  "all_members_are_administrators": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": false,
+    "limited_gifts": false,
+    "unique_gifts": false,
+    "premium_subscription": false
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 4
+}
+2025-04-28 19:25:56 [INFO] 测试消息已发送到群组 -4627711652: 495
+2025-04-28 19:25:56 [INFO] 
+解析流动性池地址...
+2025-04-28 19:25:56 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 19:25:57 [INFO] 索引 11 的地址: HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwgeyHfgRsHp6
+2025-04-28 19:25:57 [INFO] 索引 12 的地址: 68rLBhwvJoV6GcqiZXwcdHMbwndcMU4PsbeJkhaVPZvW
+2025-04-28 19:25:57 [INFO] 解析的流动性池地址: HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwgeyHfgRsHp6, 68rLBhwvJoV6GcqiZXwcdHMbwndcMU4PsbeJkhaVPZvW
+2025-04-28 19:25:57 [INFO] 
+检查 Solana 连接...
+2025-04-28 19:25:57 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 19:25:57 [INFO] 连接测试成功，节点版本:
+2025-04-28 19:25:57 [INFO] 
+开始监控地址...
+2025-04-28 19:25:57 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 19:25:57 [INFO] 连接测试成功，节点版本:
+2025-04-28 19:25:57 [INFO] 成功建立 Solana 连接
+2025-04-28 19:25:57 [INFO] 添加监控地址: 张三|AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx
+2025-04-28 19:25:57 [INFO] 添加监控地址: Ansem|AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm
+2025-04-28 19:25:57 [INFO] 添加监控地址: 王五|GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW
+2025-04-28 19:25:57 [INFO] 添加监控地址: 小筑|6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP
+2025-04-28 19:25:57 [INFO] 添加监控地址: 搞钱小猫|EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE
+2025-04-28 19:25:57 [INFO] 添加监控地址: 凉粉小刀|3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi
+2025-04-28 19:25:57 [INFO] 添加监控地址: robo|Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu
+2025-04-28 19:25:57 [INFO] 添加监控地址: 学长|Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd
+2025-04-28 19:25:57 [INFO] 添加监控地址: 王小二|71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC
+2025-04-28 19:25:57 [INFO] 添加监控地址: 川木|CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT
+2025-04-28 19:25:57 [INFO] 添加监控地址: POW|8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd
+2025-04-28 19:25:57 [INFO] 添加监控地址: CryptoD|G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc
+2025-04-28 19:25:57 [INFO] 添加监控地址: 女王XX|3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1
+2025-04-28 19:25:57 [INFO] 添加监控地址: 冷静|Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH
+2025-04-28 19:25:57 [INFO] 开始订阅交易日志...
+2025-04-28 19:25:57 [INFO] 已订阅地址 AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx 的交易日志，订阅 ID: 0
+2025-04-28 19:25:58 [INFO] 已订阅地址 AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm 的交易日志，订阅 ID: 1
+2025-04-28 19:25:59 [INFO] 已订阅地址 GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW 的交易日志，订阅 ID: 2
+2025-04-28 19:26:00 [INFO] 已订阅地址 6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP 的交易日志，订阅 ID: 3
+2025-04-28 19:26:01 [INFO] 已订阅地址 EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE 的交易日志，订阅 ID: 4
+2025-04-28 19:26:02 [INFO] 等待 1 秒后继续下一批订阅...
+2025-04-28 19:26:03 [INFO] 已订阅地址 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi 的交易日志，订阅 ID: 5
+2025-04-28 19:26:04 [INFO] 已订阅地址 Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu 的交易日志，订阅 ID: 6
+2025-04-28 19:26:05 [INFO] 已订阅地址 Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd 的交易日志，订阅 ID: 7
+2025-04-28 19:26:07 [INFO] 已订阅地址 71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC 的交易日志，订阅 ID: 8
+2025-04-28 19:26:08 [INFO] 已订阅地址 CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT 的交易日志，订阅 ID: 9
+2025-04-28 19:26:09 [INFO] 等待 1 秒后继续下一批订阅...
+2025-04-28 19:26:10 [INFO] 已订阅地址 8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd 的交易日志，订阅 ID: 10
+2025-04-28 19:26:11 [INFO] 已订阅地址 G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc 的交易日志，订阅 ID: 11
+2025-04-28 19:26:12 [INFO] 已订阅地址 3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1 的交易日志，订阅 ID: 12
+2025-04-28 19:26:13 [INFO] 已订阅地址 Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH 的交易日志，订阅 ID: 13
+2025-04-28 19:26:14 [INFO] 监控程序正在运行...
+2025-04-28 19:27:14 [INFO] 连接测试成功，节点版本:
+2025-04-28 19:28:45 [INFO] === 启动监控程序 ===
+2025-04-28 19:28:45 [INFO] 
+检查 Bot 状态...
+2025-04-28 19:28:45 [INFO] 
+检查Token状态 (第 1 次尝试)...
+2025-04-28 19:28:45 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 19:28:45 [INFO] DNS解析结果: 199.96.61.1
+2025-04-28 19:28:45 [INFO] 测试网络延迟...
+2025-04-28 19:28:45 [INFO] 网络延迟: 21ms
+2025-04-28 19:28:45 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 19:28:45 [INFO] TCP连接成功，本地端口: 63789
+2025-04-28 19:28:45 [INFO] 测试HTTPS连接...
+2025-04-28 19:28:45 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:28:46 [INFO] HTTPS状态码: 302
+2025-04-28 19:28:46 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:28:46 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 19:28:46 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 19:28:46 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 19:28:46 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:28:48 [INFO] HTTPS状态码: 200
+2025-04-28 19:28:48 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:28:48 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37489",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 19:28:48 [INFO] 尝试使用端点: https://api.telegram.org
+2025-04-28 19:28:49 [INFO] Token状态: ✅ 有效
+2025-04-28 19:28:49 [INFO] Bot信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-04-28 19:28:49 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 19:28:49 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 19:28:49 [INFO] DNS解析结果: 199.96.61.1
+2025-04-28 19:28:49 [INFO] 测试网络延迟...
+2025-04-28 19:28:49 [INFO] 网络延迟: 3ms
+2025-04-28 19:28:49 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 19:28:49 [INFO] TCP连接成功，本地端口: 63809
+2025-04-28 19:28:49 [INFO] 测试HTTPS连接...
+2025-04-28 19:28:49 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:28:50 [INFO] HTTPS状态码: 302
+2025-04-28 19:28:50 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:28:50 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 19:28:50 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 19:28:50 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 19:28:50 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:28:52 [INFO] HTTPS状态码: 200
+2025-04-28 19:28:52 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:28:51 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37489",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 19:28:52 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 19:28:52 [INFO] 使用 API 端点: https://api.telegram.org
+2025-04-28 19:28:53 [INFO] Bot 信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-04-28 19:28:53 [INFO] 检查群组 1584537074...
+2025-04-28 19:28:53 [INFO] 群组 1584537074 信息: {
+  "id": 1584537074,
+  "first_name": "Joe",
+  "last_name": "S",
+  "username": "joe2140",
+  "type": "private",
+  "can_send_gift": true,
+  "active_usernames": [
+    "joe2140"
+  ],
+  "has_private_forwards": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": true,
+    "limited_gifts": true,
+    "unique_gifts": true,
+    "premium_subscription": true
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 1
+}
+2025-04-28 19:28:54 [INFO] 测试消息已发送到群组 1584537074: 496
+2025-04-28 19:28:54 [INFO] 检查群组 -4627711652...
+2025-04-28 19:28:54 [INFO] 群组 -4627711652 信息: {
+  "id": -4627711652,
+  "title": "KOL监控",
+  "type": "group",
+  "invite_link": "https://t.me/+GAP7ZyfNF-AxNGRl",
+  "permissions": {
+    "can_send_messages": true,
+    "can_send_media_messages": true,
+    "can_send_audios": true,
+    "can_send_documents": true,
+    "can_send_photos": true,
+    "can_send_videos": true,
+    "can_send_video_notes": true,
+    "can_send_voice_notes": true,
+    "can_send_polls": true,
+    "can_send_other_messages": true,
+    "can_add_web_page_previews": true,
+    "can_change_info": true,
+    "can_invite_users": true,
+    "can_pin_messages": true,
+    "can_manage_topics": true
+  },
+  "all_members_are_administrators": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": false,
+    "limited_gifts": false,
+    "unique_gifts": false,
+    "premium_subscription": false
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 4
+}
+2025-04-28 19:28:55 [INFO] 测试消息已发送到群组 -4627711652: 497
+2025-04-28 19:28:55 [INFO] 
+解析流动性池地址...
+2025-04-28 19:28:55 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 19:28:55 [INFO] 索引 11 的地址: HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwgeyHfgRsHp6
+2025-04-28 19:28:55 [INFO] 索引 12 的地址: 68rLBhwvJoV6GcqiZXwcdHMbwndcMU4PsbeJkhaVPZvW
+2025-04-28 19:28:55 [INFO] 解析的流动性池地址: HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwgeyHfgRsHp6, 68rLBhwvJoV6GcqiZXwcdHMbwndcMU4PsbeJkhaVPZvW
+2025-04-28 19:28:55 [INFO] 
+检查 Solana 连接...
+2025-04-28 19:28:55 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 19:28:55 [INFO] 连接测试成功，节点版本:
+2025-04-28 19:28:55 [INFO] 
+开始监控地址...
+2025-04-28 19:28:55 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 19:28:56 [INFO] 连接测试成功，节点版本:
+2025-04-28 19:28:56 [INFO] 成功建立 Solana 连接
+2025-04-28 19:28:56 [INFO] 添加监控地址: 张三|AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx
+2025-04-28 19:28:56 [INFO] 添加监控地址: Ansem|AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm
+2025-04-28 19:28:56 [INFO] 添加监控地址: 王五|GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW
+2025-04-28 19:28:56 [INFO] 添加监控地址: 小筑|6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP
+2025-04-28 19:28:56 [INFO] 添加监控地址: 搞钱小猫|EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE
+2025-04-28 19:28:56 [INFO] 添加监控地址: 凉粉小刀|3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi
+2025-04-28 19:28:56 [INFO] 添加监控地址: robo|Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu
+2025-04-28 19:28:56 [INFO] 添加监控地址: 学长|Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd
+2025-04-28 19:28:56 [INFO] 添加监控地址: 王小二|71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC
+2025-04-28 19:28:56 [INFO] 添加监控地址: 川木|CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT
+2025-04-28 19:28:56 [INFO] 添加监控地址: POW|8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd
+2025-04-28 19:28:56 [INFO] 添加监控地址: CryptoD|G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc
+2025-04-28 19:28:56 [INFO] 添加监控地址: 女王XX|3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1
+2025-04-28 19:28:56 [INFO] 添加监控地址: 冷静|Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH
+2025-04-28 19:28:56 [INFO] 开始订阅交易日志...
+2025-04-28 19:28:56 [INFO] 已订阅地址 AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx 的交易日志，订阅 ID: 0
+2025-04-28 19:28:57 [INFO] 已订阅地址 AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm 的交易日志，订阅 ID: 1
+2025-04-28 19:28:58 [INFO] 已订阅地址 GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW 的交易日志，订阅 ID: 2
+2025-04-28 19:28:59 [INFO] 已订阅地址 6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP 的交易日志，订阅 ID: 3
+2025-04-28 19:29:00 [INFO] 已订阅地址 EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE 的交易日志，订阅 ID: 4
+2025-04-28 19:29:01 [INFO] 等待 1 秒后继续下一批订阅...
+2025-04-28 19:29:02 [INFO] 已订阅地址 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi 的交易日志，订阅 ID: 5
+2025-04-28 19:29:03 [INFO] 已订阅地址 Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu 的交易日志，订阅 ID: 6
+2025-04-28 19:29:04 [INFO] 已订阅地址 Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd 的交易日志，订阅 ID: 7
+2025-04-28 19:29:05 [INFO] 已订阅地址 71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC 的交易日志，订阅 ID: 8
+2025-04-28 19:29:06 [INFO] 已订阅地址 CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT 的交易日志，订阅 ID: 9
+2025-04-28 19:29:07 [INFO] 等待 1 秒后继续下一批订阅...
+2025-04-28 19:29:08 [INFO] 已订阅地址 8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd 的交易日志，订阅 ID: 10
+2025-04-28 19:29:09 [INFO] 已订阅地址 G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc 的交易日志，订阅 ID: 11
+2025-04-28 19:29:10 [INFO] 已订阅地址 3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1 的交易日志，订阅 ID: 12
+2025-04-28 19:29:11 [INFO] 已订阅地址 Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH 的交易日志，订阅 ID: 13
+2025-04-28 19:29:12 [INFO] 监控程序正在运行...
+2025-04-28 19:30:12 [INFO] 连接测试成功，节点版本:
+2025-04-28 19:31:01 [INFO] 开始解析交易: 3a2t6VbR5aTY7B6hNW7va6pLHJb24xfVnB2TD4L6io9GzKJb6vKtxSkoGjLQuYW3wfrPwuU6JukLG5TggH6SZR3A
+2025-04-28 19:31:01 [INFO] 交易解析成功:
+2025-04-28 19:31:01 [INFO] 交易详情:
+2025-04-28 19:31:01 [INFO] 发起地址: GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW
+2025-04-28 19:31:01 [INFO] 交易类型: 卖出
+2025-04-28 19:31:01 [INFO] SOL变化: 0.0010432629999999991
+2025-04-28 19:31:01 [INFO] 代币合约: 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 19:31:01 [INFO] 代币变化: -300.22943499999997
+2025-04-28 19:31:01 [INFO] 开始构建通知消息...
+2025-04-28 19:31:01 [INFO] 通知消息内容:
+2025-04-28 19:31:01 [INFO] 尝试发送 Telegram 通知到 1584537074 (第 1 次)...
+2025-04-28 19:31:01 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 19:31:01 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 19:31:01 [INFO] DNS解析结果: 199.96.61.1
+2025-04-28 19:31:01 [INFO] 测试网络延迟...
+2025-04-28 19:31:01 [INFO] 网络延迟: 2ms
+2025-04-28 19:31:01 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 19:31:01 [INFO] TCP连接成功，本地端口: 63955
+2025-04-28 19:31:01 [INFO] 测试HTTPS连接...
+2025-04-28 19:31:01 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:31:02 [INFO] HTTPS状态码: 302
+2025-04-28 19:31:02 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:31:02 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 19:31:02 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 19:31:02 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 19:31:02 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:31:04 [INFO] HTTPS状态码: 200
+2025-04-28 19:31:04 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:31:04 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37487",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 19:31:05 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 19:31:05 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 19:31:06 [INFO] ✅ Telegram 通知发送成功到 1584537074
+2025-04-28 19:31:06 [INFO] 消息 ID: 498
+2025-04-28 19:31:06 [INFO] 尝试发送 Telegram 通知到 -4627711652 (第 1 次)...
+2025-04-28 19:31:06 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 19:31:06 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 19:31:06 [INFO] DNS解析结果: 199.96.61.1
+2025-04-28 19:31:06 [INFO] 测试网络延迟...
+2025-04-28 19:31:06 [INFO] 网络延迟: 3ms
+2025-04-28 19:31:06 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 19:31:06 [INFO] TCP连接成功，本地端口: 63975
+2025-04-28 19:31:06 [INFO] 测试HTTPS连接...
+2025-04-28 19:31:06 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:31:07 [INFO] HTTPS状态码: 302
+2025-04-28 19:31:07 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:31:07 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 19:31:07 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 19:31:07 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 19:31:07 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 19:31:08 [INFO] 开始解析交易: qAQBhnjTcvYs3yxwMVdDtF1xy5pkLJor31kEXLny1hYRuZUaPdbWB49Yas6oq7jEUVLLoJ8Jwfp5uWCdbD1z2Xm
+2025-04-28 19:31:08 [INFO] 开始解析交易: 3h8cNoy2LfUhZxsVfebthCQ5icW8hBLww1PGdF2pPJfcRyzodjo5ksQma1Jyt9ZH51KN9SqoFaqeH7hKxMrGmF1
+2025-04-28 19:31:08 [INFO] 交易解析成功:
+2025-04-28 19:31:08 [INFO] 交易详情:
+2025-04-28 19:31:08 [INFO] 发起地址: FLiPGqowc82LLR173hKiFYBq2fCxLZEST5iHbHwj8xKb
+2025-04-28 19:31:08 [INFO] 交易类型: 卖出
+2025-04-28 19:31:08 [INFO] SOL变化: -0.000005019000000050511
+2025-04-28 19:31:08 [INFO] 代币合约: 
+2025-04-28 19:31:08 [INFO] 代币变化: 0
+2025-04-28 19:31:08 [INFO] 地址 FLiPGqowc82LLR173hKiFYBq2fCxLZEST5iHbHwj8xKb 不在监控名单中，跳过通知
+2025-04-28 19:31:08 [INFO] 交易解析成功:
+2025-04-28 19:31:08 [INFO] 交易详情:
+2025-04-28 19:31:08 [INFO] 发起地址: FLiPgGTXtBtEJoytikaywvWgbz5a56DdHKZU72HSYMFF
+2025-04-28 19:31:08 [INFO] 交易类型: 卖出
+2025-04-28 19:31:08 [INFO] SOL变化: -0.000005019000000050511
+2025-04-28 19:31:08 [INFO] 代币合约: 
+2025-04-28 19:31:08 [INFO] 代币变化: 0
+2025-04-28 19:31:08 [INFO] 地址 FLiPgGTXtBtEJoytikaywvWgbz5a56DdHKZU72HSYMFF 不在监控名单中，跳过通知
+2025-04-28 19:31:09 [INFO] HTTPS状态码: 200
+2025-04-28 19:31:09 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 11:31:09 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 19:31:09 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 19:31:09 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 19:31:10 [INFO] ✅ Telegram 通知发送成功到 -4627711652
+2025-04-28 19:31:10 [INFO] 消息 ID: 499
+2025-04-28 19:31:10 [INFO] 开始发送邮件通知...
+2025-04-28 19:31:13 [INFO] 连接测试成功，节点版本:
+2025-04-28 19:31:14 [INFO] ✅ 邮件通知发送成功
+2025-04-28 19:31:14 [INFO] 邮件 ID: <39c43612-9bba-abdc-5c4d-d6c151b239ca@gmail.com>
+2025-04-28 19:31:14 [INFO] 接收地址: 411532124@qq.com, jiawenmg@gmail.com
+2025-04-28 19:32:13 [INFO] 连接测试成功，节点版本:
+2025-04-28 19:34:21 [ERROR] 获取代币市值信息失败: Request failed with status code 404
+2025-04-28 19:34:56 [WARN] 无法找到代币信息: 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 19:35:37 [ERROR] 获取代币信息失败: Client network socket disconnected before secure TLS connection was established
+2025-04-28 19:36:11 [ERROR] 获取代币信息失败: Request failed with status code 401
+2025-04-28 19:36:11 [ERROR] API 响应状态: 401
+2025-04-28 19:36:11 [ERROR] API 响应数据: {"success":false,"message":"Unauthorized"}
+2025-04-28 19:36:42 [WARN] 无法找到代币信息: 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 19:37:09 [WARN] 未找到代币账户: 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 19:37:43 [ERROR] 获取代币信息失败: 429 Too Many Requests:  {"jsonrpc":"2.0","error":{"code": 429, "message":"Too many requests for a specific RPC call"}, "id": "7fa96000-686f-415e-9d14-9b54d3242a92" } 
+
+2025-04-28 19:38:23 [WARN] 请求被限制，等待 1000ms 后重试...
+2025-04-28 19:38:34 [WARN] 请求被限制，等待 2000ms 后重试...
+2025-04-28 19:38:45 [WARN] 请求被限制，等待 4000ms 后重试...
+2025-04-28 19:38:49 [ERROR] 获取代币信息失败: 429 Too Many Requests:  {"jsonrpc":"2.0","error":{"code": 429, "message":"Too many requests for a specific RPC call"}, "id": "7b937dac-bf0d-4237-904e-e4235494f59f" } 
+
+2025-04-28 19:44:16 [WARN] 无法获取 Raydium 交易对信息
+2025-04-28 19:44:48 [WARN] 无法获取 Raydium 交易对信息
+2025-04-28 19:45:20 [ERROR] 获取代币市值信息失败: Request failed with status code 404
+2025-04-28 19:45:20 [ERROR] API 响应状态: 404
+2025-04-28 19:45:20 [ERROR] API 响应数据: {"id":"8129565fe27f45c8a55281db75854711","success":false}
+2025-04-28 19:45:45 [ERROR] 获取代币市值信息失败: Client network socket disconnected before secure TLS connection was established
+2025-04-28 19:46:44 [WARN] 未找到代币信息
+2025-04-28 19:47:29 [WARN] 无法获取 Raydium 价格信息: Request failed with status code 404
+2025-04-28 19:48:31 [WARN] 无法获取 GMGN 价格信息: Client network socket disconnected before secure TLS connection was established
+2025-04-28 19:48:33 [WARN] 无法获取 Birdeye 价格信息: Request failed with status code 401
+2025-04-28 19:58:23 [WARN] 无法获取 Birdeye 价格信息: Request failed with status code 404
+2025-04-28 19:58:23 [ERROR] API 响应状态: 404
+2025-04-28 19:58:23 [ERROR] API 响应数据: {"success":false,"message":"Not found"}
+2025-04-28 20:00:38 [WARN] 无法获取 Birdeye 价格信息: Request failed with status code 401
+2025-04-28 20:00:38 [ERROR] API 响应状态: 401
+2025-04-28 20:00:38 [ERROR] API 响应数据: {"success":false,"message":"Unauthorized"}
+2025-04-28 20:20:28 [WARN] 无法获取 Birdeye 价格信息: Request failed with status code 401
+2025-04-28 20:20:28 [ERROR] API 响应状态: 401
+2025-04-28 20:20:28 [ERROR] API 响应数据: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-28 20:25:54 [INFO] 获取代币 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump 的供应量信息...
+2025-04-28 20:25:54 [INFO] 代币供应量: 999970039.547754 (原始值: 999970039547754, 小数位: 6)
+2025-04-28 20:25:54 [INFO] 尝试从 CoinGecko 获取代币价格...
+2025-04-28 20:25:54 [INFO] 发送请求到 CoinGecko: https://api.coingecko.com/api/v3/simple/token_price/solana?contract_addresses=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump&vs_currencies=usd
+2025-04-28 20:25:54 [INFO] API 响应状态: 200
+2025-04-28 20:25:54 [WARN] 从 CoinGecko 获取的价格数据无效: {}
+2025-04-28 20:25:54 [INFO] 尝试从 Raydium 获取代币价格...
+2025-04-28 20:25:54 [INFO] 发送请求到 Raydium: https://api.raydium.io/v2/main/price?ids=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:25:55 [INFO] API 响应状态: 200
+2025-04-28 20:25:55 [WARN] 从 Raydium 获取的价格数据无效: {"2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo":0.9957554242264919,"2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk":880.679418363409,"2VhjJ9WxaGC3EZFwJG9BDUs9KxKCAjQY4vgd1qxgYWVg":0,"2wmKXX1xsxLfrvjEPrt2UHiqj8Gbzwxvffr9qmNjsw8g":0,"2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv":0.01254831627972048,"333iHoRM2Awhf9uVZtSyTfU8AekdGrgQePZsKMFPgKmS":0,"3bRTivrVsitbmCTGtqwp7hxXPsybkjn4XLNtPsHqa3zR":0.017070431378328244,"3eamaYJ7yicyRd3mYz4YeNyNPGVo6zMmKUp5UP25AxRM":0.9920635781194883,"3FoUAsGDbvTD6YZ4wVKJgTB76onJUKz7GPEBNiR5b8wc":0.00033401026712672036,"3joMReCCSESngJEpFLoKR2dNcChjSRCDtybQet5uSpse":0.000007182435754803435,"3JSf5tPeuscJGtaCp5giEiDhv51gQ4v3zWg8DGgyLfAB":0,"3K6rftdAaQYMPunrtNRHgnK2UAtjm2JwyT2oCiTDouYE":0.23101426363805047,"49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt":0.30036535013767895,"4BVrtjWqPsn4oyWDsB8oCLiS5DJN8Wwhmy4RKEzpys4u":0.0033142000337267547,"4dmKkXNHdgYsXqBHCuMikNQWwVomZURhYvkkX5c4pQ7y":0.00279664325611765,"4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU":0.6490880222689089,"4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R":2.9771853205285237,"4SZjjNABoqhbd4hnapbvoEPEqT8mnNkfbEoAwALf1V8t":0.009739491765792639,"4TGxgCSJQx2GQk9oHZ8dC5m3JNXTYZHjXumKAW3vLnNx":0.0003294243133647691,"4wjPQJ6PrkC4dHhYghwJzGBVP78DkBzA2U3kHoFNBuhj":0.0007064209275825596,"51tMb3zBKDiQhNwGqpgwbavaGH54mk8fXFzxTc1xnasg":0.002021277440497123,"5DkzT65YJvCsZcot9L6qwkJnsBCPmKHjJz3QU7t7QeRW":5.7267160479805925,"5gs8nf4wojB5EXgDUWNLwXpknzgV2YWDhveAeBZpVLbp":0.026513173967080913,"5LSFpvLDkcdV2a3Kiyzmg5YmJsj2XDLySaXvnfP1cgLT":1.6048102585708276e-7,"5tN42n9vMi6ubp67Uy4NnmM5DMZYN8aS8GeB3bEDHr6E":0.0003375940369471511,"5U9QqCPhqXAJcEv9uyzFJd5zhN93vuPk1aNNkXnUfPnt":0,"5Wsd311hY8NXQhkt9cWHwTnqafk7BGEbLu8Py3DSnPAr":0.00013845900015559614,"5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC":0.12647784044493607,"674PmuiDtgKx3uKuJ1B16f9m5L84eFvNwj3xDMvHcbo7":0.0006425550526888523,"6cVgJUqo4nmvQpbgrDZwyfd6RwWw5bfnCamS3M9N1fd":0.0002924128955859559,"6F9XriABHfWhit6zmMUYAQBSy6XK5VF1cHXuW5LDpRtC":0.000012945663244611862,"76aYNHbDfHemxSS7vmh6eJGfjodK8m7srCxiYCrKxzY1":0,"7dgHoN8wBZCc5wbnQ2C47TDnBMAxG4Q5L3KjP67z8kNi":0.3146030707407309,"7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj":183.34914666986046,"7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn":190.9781061972292,"7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs":1808.1783413201003,"7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU":0.003371447509029974,"7zBWymxbZt7PVHQzfi3i85frc1YRiQc23K7bh3gos8ZC":0,"8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36":5.671798768989998,"8HGyAAB1yoM1ttS7pXjHMa3dukTFGQggnFFH3hJZgzQh":0.0036045901810531095,"8PMHT4swUMtBzgHnh5U564N5sjPSiUz2cjEQzFnnP1Fo":0.0041129563730687635,"8upjSpvjcdpuzhfR1zriwg5NXkwDruejqNE9WNbPRtyA":0.00016138827951888134,"9F9fNTT6qwjsu4X4yWYKZpsbw5qT7o6yR2i57JF2jagy":0,"9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa":606.2884697278494,"9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM":0.07679031212666566,"9McvH6w97oewLmPxqQEoHUAv3u5iYMyQ9AeZZhguYf1T":5.177665720082364,"9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E":0.03285992899947423,"9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE":0.000026292528072077926,"9TE7ebz1dsFo1uQ2T4oYAKSm39Y6fWuHrd6Uk6XaiD16":0.00031113435707131535,"9zoqdwEBKWEi9G5Ze8BSkdmppxGgVv1Kw4LuigDiNr9m":0.0004206313273996585,"a11bdAAuV8iB2fu7X6AxAvDTo1QZ8FXB3kk5eecdasp":0,"A98UDy7z8MfmWnTQt6cKjje7UfqV3pTLf4yEbuwL2HrH":0.000209293974471451,"AAXng5czWLNtTXHdWEn9Ef7kXMXEaraHj2JQKo7ZoLux":0,"ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E":0.11074429101595454,"AD27ov5fVU2XzwsbvnFvb1JpCBaCB5dRXrczV9CqSVGb":0.004145163826204347,"AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB":0.007709525290887682,"AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3":1.1328636542051542,"AH3g889eGTV1qwaLmbiGrmYEbbK8pcaPjnd4TxUrCCsZ":0,"AkhdZGVbJXPuQZ53u2LrimCjkRP6ZyxG1SoM85T98eE1":0.00017135997077795325,"APTtJyaRX5yGTsJU522N4VYWg3vCvSb65eam5GrPT5Rt":0.00013377651521919064,"AR1Mtgh7zAtxuxGd2XPovXPVjcSdY3i4rQYisNadjfKy":0,"ArUkYE2XDKzqy77PRRGjo4wREWwqk6RXTfM9NeqzPvjU":0,"ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx":0.0013512013122072095,"AURYydfxJib1ZkTir1Jn1J9ECYUtjb6rKQVmtYaixWPP":0.11847334969133158,"AvoecWraqX969kfXUF5XCCDz59sjRjiDa1KUDyj225t8":0.0057609582181388005,"Basis9oJw9j8cw53oMV7iqsgo6ihi9ALw4QR31rcjUJa":0,"BKipkearSqAUdNKa1WDstvcMjoPsSKBuNyvKDQDDu9WE":0.00007029949530471863,"BLwTnYKqf7u4qjgZrrsKeNs2EzWkMLqVCu6j8iHyrNA3":0.00007665424171414344,"bonegFPgrpZ4bfVn3kQK1aMbGYddWtfMAywNt5LsuVE":0.000005560071551486492,"BRLsMczKuaR5w9vSubF4j8HwEGGprVAyyVgS4EX7DKEg":0,"Bx1fDtvTN6NvE4kjdPHQXtmGSg582bZx9fGy4DQNMmAT":0.00005398976899017435,"cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij":95216.20247849377,"CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5":0,"Ce3PSQfkxT5ua4r2JqCoWYrMwKWC5hEzwsrT9Hb7mAz9":0.0002265197125241645,"CH1LLLLUjZBai91qiKhVrTtzKqLxF4FtVAommraUQ66o":0.0007399688346770207,"CH74tuRLTYcxG7qNJCsV9rghfLXJCQJbsu7i52a8F1Gn":0.0001632143064053386,"ChVzxWRmrTeSgwd3Ui3UumcN8KX7VK3WaD4KGeSKpypj":0.6875224023156773,"CiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z":0.00001372327433201149,"CKaKtYvz6dKPyMvYq9Rh3UBrnNqYZAyd7iF4hJtjUvks":0.002520987734029641,"CLr7G2af9VSfH1PFZ5fYvB8WK1DTgE85qrVjpa8Xkg4N":2.3708700757318217,"CN7qFa5iYkHz99PTctvT4xXUHnxwjQ5MHxCuTJtPN5uS":0.0005852392914030956,"CobcsUrt3p91FwvULYKorQejgsm5HoQdv5T8RUZ6PnLA":0.01468658884201179,"CRWNYkqdgvhGGae9CKfNka58j6QQkaD5bLhKXvUYqnc1":0.0014105822720388737,"CsZ5LZkDS7h9TDKjrbL7VAwQZ9nsRu8vJLhRYfmGaN8K":0.003947172666540681,"CWE8jPTUYhdCTZYWPTe1o5DFqfdjzWKc9WKz6rSjQUdG":0.7420388530619396,"cxxShYRVcepDudXhe7U62QHvw8uBJoKFifmzggGKVC2":0.000040104498615338336,"Czt7Fc4dz6BpLh2vKiSYyotNK2uPPDhvbWrrLeD9QxhV":0,"DFL1zNkaGPWm1BqAVqRjCZvHmwTFrEaJtbzJWgseoNJh":0.00020509099830108349,"DMCUFm2ZAnSU7UgsdVq23gRogMU3MEBjPgQF1gK53rEn":0.00002154510915804292,"DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz":0,"Dz8VutERqbHR2aFL5A3s1Ky4dG1unJT1jUFXXPaY9ytX":0.07170699124064565,"E5ndSkaB17Dm7CsD22dvcjfrYSDLCxFcMd6z8ddCk5wp":0.0038874232116448675,"Ea5SjE2Y6yvCeW5dYTn7PYMuW5ikXkvbGdcmSnXeaLjS":0,"EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp":0.08404656533730591,"EdAhkbj5nF9sRM7XN7ewuW8C9XEUMs8P7cnoQ57SYE96":8.616867892086488e-7,"EFFECT1A1R3Dz8Hg4q5SXKjkiPc6KDRUWQ7Czjvy4H7E":0.006190626406812726,"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v":1,"EqWCKXfs3x47uVosDpTRgFniThL9Y8iCztJaapxbEaVX":0,"ErGB9xa24Szxbk1M28u2Tx8rKPqzL6BroNkkzk5rG4zj":0.0008140121355070469,"Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB":1.00041163066456,"ETAtLmCmsoiEEKfNrHKJ2kYy3MoABhU6NQvpSfij5tDs":0.5297619495363101,"EwJN2GqUGXXzYmoAciwuABtorHczTA5LqbukKXV1viH7":0.00004227582283351188,"F3nefJBcejYbtdREjui1T9DPh5dBgpkKq7u2GAAMXs5B":0.00003325574119222925,"FANTafPFBAt93BNJVpdu25pGPmca3RfwdsDsRrT3LX1r":0,"FgX1WD9WzMU3yLwXaFSarPfkgzjLb2DZCqmkx9ExpuvJ":0.003217555205469764,"FLWRna1gxehQ9pSyZMzxfp4UhewvLPwuKfdUTgdZuMBY":0,"Fm9rHUTF5v3hwMLbStjZXqNBBoZyGriQaFM6sTFz3K8A":0.0034678766875499943,"FNFKRV3V8DtA3gVJN6UshMiLGYA8izxFwkNWmJbFjmRj":0.0009114145360756193,"FnKE9n6aGjQoNWRBZXy4RW6LZVao7qwBonUbiD7edUmZ":0.0002168868444409786,"fujiCeCeP9AFDVCv27P5JRcKLoH7wfs2C9xmDECs24m":0.00041628220739217204,"G9tt98aYSznRk7jWsfuz9FnTdokxS6Brohdo9hSmjTRB":0.0009399000046271774,"Gdck9KXSSiMMhNyjUjo4sVT1GDzeZnZP2yse9jhax3GR":0.0011618931890990459,"GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz":0.06277694150689943,"GFX1ZjR2P15tmrSwow6FjyDYcEkoFb4p4gJCpLBjaxHD":0.0354464446367949,"GsNzxJfFn6zQdJGeYsupJWzUAm57Ba7335mfhWvFiE9Z":0.00038568991150489233,"GUohe4DJUA5FKPWo3joiPgsB7yzer7LpDmt1Vhzy3Zht":0,"GXMvfY2jpQctDqZ9RoU3oWPhufKiCcFEfchvYumtX7jd":0,"H7Qc9APCWWGDVxGD5fJHmLTmdEgT9GFatAKFNg6sHh8A":0,"HCgybxq5Upy8Mccihrp7EsmwwFqYZtrHrsmsKwtGXLgW":0.010839726604856003,"HfYFjMKNZygfMC8LsQ8LtpPsPxEJoXJx4M6tqi75Hajo":0.0013794328138867988,"HJbNXx2YMRxgfUJ6K4qeWtjatMK5KYQT1QnsCdDWywNv":0.0007740358939298382,"HKfs24UEDQpHS5hUyKYkHd9q7GY5UQ679q2bokeL2whu":0.002053011318443407,"HovGjrBGTfna4dvg6exkMxXuexB3tUfEZKcut8AWowXj":0.00006229689128665242,"HX6zNkjJ7zy653VoDWzbaYpSg7BrgLfq4i4RA7D5nkkz":0.020615338604721554,"HysWcbHiYY9888pHbaqhwLYZQeZrcQMXKQWRqS7zcPK5":2.4280317482359104,"HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p":0.8749016154123157,"inL8PMVd6iiW3RCBJnr5AsrRN6nqr4BTrcNuQWQSkvY":0,"iVNcrNE9BRZBC9Aqf753iZiZfbszeAVUoikgT9yvr2a":0,"kiNeKo77w1WBEzFFCXrTDRWGRWGP8yHvKC9rX6dqjQh":0.00014328792719806865,"kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6":0.000002753306546409284,"Lrxqnh6ZHKbGy3dcrCED43nsoLkM1LTzU2jRfWe8qUC":0.000030347418138105167,"MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac":0.01796680126999406,"MAPS41MDahZ9QdKXhVa4dWB9RuyfV4XqhyAZ8XcYepb":0.008925538900824993,"MEANeD3XDdUmNMsRGjASkSWdC8prLYsoRJ61pPeHctD":0.0002484061130404535,"MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u":0.9824018680029323,"MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K":0.0001715468737870289,"METAmTMXwdb8gYzyCPfXXFmZZw4rUsXX58PNsDg7zjL":0.0004125734667715001,"MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey":0.09434366292241651,"mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So":194.5092147622805,"NFTUkR4u7wKxy9QLaX2TGvd9oZSWoMo4jqSJqdMb7Nk":0.06591602345917491,"nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7":0.9460336040300968,"orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE":3.6511032221638033,"poLisWXnNRwC6oBu1vHiuKQzFjGL4XDSu4g9qjz9qVk":0.0709733041427013,"PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y":0.0031555602285388206,"PRAxfbouRoJ9yZqhyejEAH6RvjJ86Y82vfiZTBSM3xG":0.005748075758368303,"PRSMNsEPqhGVCH1TtWiJqPjJyh2cKrLostPZTNy1o5x":0.0007213997614798045,"PRT88RkA4Kg5z7pKnezeNH4mafTvtQdfFgpQTGRjz44":0,"PsyFiqqjiv41G7o5SMRzDJCu4psptThNR2GtfeGHfSq":0.00017714728269574396,"Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1":0.000986645140389544,"SCYfrGCw8aDiqdgcpdGjV6jp4UVVQLuphxTDLNWu36f":1.81233862698356e-7,"seedEDBqu63tJ7PFqvcbwvThrYUkQeqT6NLf81kLibs":0.0003789483900379692,"SHDWyBxihqiCj6YekG2GUr7wqKLeLAMK1gHZck9pL6y":0.1352802963966055,"SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp":0.3703919886199857,"SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr":0.0004128893649101558,"SNSNkV9zfG5ZKWQs6x4hxvBRV6s8SqMfSGCtECDvdMd":0.004322985716428986,"So11111111111111111111111111111111111111112":151.06894920221316,"sonarX4VtVkQemriJeLm6CKeW3GDMyiBnnAEMw1MRAE":0.005215080411215295,"SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt":0.016932647268340383,"StepAscQoEioFxxWGnh2sLBDFp9d8rvKz2Yp39iDpyT":0.0790458353328891,"SuperbZyz7TsSdSoFAZ6RYHfAWe9NmjXBLVQpS8hqdx":0,"susdabGDNbhrnCa6ncrYo81u4s9GM8ecK2UwMyZiq4X":1.0956717359882178,"svtMpL5eQzdmB3uqK9NXaQkq8prGZoKQFNVJghdWCkV":0.0013556683331355098,"TuLipcqtGVXP9XR62wM8WWCm6a9vhLs7T1uoWBk6FDs":0.10999191759232636,"USDrbBQwQbQ2oWHUPfA8QBHcyVxKUq1xHyXsSLKdUq2":0,"UXPhBoR3qG4UCiGNJfV7MqhHyFqKN68g45GoYvAeL2M":0,"vSoLxydx6akxyMD9XEcPvGYNGq6Nn66oqVb3UkGkei7":163.1915715740153,"xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW":0.05429461766760002,"YAWtS7vWCSRPckx1agB6sKidVXiXiDUfehXdEUSRGKE":0.0000032473725132311944,"z3dn17yLaGMKffVogeFHQ9zWVcXgqgf3PQnDsNs2g6M":0.03206613357899507,"zBTCug3er3tLyffELcvDNrKkCymbPWysGcWihESYfLg":95078.04833850024,"zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF":0.0009101812326883866,"ZEXy1pqteRu3n13kdyh4LwPQknkFk3GzmMYMuNadWPo":0.03117857231793686}
+2025-04-28 20:25:55 [INFO] 尝试从 Jupiter 获取代币价格...
+2025-04-28 20:25:55 [INFO] 发送请求到 Jupiter: https://quote-api.jup.ag/v4/tokens
+2025-04-28 20:25:55 [INFO] API 响应状态: 404
+2025-04-28 20:25:55 [WARN] 从 Jupiter 获取价格失败: HTTP 404
+2025-04-28 20:25:55 [WARN] API 响应数据: 
+2025-04-28 20:25:55 [WARN] 无法从任何数据源获取代币价格
+2025-04-28 20:32:02 [INFO] 获取代币 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump 的供应量信息...
+2025-04-28 20:32:02 [INFO] 代币供应量: 999970039.547754 (原始值: 999970039547754, 小数位: 6)
+2025-04-28 20:32:02 [INFO] 尝试从 CoinGecko 获取代币价格...
+2025-04-28 20:32:02 [INFO] 发送请求到 CoinGecko: https://api.coingecko.com/api/v3/simple/token_price/solana?contract_addresses=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump&vs_currencies=usd
+2025-04-28 20:32:03 [INFO] API 响应状态: 200
+2025-04-28 20:32:03 [WARN] 从 CoinGecko 获取的价格数据无效: {}
+2025-04-28 20:32:03 [INFO] 尝试从 Raydium 获取代币价格...
+2025-04-28 20:32:03 [INFO] 发送请求到 Raydium: https://api.raydium.io/v2/main/price?ids=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:32:03 [INFO] API 响应状态: 200
+2025-04-28 20:32:03 [WARN] 从 Raydium 获取的价格数据无效: {"2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo":0.9954705681045612,"2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk":879.6150781566294,"2VhjJ9WxaGC3EZFwJG9BDUs9KxKCAjQY4vgd1qxgYWVg":0,"2wmKXX1xsxLfrvjEPrt2UHiqj8Gbzwxvffr9qmNjsw8g":0,"2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv":0.012438285028438249,"333iHoRM2Awhf9uVZtSyTfU8AekdGrgQePZsKMFPgKmS":0,"3bRTivrVsitbmCTGtqwp7hxXPsybkjn4XLNtPsHqa3zR":0.01706730030564426,"3eamaYJ7yicyRd3mYz4YeNyNPGVo6zMmKUp5UP25AxRM":0.9920635781194883,"3FoUAsGDbvTD6YZ4wVKJgTB76onJUKz7GPEBNiR5b8wc":0.00033401026712672036,"3joMReCCSESngJEpFLoKR2dNcChjSRCDtybQet5uSpse":0.0000071852844332204,"3JSf5tPeuscJGtaCp5giEiDhv51gQ4v3zWg8DGgyLfAB":0,"3K6rftdAaQYMPunrtNRHgnK2UAtjm2JwyT2oCiTDouYE":0.23101426363805047,"49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt":0.30036535013767895,"4BVrtjWqPsn4oyWDsB8oCLiS5DJN8Wwhmy4RKEzpys4u":0.003290573165327155,"4dmKkXNHdgYsXqBHCuMikNQWwVomZURhYvkkX5c4pQ7y":0.00279664325611765,"4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU":0.6490880222689089,"4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R":2.973500185184866,"4SZjjNABoqhbd4hnapbvoEPEqT8mnNkfbEoAwALf1V8t":0.009739491765792639,"4TGxgCSJQx2GQk9oHZ8dC5m3JNXTYZHjXumKAW3vLnNx":0.0003294243133647691,"4wjPQJ6PrkC4dHhYghwJzGBVP78DkBzA2U3kHoFNBuhj":0.0007064209275825596,"51tMb3zBKDiQhNwGqpgwbavaGH54mk8fXFzxTc1xnasg":0.002021277440497123,"5DkzT65YJvCsZcot9L6qwkJnsBCPmKHjJz3QU7t7QeRW":5.7267160479805925,"5gs8nf4wojB5EXgDUWNLwXpknzgV2YWDhveAeBZpVLbp":0.026513173967080913,"5LSFpvLDkcdV2a3Kiyzmg5YmJsj2XDLySaXvnfP1cgLT":1.6054467541139802e-7,"5tN42n9vMi6ubp67Uy4NnmM5DMZYN8aS8GeB3bEDHr6E":0.0003375940369471511,"5U9QqCPhqXAJcEv9uyzFJd5zhN93vuPk1aNNkXnUfPnt":0,"5Wsd311hY8NXQhkt9cWHwTnqafk7BGEbLu8Py3DSnPAr":0.00013851391539310647,"5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC":0.12651384724130757,"674PmuiDtgKx3uKuJ1B16f9m5L84eFvNwj3xDMvHcbo7":0.0006425550526888523,"6cVgJUqo4nmvQpbgrDZwyfd6RwWw5bfnCamS3M9N1fd":0.0002924128955859559,"6F9XriABHfWhit6zmMUYAQBSy6XK5VF1cHXuW5LDpRtC":0.000012945663244611862,"76aYNHbDfHemxSS7vmh6eJGfjodK8m7srCxiYCrKxzY1":0,"7dgHoN8wBZCc5wbnQ2C47TDnBMAxG4Q5L3KjP67z8kNi":0.3146030707407309,"7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj":183.25345585208703,"7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn":191.05385142180333,"7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs":1808.8954961671168,"7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU":0.0033667422990119595,"7zBWymxbZt7PVHQzfi3i85frc1YRiQc23K7bh3gos8ZC":0,"8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36":5.671798768989998,"8HGyAAB1yoM1ttS7pXjHMa3dukTFGQggnFFH3hJZgzQh":0.0036045901810531095,"8PMHT4swUMtBzgHnh5U564N5sjPSiUz2cjEQzFnnP1Fo":0.0041129563730687635,"8upjSpvjcdpuzhfR1zriwg5NXkwDruejqNE9WNbPRtyA":0.00016138827951888134,"9F9fNTT6qwjsu4X4yWYKZpsbw5qT7o6yR2i57JF2jagy":0,"9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa":606.2884697278494,"9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM":0.07679031212666566,"9McvH6w97oewLmPxqQEoHUAv3u5iYMyQ9AeZZhguYf1T":5.1229387337201135,"9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E":0.03285052874745052,"9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE":0.000026229838687956512,"9TE7ebz1dsFo1uQ2T4oYAKSm39Y6fWuHrd6Uk6XaiD16":0.00031125775834603924,"9zoqdwEBKWEi9G5Ze8BSkdmppxGgVv1Kw4LuigDiNr9m":0.0004206313273996585,"a11bdAAuV8iB2fu7X6AxAvDTo1QZ8FXB3kk5eecdasp":0,"A98UDy7z8MfmWnTQt6cKjje7UfqV3pTLf4yEbuwL2HrH":0.000209293974471451,"AAXng5czWLNtTXHdWEn9Ef7kXMXEaraHj2JQKo7ZoLux":0,"ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E":0.1107882141198136,"AD27ov5fVU2XzwsbvnFvb1JpCBaCB5dRXrczV9CqSVGb":0.004145163826204347,"AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB":0.007722411151809383,"AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3":1.1328636542051542,"AH3g889eGTV1qwaLmbiGrmYEbbK8pcaPjnd4TxUrCCsZ":0,"AkhdZGVbJXPuQZ53u2LrimCjkRP6ZyxG1SoM85T98eE1":0.00017135997077795325,"APTtJyaRX5yGTsJU522N4VYWg3vCvSb65eam5GrPT5Rt":0.00013377651521919064,"AR1Mtgh7zAtxuxGd2XPovXPVjcSdY3i4rQYisNadjfKy":0,"ArUkYE2XDKzqy77PRRGjo4wREWwqk6RXTfM9NeqzPvjU":0,"ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx":0.0013518414088831384,"AURYydfxJib1ZkTir1Jn1J9ECYUtjb6rKQVmtYaixWPP":0.11847334969133158,"AvoecWraqX969kfXUF5XCCDz59sjRjiDa1KUDyj225t8":0.005760960314608583,"Basis9oJw9j8cw53oMV7iqsgo6ihi9ALw4QR31rcjUJa":0,"BKipkearSqAUdNKa1WDstvcMjoPsSKBuNyvKDQDDu9WE":0.00007029949530471863,"BLwTnYKqf7u4qjgZrrsKeNs2EzWkMLqVCu6j8iHyrNA3":0.00007655935972831801,"bonegFPgrpZ4bfVn3kQK1aMbGYddWtfMAywNt5LsuVE":0.000005562276772161791,"BRLsMczKuaR5w9vSubF4j8HwEGGprVAyyVgS4EX7DKEg":0,"Bx1fDtvTN6NvE4kjdPHQXtmGSg582bZx9fGy4DQNMmAT":0.00005398978863758628,"cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij":95320.01630459308,"CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5":0,"Ce3PSQfkxT5ua4r2JqCoWYrMwKWC5hEzwsrT9Hb7mAz9":0.0002265197125241645,"CH1LLLLUjZBai91qiKhVrTtzKqLxF4FtVAommraUQ66o":0.0007400457713496799,"CH74tuRLTYcxG7qNJCsV9rghfLXJCQJbsu7i52a8F1Gn":0.00016301228108801032,"ChVzxWRmrTeSgwd3Ui3UumcN8KX7VK3WaD4KGeSKpypj":0.6875224023156773,"CiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z":0.00001372327433201149,"CKaKtYvz6dKPyMvYq9Rh3UBrnNqYZAyd7iF4hJtjUvks":0.002521987601427349,"CLr7G2af9VSfH1PFZ5fYvB8WK1DTgE85qrVjpa8Xkg4N":2.3708700757318217,"CN7qFa5iYkHz99PTctvT4xXUHnxwjQ5MHxCuTJtPN5uS":0.0005852392914030956,"CobcsUrt3p91FwvULYKorQejgsm5HoQdv5T8RUZ6PnLA":0.01468658884201179,"CRWNYkqdgvhGGae9CKfNka58j6QQkaD5bLhKXvUYqnc1":0.001410203453455125,"CsZ5LZkDS7h9TDKjrbL7VAwQZ9nsRu8vJLhRYfmGaN8K":0.003947172666540681,"CWE8jPTUYhdCTZYWPTe1o5DFqfdjzWKc9WKz6rSjQUdG":0.7420388530619396,"cxxShYRVcepDudXhe7U62QHvw8uBJoKFifmzggGKVC2":0.000040104498615338336,"Czt7Fc4dz6BpLh2vKiSYyotNK2uPPDhvbWrrLeD9QxhV":0,"DFL1zNkaGPWm1BqAVqRjCZvHmwTFrEaJtbzJWgseoNJh":0.00020509099830108349,"DMCUFm2ZAnSU7UgsdVq23gRogMU3MEBjPgQF1gK53rEn":0.00002154510915804292,"DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz":0,"Dz8VutERqbHR2aFL5A3s1Ky4dG1unJT1jUFXXPaY9ytX":0.07173555766795944,"E5ndSkaB17Dm7CsD22dvcjfrYSDLCxFcMd6z8ddCk5wp":0.0038874232116448675,"Ea5SjE2Y6yvCeW5dYTn7PYMuW5ikXkvbGdcmSnXeaLjS":0,"EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp":0.08404113100234088,"EdAhkbj5nF9sRM7XN7ewuW8C9XEUMs8P7cnoQ57SYE96":8.616867892086488e-7,"EFFECT1A1R3Dz8Hg4q5SXKjkiPc6KDRUWQ7Czjvy4H7E":0.006190626406812726,"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v":1,"EqWCKXfs3x47uVosDpTRgFniThL9Y8iCztJaapxbEaVX":0,"ErGB9xa24Szxbk1M28u2Tx8rKPqzL6BroNkkzk5rG4zj":0.000814334986818319,"Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB":1.0004119947242658,"ETAtLmCmsoiEEKfNrHKJ2kYy3MoABhU6NQvpSfij5tDs":0.5297619495363101,"EwJN2GqUGXXzYmoAciwuABtorHczTA5LqbukKXV1viH7":0.00004227582283351188,"F3nefJBcejYbtdREjui1T9DPh5dBgpkKq7u2GAAMXs5B":0.000033268930995160813,"FANTafPFBAt93BNJVpdu25pGPmca3RfwdsDsRrT3LX1r":0,"FgX1WD9WzMU3yLwXaFSarPfkgzjLb2DZCqmkx9ExpuvJ":0.003217555205469764,"FLWRna1gxehQ9pSyZMzxfp4UhewvLPwuKfdUTgdZuMBY":0,"Fm9rHUTF5v3hwMLbStjZXqNBBoZyGriQaFM6sTFz3K8A":0.0034678766875499943,"FNFKRV3V8DtA3gVJN6UshMiLGYA8izxFwkNWmJbFjmRj":0.0009114145360756193,"FnKE9n6aGjQoNWRBZXy4RW6LZVao7qwBonUbiD7edUmZ":0.00021739266355826103,"fujiCeCeP9AFDVCv27P5JRcKLoH7wfs2C9xmDECs24m":0.0004164473121254474,"G9tt98aYSznRk7jWsfuz9FnTdokxS6Brohdo9hSmjTRB":0.0009395258604788957,"Gdck9KXSSiMMhNyjUjo4sVT1GDzeZnZP2yse9jhax3GR":0.0011623540160613185,"GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz":0.06273451446578637,"GFX1ZjR2P15tmrSwow6FjyDYcEkoFb4p4gJCpLBjaxHD":0.0354464446367949,"GsNzxJfFn6zQdJGeYsupJWzUAm57Ba7335mfhWvFiE9Z":0.00038568991150489233,"GUohe4DJUA5FKPWo3joiPgsB7yzer7LpDmt1Vhzy3Zht":0,"GXMvfY2jpQctDqZ9RoU3oWPhufKiCcFEfchvYumtX7jd":0,"H7Qc9APCWWGDVxGD5fJHmLTmdEgT9GFatAKFNg6sHh8A":0,"HCgybxq5Upy8Mccihrp7EsmwwFqYZtrHrsmsKwtGXLgW":0.010839726604856003,"HfYFjMKNZygfMC8LsQ8LtpPsPxEJoXJx4M6tqi75Hajo":0.0013794328138867988,"HJbNXx2YMRxgfUJ6K4qeWtjatMK5KYQT1QnsCdDWywNv":0.0007740358939298382,"HKfs24UEDQpHS5hUyKYkHd9q7GY5UQ679q2bokeL2whu":0.002053011318443407,"HovGjrBGTfna4dvg6exkMxXuexB3tUfEZKcut8AWowXj":0.00006229689128665242,"HX6zNkjJ7zy653VoDWzbaYpSg7BrgLfq4i4RA7D5nkkz":0.02062351500506073,"HysWcbHiYY9888pHbaqhwLYZQeZrcQMXKQWRqS7zcPK5":2.4280317482359104,"HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p":0.8744449999735712,"inL8PMVd6iiW3RCBJnr5AsrRN6nqr4BTrcNuQWQSkvY":0,"iVNcrNE9BRZBC9Aqf753iZiZfbszeAVUoikgT9yvr2a":0,"kiNeKo77w1WBEzFFCXrTDRWGRWGP8yHvKC9rX6dqjQh":0.00014328792719806865,"kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6":0.000002750218677378192,"Lrxqnh6ZHKbGy3dcrCED43nsoLkM1LTzU2jRfWe8qUC":0.000030347418138105167,"MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac":0.01796680126999406,"MAPS41MDahZ9QdKXhVa4dWB9RuyfV4XqhyAZ8XcYepb":0.008914490942662018,"MEANeD3XDdUmNMsRGjASkSWdC8prLYsoRJ61pPeHctD":0.0002484061130404535,"MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u":0.9802985287296748,"MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K":0.0001715468737870289,"METAmTMXwdb8gYzyCPfXXFmZZw4rUsXX58PNsDg7zjL":0.0004125734667715001,"MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey":0.09438110300120958,"mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So":194.58640532390484,"NFTUkR4u7wKxy9QLaX2TGvd9oZSWoMo4jqSJqdMb7Nk":0.06586137221174906,"nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7":0.9456975052079805,"orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE":3.6500587497167243,"poLisWXnNRwC6oBu1vHiuKQzFjGL4XDSu4g9qjz9qVk":0.07092526082421746,"PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y":0.0031555602285388206,"PRAxfbouRoJ9yZqhyejEAH6RvjJ86Y82vfiZTBSM3xG":0.005748075758368303,"PRSMNsEPqhGVCH1TtWiJqPjJyh2cKrLostPZTNy1o5x":0.0007213997614798045,"PRT88RkA4Kg5z7pKnezeNH4mafTvtQdfFgpQTGRjz44":0,"PsyFiqqjiv41G7o5SMRzDJCu4psptThNR2GtfeGHfSq":0.00017714728269574396,"Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1":0.0009919402017226076,"SCYfrGCw8aDiqdgcpdGjV6jp4UVVQLuphxTDLNWu36f":1.81233862698356e-7,"seedEDBqu63tJ7PFqvcbwvThrYUkQeqT6NLf81kLibs":0.0003789483900379692,"SHDWyBxihqiCj6YekG2GUr7wqKLeLAMK1gHZck9pL6y":0.1352802963966055,"SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp":0.3705388924976977,"SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr":0.0004128893649101558,"SNSNkV9zfG5ZKWQs6x4hxvBRV6s8SqMfSGCtECDvdMd":0.004322985716428986,"So11111111111111111111111111111111111111112":151.12886576391412,"sonarX4VtVkQemriJeLm6CKeW3GDMyiBnnAEMw1MRAE":0.005215080411215295,"SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt":0.016917841979738252,"StepAscQoEioFxxWGnh2sLBDFp9d8rvKz2Yp39iDpyT":0.07900552959691051,"SuperbZyz7TsSdSoFAZ6RYHfAWe9NmjXBLVQpS8hqdx":0,"susdabGDNbhrnCa6ncrYo81u4s9GM8ecK2UwMyZiq4X":1.0956712534770618,"svtMpL5eQzdmB3uqK9NXaQkq8prGZoKQFNVJghdWCkV":0.0013556683331355098,"TuLipcqtGVXP9XR62wM8WWCm6a9vhLs7T1uoWBk6FDs":0.10999191759232636,"USDrbBQwQbQ2oWHUPfA8QBHcyVxKUq1xHyXsSLKdUq2":0,"UXPhBoR3qG4UCiGNJfV7MqhHyFqKN68g45GoYvAeL2M":0,"vSoLxydx6akxyMD9XEcPvGYNGq6Nn66oqVb3UkGkei7":163.25629617770738,"xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW":0.05431615185332574,"YAWtS7vWCSRPckx1agB6sKidVXiXiDUfehXdEUSRGKE":0.0000032473725132311944,"z3dn17yLaGMKffVogeFHQ9zWVcXgqgf3PQnDsNs2g6M":0.0320264423843047,"zBTCug3er3tLyffELcvDNrKkCymbPWysGcWihESYfLg":95149.72465190063,"zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF":0.0009101812326883866,"ZEXy1pqteRu3n13kdyh4LwPQknkFk3GzmMYMuNadWPo":0.03119099314893894}
+2025-04-28 20:32:03 [INFO] 尝试从 Jupiter 获取代币价格...
+2025-04-28 20:32:03 [INFO] 发送请求到 Jupiter: https://quote-api.jup.ag/v4/tokens
+2025-04-28 20:32:04 [INFO] API 响应状态: 404
+2025-04-28 20:32:04 [WARN] 从 Jupiter 获取价格失败: HTTP 404
+2025-04-28 20:32:04 [WARN] API 响应数据: 
+2025-04-28 20:32:04 [WARN] 无法从任何数据源获取代币价格
+2025-04-28 20:35:03 [INFO] 获取代币 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump 的供应量信息...
+2025-04-28 20:35:03 [INFO] 代币供应量: 999970039.547754 (原始值: 999970039547754, 小数位: 6)
+2025-04-28 20:35:03 [INFO] 尝试从 Birdeye 获取代币价格...
+2025-04-28 20:35:03 [INFO] 发送请求到 Birdeye: https://public-api.birdeye.so/defi/token_price?address=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:35:04 [INFO] API 响应状态: 404
+2025-04-28 20:35:04 [WARN] 从 Birdeye 获取价格失败: HTTP 404
+2025-04-28 20:35:04 [WARN] API 响应数据: {"success":false,"message":"Not found"}
+2025-04-28 20:35:04 [INFO] 尝试从 CoinGecko 获取代币价格...
+2025-04-28 20:35:04 [INFO] 发送请求到 CoinGecko: https://api.coingecko.com/api/v3/simple/token_price/solana?contract_addresses=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump&vs_currencies=usd
+2025-04-28 20:35:05 [INFO] API 响应状态: 200
+2025-04-28 20:35:05 [WARN] 从 CoinGecko 获取的价格数据无效: {}
+2025-04-28 20:35:05 [INFO] 尝试从 Raydium 获取代币价格...
+2025-04-28 20:35:05 [INFO] 发送请求到 Raydium: https://api.raydium.io/v2/main/price?ids=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:35:05 [INFO] API 响应状态: 200
+2025-04-28 20:35:05 [WARN] 从 Raydium 获取的价格数据无效: {"2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo":0.9954705681045612,"2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk":879.6150781566294,"2VhjJ9WxaGC3EZFwJG9BDUs9KxKCAjQY4vgd1qxgYWVg":0,"2wmKXX1xsxLfrvjEPrt2UHiqj8Gbzwxvffr9qmNjsw8g":0,"2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv":0.012438285028438249,"333iHoRM2Awhf9uVZtSyTfU8AekdGrgQePZsKMFPgKmS":0,"3bRTivrVsitbmCTGtqwp7hxXPsybkjn4XLNtPsHqa3zR":0.01706730030564426,"3eamaYJ7yicyRd3mYz4YeNyNPGVo6zMmKUp5UP25AxRM":0.9920635781194883,"3FoUAsGDbvTD6YZ4wVKJgTB76onJUKz7GPEBNiR5b8wc":0.00033401026712672036,"3joMReCCSESngJEpFLoKR2dNcChjSRCDtybQet5uSpse":0.0000071852844332204,"3JSf5tPeuscJGtaCp5giEiDhv51gQ4v3zWg8DGgyLfAB":0,"3K6rftdAaQYMPunrtNRHgnK2UAtjm2JwyT2oCiTDouYE":0.23101426363805047,"49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt":0.30036535013767895,"4BVrtjWqPsn4oyWDsB8oCLiS5DJN8Wwhmy4RKEzpys4u":0.003290573165327155,"4dmKkXNHdgYsXqBHCuMikNQWwVomZURhYvkkX5c4pQ7y":0.00279664325611765,"4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU":0.6490880222689089,"4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R":2.973500185184866,"4SZjjNABoqhbd4hnapbvoEPEqT8mnNkfbEoAwALf1V8t":0.009739491765792639,"4TGxgCSJQx2GQk9oHZ8dC5m3JNXTYZHjXumKAW3vLnNx":0.0003294243133647691,"4wjPQJ6PrkC4dHhYghwJzGBVP78DkBzA2U3kHoFNBuhj":0.0007064209275825596,"51tMb3zBKDiQhNwGqpgwbavaGH54mk8fXFzxTc1xnasg":0.002021277440497123,"5DkzT65YJvCsZcot9L6qwkJnsBCPmKHjJz3QU7t7QeRW":5.7267160479805925,"5gs8nf4wojB5EXgDUWNLwXpknzgV2YWDhveAeBZpVLbp":0.026513173967080913,"5LSFpvLDkcdV2a3Kiyzmg5YmJsj2XDLySaXvnfP1cgLT":1.6054467541139802e-7,"5tN42n9vMi6ubp67Uy4NnmM5DMZYN8aS8GeB3bEDHr6E":0.0003375940369471511,"5U9QqCPhqXAJcEv9uyzFJd5zhN93vuPk1aNNkXnUfPnt":0,"5Wsd311hY8NXQhkt9cWHwTnqafk7BGEbLu8Py3DSnPAr":0.00013851391539310647,"5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC":0.12651384724130757,"674PmuiDtgKx3uKuJ1B16f9m5L84eFvNwj3xDMvHcbo7":0.0006425550526888523,"6cVgJUqo4nmvQpbgrDZwyfd6RwWw5bfnCamS3M9N1fd":0.0002924128955859559,"6F9XriABHfWhit6zmMUYAQBSy6XK5VF1cHXuW5LDpRtC":0.000012945663244611862,"76aYNHbDfHemxSS7vmh6eJGfjodK8m7srCxiYCrKxzY1":0,"7dgHoN8wBZCc5wbnQ2C47TDnBMAxG4Q5L3KjP67z8kNi":0.3146030707407309,"7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj":183.25345585208703,"7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn":191.05385142180333,"7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs":1808.8954961671168,"7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU":0.0033667422990119595,"7zBWymxbZt7PVHQzfi3i85frc1YRiQc23K7bh3gos8ZC":0,"8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36":5.671798768989998,"8HGyAAB1yoM1ttS7pXjHMa3dukTFGQggnFFH3hJZgzQh":0.0036045901810531095,"8PMHT4swUMtBzgHnh5U564N5sjPSiUz2cjEQzFnnP1Fo":0.0041129563730687635,"8upjSpvjcdpuzhfR1zriwg5NXkwDruejqNE9WNbPRtyA":0.00016138827951888134,"9F9fNTT6qwjsu4X4yWYKZpsbw5qT7o6yR2i57JF2jagy":0,"9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa":606.2884697278494,"9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM":0.07679031212666566,"9McvH6w97oewLmPxqQEoHUAv3u5iYMyQ9AeZZhguYf1T":5.1229387337201135,"9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E":0.03285052874745052,"9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE":0.000026229838687956512,"9TE7ebz1dsFo1uQ2T4oYAKSm39Y6fWuHrd6Uk6XaiD16":0.00031125775834603924,"9zoqdwEBKWEi9G5Ze8BSkdmppxGgVv1Kw4LuigDiNr9m":0.0004206313273996585,"a11bdAAuV8iB2fu7X6AxAvDTo1QZ8FXB3kk5eecdasp":0,"A98UDy7z8MfmWnTQt6cKjje7UfqV3pTLf4yEbuwL2HrH":0.000209293974471451,"AAXng5czWLNtTXHdWEn9Ef7kXMXEaraHj2JQKo7ZoLux":0,"ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E":0.1107882141198136,"AD27ov5fVU2XzwsbvnFvb1JpCBaCB5dRXrczV9CqSVGb":0.004145163826204347,"AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB":0.007722411151809383,"AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3":1.1328636542051542,"AH3g889eGTV1qwaLmbiGrmYEbbK8pcaPjnd4TxUrCCsZ":0,"AkhdZGVbJXPuQZ53u2LrimCjkRP6ZyxG1SoM85T98eE1":0.00017135997077795325,"APTtJyaRX5yGTsJU522N4VYWg3vCvSb65eam5GrPT5Rt":0.00013377651521919064,"AR1Mtgh7zAtxuxGd2XPovXPVjcSdY3i4rQYisNadjfKy":0,"ArUkYE2XDKzqy77PRRGjo4wREWwqk6RXTfM9NeqzPvjU":0,"ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx":0.0013518414088831384,"AURYydfxJib1ZkTir1Jn1J9ECYUtjb6rKQVmtYaixWPP":0.11847334969133158,"AvoecWraqX969kfXUF5XCCDz59sjRjiDa1KUDyj225t8":0.005760960314608583,"Basis9oJw9j8cw53oMV7iqsgo6ihi9ALw4QR31rcjUJa":0,"BKipkearSqAUdNKa1WDstvcMjoPsSKBuNyvKDQDDu9WE":0.00007029949530471863,"BLwTnYKqf7u4qjgZrrsKeNs2EzWkMLqVCu6j8iHyrNA3":0.00007655935972831801,"bonegFPgrpZ4bfVn3kQK1aMbGYddWtfMAywNt5LsuVE":0.000005562276772161791,"BRLsMczKuaR5w9vSubF4j8HwEGGprVAyyVgS4EX7DKEg":0,"Bx1fDtvTN6NvE4kjdPHQXtmGSg582bZx9fGy4DQNMmAT":0.00005398978863758628,"cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij":95320.01630459308,"CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5":0,"Ce3PSQfkxT5ua4r2JqCoWYrMwKWC5hEzwsrT9Hb7mAz9":0.0002265197125241645,"CH1LLLLUjZBai91qiKhVrTtzKqLxF4FtVAommraUQ66o":0.0007400457713496799,"CH74tuRLTYcxG7qNJCsV9rghfLXJCQJbsu7i52a8F1Gn":0.00016301228108801032,"ChVzxWRmrTeSgwd3Ui3UumcN8KX7VK3WaD4KGeSKpypj":0.6875224023156773,"CiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z":0.00001372327433201149,"CKaKtYvz6dKPyMvYq9Rh3UBrnNqYZAyd7iF4hJtjUvks":0.002521987601427349,"CLr7G2af9VSfH1PFZ5fYvB8WK1DTgE85qrVjpa8Xkg4N":2.3708700757318217,"CN7qFa5iYkHz99PTctvT4xXUHnxwjQ5MHxCuTJtPN5uS":0.0005852392914030956,"CobcsUrt3p91FwvULYKorQejgsm5HoQdv5T8RUZ6PnLA":0.01468658884201179,"CRWNYkqdgvhGGae9CKfNka58j6QQkaD5bLhKXvUYqnc1":0.001410203453455125,"CsZ5LZkDS7h9TDKjrbL7VAwQZ9nsRu8vJLhRYfmGaN8K":0.003947172666540681,"CWE8jPTUYhdCTZYWPTe1o5DFqfdjzWKc9WKz6rSjQUdG":0.7420388530619396,"cxxShYRVcepDudXhe7U62QHvw8uBJoKFifmzggGKVC2":0.000040104498615338336,"Czt7Fc4dz6BpLh2vKiSYyotNK2uPPDhvbWrrLeD9QxhV":0,"DFL1zNkaGPWm1BqAVqRjCZvHmwTFrEaJtbzJWgseoNJh":0.00020509099830108349,"DMCUFm2ZAnSU7UgsdVq23gRogMU3MEBjPgQF1gK53rEn":0.00002154510915804292,"DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz":0,"Dz8VutERqbHR2aFL5A3s1Ky4dG1unJT1jUFXXPaY9ytX":0.07173555766795944,"E5ndSkaB17Dm7CsD22dvcjfrYSDLCxFcMd6z8ddCk5wp":0.0038874232116448675,"Ea5SjE2Y6yvCeW5dYTn7PYMuW5ikXkvbGdcmSnXeaLjS":0,"EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp":0.08404113100234088,"EdAhkbj5nF9sRM7XN7ewuW8C9XEUMs8P7cnoQ57SYE96":8.616867892086488e-7,"EFFECT1A1R3Dz8Hg4q5SXKjkiPc6KDRUWQ7Czjvy4H7E":0.006190626406812726,"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v":1,"EqWCKXfs3x47uVosDpTRgFniThL9Y8iCztJaapxbEaVX":0,"ErGB9xa24Szxbk1M28u2Tx8rKPqzL6BroNkkzk5rG4zj":0.000814334986818319,"Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB":1.0004119947242658,"ETAtLmCmsoiEEKfNrHKJ2kYy3MoABhU6NQvpSfij5tDs":0.5297619495363101,"EwJN2GqUGXXzYmoAciwuABtorHczTA5LqbukKXV1viH7":0.00004227582283351188,"F3nefJBcejYbtdREjui1T9DPh5dBgpkKq7u2GAAMXs5B":0.000033268930995160813,"FANTafPFBAt93BNJVpdu25pGPmca3RfwdsDsRrT3LX1r":0,"FgX1WD9WzMU3yLwXaFSarPfkgzjLb2DZCqmkx9ExpuvJ":0.003217555205469764,"FLWRna1gxehQ9pSyZMzxfp4UhewvLPwuKfdUTgdZuMBY":0,"Fm9rHUTF5v3hwMLbStjZXqNBBoZyGriQaFM6sTFz3K8A":0.0034678766875499943,"FNFKRV3V8DtA3gVJN6UshMiLGYA8izxFwkNWmJbFjmRj":0.0009114145360756193,"FnKE9n6aGjQoNWRBZXy4RW6LZVao7qwBonUbiD7edUmZ":0.00021739266355826103,"fujiCeCeP9AFDVCv27P5JRcKLoH7wfs2C9xmDECs24m":0.0004164473121254474,"G9tt98aYSznRk7jWsfuz9FnTdokxS6Brohdo9hSmjTRB":0.0009395258604788957,"Gdck9KXSSiMMhNyjUjo4sVT1GDzeZnZP2yse9jhax3GR":0.0011623540160613185,"GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz":0.06273451446578637,"GFX1ZjR2P15tmrSwow6FjyDYcEkoFb4p4gJCpLBjaxHD":0.0354464446367949,"GsNzxJfFn6zQdJGeYsupJWzUAm57Ba7335mfhWvFiE9Z":0.00038568991150489233,"GUohe4DJUA5FKPWo3joiPgsB7yzer7LpDmt1Vhzy3Zht":0,"GXMvfY2jpQctDqZ9RoU3oWPhufKiCcFEfchvYumtX7jd":0,"H7Qc9APCWWGDVxGD5fJHmLTmdEgT9GFatAKFNg6sHh8A":0,"HCgybxq5Upy8Mccihrp7EsmwwFqYZtrHrsmsKwtGXLgW":0.010839726604856003,"HfYFjMKNZygfMC8LsQ8LtpPsPxEJoXJx4M6tqi75Hajo":0.0013794328138867988,"HJbNXx2YMRxgfUJ6K4qeWtjatMK5KYQT1QnsCdDWywNv":0.0007740358939298382,"HKfs24UEDQpHS5hUyKYkHd9q7GY5UQ679q2bokeL2whu":0.002053011318443407,"HovGjrBGTfna4dvg6exkMxXuexB3tUfEZKcut8AWowXj":0.00006229689128665242,"HX6zNkjJ7zy653VoDWzbaYpSg7BrgLfq4i4RA7D5nkkz":0.02062351500506073,"HysWcbHiYY9888pHbaqhwLYZQeZrcQMXKQWRqS7zcPK5":2.4280317482359104,"HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p":0.8744449999735712,"inL8PMVd6iiW3RCBJnr5AsrRN6nqr4BTrcNuQWQSkvY":0,"iVNcrNE9BRZBC9Aqf753iZiZfbszeAVUoikgT9yvr2a":0,"kiNeKo77w1WBEzFFCXrTDRWGRWGP8yHvKC9rX6dqjQh":0.00014328792719806865,"kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6":0.000002750218677378192,"Lrxqnh6ZHKbGy3dcrCED43nsoLkM1LTzU2jRfWe8qUC":0.000030347418138105167,"MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac":0.01796680126999406,"MAPS41MDahZ9QdKXhVa4dWB9RuyfV4XqhyAZ8XcYepb":0.008914490942662018,"MEANeD3XDdUmNMsRGjASkSWdC8prLYsoRJ61pPeHctD":0.0002484061130404535,"MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u":0.9802985287296748,"MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K":0.0001715468737870289,"METAmTMXwdb8gYzyCPfXXFmZZw4rUsXX58PNsDg7zjL":0.0004125734667715001,"MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey":0.09438110300120958,"mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So":194.58640532390484,"NFTUkR4u7wKxy9QLaX2TGvd9oZSWoMo4jqSJqdMb7Nk":0.06586137221174906,"nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7":0.9456975052079805,"orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE":3.6500587497167243,"poLisWXnNRwC6oBu1vHiuKQzFjGL4XDSu4g9qjz9qVk":0.07092526082421746,"PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y":0.0031555602285388206,"PRAxfbouRoJ9yZqhyejEAH6RvjJ86Y82vfiZTBSM3xG":0.005748075758368303,"PRSMNsEPqhGVCH1TtWiJqPjJyh2cKrLostPZTNy1o5x":0.0007213997614798045,"PRT88RkA4Kg5z7pKnezeNH4mafTvtQdfFgpQTGRjz44":0,"PsyFiqqjiv41G7o5SMRzDJCu4psptThNR2GtfeGHfSq":0.00017714728269574396,"Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1":0.0009919402017226076,"SCYfrGCw8aDiqdgcpdGjV6jp4UVVQLuphxTDLNWu36f":1.81233862698356e-7,"seedEDBqu63tJ7PFqvcbwvThrYUkQeqT6NLf81kLibs":0.0003789483900379692,"SHDWyBxihqiCj6YekG2GUr7wqKLeLAMK1gHZck9pL6y":0.1352802963966055,"SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp":0.3705388924976977,"SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr":0.0004128893649101558,"SNSNkV9zfG5ZKWQs6x4hxvBRV6s8SqMfSGCtECDvdMd":0.004322985716428986,"So11111111111111111111111111111111111111112":151.12886576391412,"sonarX4VtVkQemriJeLm6CKeW3GDMyiBnnAEMw1MRAE":0.005215080411215295,"SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt":0.016917841979738252,"StepAscQoEioFxxWGnh2sLBDFp9d8rvKz2Yp39iDpyT":0.07900552959691051,"SuperbZyz7TsSdSoFAZ6RYHfAWe9NmjXBLVQpS8hqdx":0,"susdabGDNbhrnCa6ncrYo81u4s9GM8ecK2UwMyZiq4X":1.0956712534770618,"svtMpL5eQzdmB3uqK9NXaQkq8prGZoKQFNVJghdWCkV":0.0013556683331355098,"TuLipcqtGVXP9XR62wM8WWCm6a9vhLs7T1uoWBk6FDs":0.10999191759232636,"USDrbBQwQbQ2oWHUPfA8QBHcyVxKUq1xHyXsSLKdUq2":0,"UXPhBoR3qG4UCiGNJfV7MqhHyFqKN68g45GoYvAeL2M":0,"vSoLxydx6akxyMD9XEcPvGYNGq6Nn66oqVb3UkGkei7":163.25629617770738,"xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW":0.05431615185332574,"YAWtS7vWCSRPckx1agB6sKidVXiXiDUfehXdEUSRGKE":0.0000032473725132311944,"z3dn17yLaGMKffVogeFHQ9zWVcXgqgf3PQnDsNs2g6M":0.0320264423843047,"zBTCug3er3tLyffELcvDNrKkCymbPWysGcWihESYfLg":95149.72465190063,"zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF":0.0009101812326883866,"ZEXy1pqteRu3n13kdyh4LwPQknkFk3GzmMYMuNadWPo":0.03119099314893894}
+2025-04-28 20:35:05 [INFO] 尝试从 Jupiter 获取代币价格...
+2025-04-28 20:35:05 [INFO] 发送请求到 Jupiter: https://quote-api.jup.ag/v4/tokens
+2025-04-28 20:35:06 [INFO] API 响应状态: 404
+2025-04-28 20:35:06 [WARN] 从 Jupiter 获取价格失败: HTTP 404
+2025-04-28 20:35:06 [WARN] API 响应数据: 
+2025-04-28 20:35:06 [WARN] 无法从任何数据源获取代币价格
+2025-04-28 20:36:40 [INFO] 获取代币 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump 的供应量信息...
+2025-04-28 20:36:40 [INFO] 代币供应量: 999970039.547754 (原始值: 999970039547754, 小数位: 6)
+2025-04-28 20:36:40 [INFO] 尝试从 Birdeye 获取代币价格...
+2025-04-28 20:36:40 [INFO] 发送请求到 Birdeye: https://public-api.birdeye.so/defi/token_price?address=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:36:41 [INFO] API 响应状态: 404
+2025-04-28 20:36:41 [WARN] 从 Birdeye 获取价格失败: HTTP 404
+2025-04-28 20:36:41 [WARN] API 响应数据: {"success":false,"message":"Not found"}
+2025-04-28 20:36:41 [INFO] 尝试从 CoinGecko 获取代币价格...
+2025-04-28 20:36:41 [INFO] 发送请求到 CoinGecko: https://api.coingecko.com/api/v3/simple/token_price/solana?contract_addresses=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump&vs_currencies=usd
+2025-04-28 20:36:42 [INFO] API 响应状态: 200
+2025-04-28 20:36:42 [WARN] 从 CoinGecko 获取的价格数据无效: {}
+2025-04-28 20:36:42 [INFO] 尝试从 Raydium 获取代币价格...
+2025-04-28 20:36:42 [INFO] 发送请求到 Raydium: https://api.raydium.io/v2/main/price?ids=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:36:42 [INFO] API 响应状态: 200
+2025-04-28 20:36:42 [WARN] 从 Raydium 获取的价格数据无效: {"2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo":0.9954705681045612,"2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk":879.6150781566294,"2VhjJ9WxaGC3EZFwJG9BDUs9KxKCAjQY4vgd1qxgYWVg":0,"2wmKXX1xsxLfrvjEPrt2UHiqj8Gbzwxvffr9qmNjsw8g":0,"2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv":0.012438285028438249,"333iHoRM2Awhf9uVZtSyTfU8AekdGrgQePZsKMFPgKmS":0,"3bRTivrVsitbmCTGtqwp7hxXPsybkjn4XLNtPsHqa3zR":0.01706730030564426,"3eamaYJ7yicyRd3mYz4YeNyNPGVo6zMmKUp5UP25AxRM":0.9920635781194883,"3FoUAsGDbvTD6YZ4wVKJgTB76onJUKz7GPEBNiR5b8wc":0.00033401026712672036,"3joMReCCSESngJEpFLoKR2dNcChjSRCDtybQet5uSpse":0.0000071852844332204,"3JSf5tPeuscJGtaCp5giEiDhv51gQ4v3zWg8DGgyLfAB":0,"3K6rftdAaQYMPunrtNRHgnK2UAtjm2JwyT2oCiTDouYE":0.23101426363805047,"49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt":0.30036535013767895,"4BVrtjWqPsn4oyWDsB8oCLiS5DJN8Wwhmy4RKEzpys4u":0.003290573165327155,"4dmKkXNHdgYsXqBHCuMikNQWwVomZURhYvkkX5c4pQ7y":0.00279664325611765,"4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU":0.6490880222689089,"4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R":2.973500185184866,"4SZjjNABoqhbd4hnapbvoEPEqT8mnNkfbEoAwALf1V8t":0.009739491765792639,"4TGxgCSJQx2GQk9oHZ8dC5m3JNXTYZHjXumKAW3vLnNx":0.0003294243133647691,"4wjPQJ6PrkC4dHhYghwJzGBVP78DkBzA2U3kHoFNBuhj":0.0007064209275825596,"51tMb3zBKDiQhNwGqpgwbavaGH54mk8fXFzxTc1xnasg":0.002021277440497123,"5DkzT65YJvCsZcot9L6qwkJnsBCPmKHjJz3QU7t7QeRW":5.7267160479805925,"5gs8nf4wojB5EXgDUWNLwXpknzgV2YWDhveAeBZpVLbp":0.026513173967080913,"5LSFpvLDkcdV2a3Kiyzmg5YmJsj2XDLySaXvnfP1cgLT":1.6054467541139802e-7,"5tN42n9vMi6ubp67Uy4NnmM5DMZYN8aS8GeB3bEDHr6E":0.0003375940369471511,"5U9QqCPhqXAJcEv9uyzFJd5zhN93vuPk1aNNkXnUfPnt":0,"5Wsd311hY8NXQhkt9cWHwTnqafk7BGEbLu8Py3DSnPAr":0.00013851391539310647,"5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC":0.12651384724130757,"674PmuiDtgKx3uKuJ1B16f9m5L84eFvNwj3xDMvHcbo7":0.0006425550526888523,"6cVgJUqo4nmvQpbgrDZwyfd6RwWw5bfnCamS3M9N1fd":0.0002924128955859559,"6F9XriABHfWhit6zmMUYAQBSy6XK5VF1cHXuW5LDpRtC":0.000012945663244611862,"76aYNHbDfHemxSS7vmh6eJGfjodK8m7srCxiYCrKxzY1":0,"7dgHoN8wBZCc5wbnQ2C47TDnBMAxG4Q5L3KjP67z8kNi":0.3146030707407309,"7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj":183.25345585208703,"7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn":191.05385142180333,"7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs":1808.8954961671168,"7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgAsU":0.0033667422990119595,"7zBWymxbZt7PVHQzfi3i85frc1YRiQc23K7bh3gos8ZC":0,"8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36":5.671798768989998,"8HGyAAB1yoM1ttS7pXjHMa3dukTFGQggnFFH3hJZgzQh":0.0036045901810531095,"8PMHT4swUMtBzgHnh5U564N5sjPSiUz2cjEQzFnnP1Fo":0.0041129563730687635,"8upjSpvjcdpuzhfR1zriwg5NXkwDruejqNE9WNbPRtyA":0.00016138827951888134,"9F9fNTT6qwjsu4X4yWYKZpsbw5qT7o6yR2i57JF2jagy":0,"9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa":606.2884697278494,"9LzCMqDgTKYz9Drzqnpgee3SGa89up3a247ypMj2xrqM":0.07679031212666566,"9McvH6w97oewLmPxqQEoHUAv3u5iYMyQ9AeZZhguYf1T":5.1229387337201135,"9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E":0.03285052874745052,"9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE":0.000026229838687956512,"9TE7ebz1dsFo1uQ2T4oYAKSm39Y6fWuHrd6Uk6XaiD16":0.00031125775834603924,"9zoqdwEBKWEi9G5Ze8BSkdmppxGgVv1Kw4LuigDiNr9m":0.0004206313273996585,"a11bdAAuV8iB2fu7X6AxAvDTo1QZ8FXB3kk5eecdasp":0,"A98UDy7z8MfmWnTQt6cKjje7UfqV3pTLf4yEbuwL2HrH":0.000209293974471451,"AAXng5czWLNtTXHdWEn9Ef7kXMXEaraHj2JQKo7ZoLux":0,"ABt79MkRXUsoHuV2CVQT32YMXQhTparKFjmidQxgiQ6E":0.1107882141198136,"AD27ov5fVU2XzwsbvnFvb1JpCBaCB5dRXrczV9CqSVGb":0.004145163826204347,"AFbX8oGjGpmVFywbVouvhQSRmiW2aR1mohfahi4Y2AdB":0.007722411151809383,"AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3":1.1328636542051542,"AH3g889eGTV1qwaLmbiGrmYEbbK8pcaPjnd4TxUrCCsZ":0,"AkhdZGVbJXPuQZ53u2LrimCjkRP6ZyxG1SoM85T98eE1":0.00017135997077795325,"APTtJyaRX5yGTsJU522N4VYWg3vCvSb65eam5GrPT5Rt":0.00013377651521919064,"AR1Mtgh7zAtxuxGd2XPovXPVjcSdY3i4rQYisNadjfKy":0,"ArUkYE2XDKzqy77PRRGjo4wREWwqk6RXTfM9NeqzPvjU":0,"ATLASXmbPQxBUYbxPsV97usA3fPQYEqzQBUHgiFCUsXx":0.0013518414088831384,"AURYydfxJib1ZkTir1Jn1J9ECYUtjb6rKQVmtYaixWPP":0.11847334969133158,"AvoecWraqX969kfXUF5XCCDz59sjRjiDa1KUDyj225t8":0.005760960314608583,"Basis9oJw9j8cw53oMV7iqsgo6ihi9ALw4QR31rcjUJa":0,"BKipkearSqAUdNKa1WDstvcMjoPsSKBuNyvKDQDDu9WE":0.00007029949530471863,"BLwTnYKqf7u4qjgZrrsKeNs2EzWkMLqVCu6j8iHyrNA3":0.00007655935972831801,"bonegFPgrpZ4bfVn3kQK1aMbGYddWtfMAywNt5LsuVE":0.000005562276772161791,"BRLsMczKuaR5w9vSubF4j8HwEGGprVAyyVgS4EX7DKEg":0,"Bx1fDtvTN6NvE4kjdPHQXtmGSg582bZx9fGy4DQNMmAT":0.00005398978863758628,"cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij":95320.01630459308,"CDJWUqTcYTVAKXAVXoQZFes5JUFc7owSeq7eMQcDSbo5":0,"Ce3PSQfkxT5ua4r2JqCoWYrMwKWC5hEzwsrT9Hb7mAz9":0.0002265197125241645,"CH1LLLLUjZBai91qiKhVrTtzKqLxF4FtVAommraUQ66o":0.0007400457713496799,"CH74tuRLTYcxG7qNJCsV9rghfLXJCQJbsu7i52a8F1Gn":0.00016301228108801032,"ChVzxWRmrTeSgwd3Ui3UumcN8KX7VK3WaD4KGeSKpypj":0.6875224023156773,"CiKu4eHsVrc1eueVQeHn7qhXTcVu95gSQmBpX4utjL9z":0.00001372327433201149,"CKaKtYvz6dKPyMvYq9Rh3UBrnNqYZAyd7iF4hJtjUvks":0.002521987601427349,"CLr7G2af9VSfH1PFZ5fYvB8WK1DTgE85qrVjpa8Xkg4N":2.3708700757318217,"CN7qFa5iYkHz99PTctvT4xXUHnxwjQ5MHxCuTJtPN5uS":0.0005852392914030956,"CobcsUrt3p91FwvULYKorQejgsm5HoQdv5T8RUZ6PnLA":0.01468658884201179,"CRWNYkqdgvhGGae9CKfNka58j6QQkaD5bLhKXvUYqnc1":0.001410203453455125,"CsZ5LZkDS7h9TDKjrbL7VAwQZ9nsRu8vJLhRYfmGaN8K":0.003947172666540681,"CWE8jPTUYhdCTZYWPTe1o5DFqfdjzWKc9WKz6rSjQUdG":0.7420388530619396,"cxxShYRVcepDudXhe7U62QHvw8uBJoKFifmzggGKVC2":0.000040104498615338336,"Czt7Fc4dz6BpLh2vKiSYyotNK2uPPDhvbWrrLeD9QxhV":0,"DFL1zNkaGPWm1BqAVqRjCZvHmwTFrEaJtbzJWgseoNJh":0.00020509099830108349,"DMCUFm2ZAnSU7UgsdVq23gRogMU3MEBjPgQF1gK53rEn":0.00002154510915804292,"DubwWZNWiNGMMeeQHPnMATNj77YZPZSAz2WVR5WjLJqz":0,"Dz8VutERqbHR2aFL5A3s1Ky4dG1unJT1jUFXXPaY9ytX":0.07173555766795944,"E5ndSkaB17Dm7CsD22dvcjfrYSDLCxFcMd6z8ddCk5wp":0.0038874232116448675,"Ea5SjE2Y6yvCeW5dYTn7PYMuW5ikXkvbGdcmSnXeaLjS":0,"EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp":0.08404113100234088,"EdAhkbj5nF9sRM7XN7ewuW8C9XEUMs8P7cnoQ57SYE96":8.616867892086488e-7,"EFFECT1A1R3Dz8Hg4q5SXKjkiPc6KDRUWQ7Czjvy4H7E":0.006190626406812726,"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v":1,"EqWCKXfs3x47uVosDpTRgFniThL9Y8iCztJaapxbEaVX":0,"ErGB9xa24Szxbk1M28u2Tx8rKPqzL6BroNkkzk5rG4zj":0.000814334986818319,"Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB":1.0004119947242658,"ETAtLmCmsoiEEKfNrHKJ2kYy3MoABhU6NQvpSfij5tDs":0.5297619495363101,"EwJN2GqUGXXzYmoAciwuABtorHczTA5LqbukKXV1viH7":0.00004227582283351188,"F3nefJBcejYbtdREjui1T9DPh5dBgpkKq7u2GAAMXs5B":0.000033268930995160813,"FANTafPFBAt93BNJVpdu25pGPmca3RfwdsDsRrT3LX1r":0,"FgX1WD9WzMU3yLwXaFSarPfkgzjLb2DZCqmkx9ExpuvJ":0.003217555205469764,"FLWRna1gxehQ9pSyZMzxfp4UhewvLPwuKfdUTgdZuMBY":0,"Fm9rHUTF5v3hwMLbStjZXqNBBoZyGriQaFM6sTFz3K8A":0.0034678766875499943,"FNFKRV3V8DtA3gVJN6UshMiLGYA8izxFwkNWmJbFjmRj":0.0009114145360756193,"FnKE9n6aGjQoNWRBZXy4RW6LZVao7qwBonUbiD7edUmZ":0.00021739266355826103,"fujiCeCeP9AFDVCv27P5JRcKLoH7wfs2C9xmDECs24m":0.0004164473121254474,"G9tt98aYSznRk7jWsfuz9FnTdokxS6Brohdo9hSmjTRB":0.0009395258604788957,"Gdck9KXSSiMMhNyjUjo4sVT1GDzeZnZP2yse9jhax3GR":0.0011623540160613185,"GENEtH5amGSi8kHAtQoezp1XEXwZJ8vcuePYnXdKrMYz":0.06273451446578637,"GFX1ZjR2P15tmrSwow6FjyDYcEkoFb4p4gJCpLBjaxHD":0.0354464446367949,"GsNzxJfFn6zQdJGeYsupJWzUAm57Ba7335mfhWvFiE9Z":0.00038568991150489233,"GUohe4DJUA5FKPWo3joiPgsB7yzer7LpDmt1Vhzy3Zht":0,"GXMvfY2jpQctDqZ9RoU3oWPhufKiCcFEfchvYumtX7jd":0,"H7Qc9APCWWGDVxGD5fJHmLTmdEgT9GFatAKFNg6sHh8A":0,"HCgybxq5Upy8Mccihrp7EsmwwFqYZtrHrsmsKwtGXLgW":0.010839726604856003,"HfYFjMKNZygfMC8LsQ8LtpPsPxEJoXJx4M6tqi75Hajo":0.0013794328138867988,"HJbNXx2YMRxgfUJ6K4qeWtjatMK5KYQT1QnsCdDWywNv":0.0007740358939298382,"HKfs24UEDQpHS5hUyKYkHd9q7GY5UQ679q2bokeL2whu":0.002053011318443407,"HovGjrBGTfna4dvg6exkMxXuexB3tUfEZKcut8AWowXj":0.00006229689128665242,"HX6zNkjJ7zy653VoDWzbaYpSg7BrgLfq4i4RA7D5nkkz":0.02062351500506073,"HysWcbHiYY9888pHbaqhwLYZQeZrcQMXKQWRqS7zcPK5":2.4280317482359104,"HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p":0.8744449999735712,"inL8PMVd6iiW3RCBJnr5AsrRN6nqr4BTrcNuQWQSkvY":0,"iVNcrNE9BRZBC9Aqf753iZiZfbszeAVUoikgT9yvr2a":0,"kiNeKo77w1WBEzFFCXrTDRWGRWGP8yHvKC9rX6dqjQh":0.00014328792719806865,"kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6":0.000002750218677378192,"Lrxqnh6ZHKbGy3dcrCED43nsoLkM1LTzU2jRfWe8qUC":0.000030347418138105167,"MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac":0.01796680126999406,"MAPS41MDahZ9QdKXhVa4dWB9RuyfV4XqhyAZ8XcYepb":0.008914490942662018,"MEANeD3XDdUmNMsRGjASkSWdC8prLYsoRJ61pPeHctD":0.0002484061130404535,"MEFNBXixkEbait3xn9bkm8WsJzXtVsaJEn4c8Sam21u":0.9802985287296748,"MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K":0.0001715468737870289,"METAmTMXwdb8gYzyCPfXXFmZZw4rUsXX58PNsDg7zjL":0.0004125734667715001,"MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey":0.09438110300120958,"mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So":194.58640532390484,"NFTUkR4u7wKxy9QLaX2TGvd9oZSWoMo4jqSJqdMb7Nk":0.06586137221174906,"nosXBVoaCTtYdLvKY6Csb4AC8JCdQKKAaWYtx2ZMoo7":0.9456975052079805,"orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE":3.6500587497167243,"poLisWXnNRwC6oBu1vHiuKQzFjGL4XDSu4g9qjz9qVk":0.07092526082421746,"PoRTjZMPXb9T7dyU7tpLEZRQj7e6ssfAE62j2oQuc6y":0.0031555602285388206,"PRAxfbouRoJ9yZqhyejEAH6RvjJ86Y82vfiZTBSM3xG":0.005748075758368303,"PRSMNsEPqhGVCH1TtWiJqPjJyh2cKrLostPZTNy1o5x":0.0007213997614798045,"PRT88RkA4Kg5z7pKnezeNH4mafTvtQdfFgpQTGRjz44":0,"PsyFiqqjiv41G7o5SMRzDJCu4psptThNR2GtfeGHfSq":0.00017714728269574396,"Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1":0.0009919402017226076,"SCYfrGCw8aDiqdgcpdGjV6jp4UVVQLuphxTDLNWu36f":1.81233862698356e-7,"seedEDBqu63tJ7PFqvcbwvThrYUkQeqT6NLf81kLibs":0.0003789483900379692,"SHDWyBxihqiCj6YekG2GUr7wqKLeLAMK1gHZck9pL6y":0.1352802963966055,"SLNDpmoWTVADgEdndyvWzroNL7zSi1dF9PC3xHGtPwp":0.3705388924976977,"SLRSSpSLUTP7okbCUBYStWCo1vUgyt775faPqz8HUMr":0.0004128893649101558,"SNSNkV9zfG5ZKWQs6x4hxvBRV6s8SqMfSGCtECDvdMd":0.004322985716428986,"So11111111111111111111111111111111111111112":151.12886576391412,"sonarX4VtVkQemriJeLm6CKeW3GDMyiBnnAEMw1MRAE":0.005215080411215295,"SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt":0.016917841979738252,"StepAscQoEioFxxWGnh2sLBDFp9d8rvKz2Yp39iDpyT":0.07900552959691051,"SuperbZyz7TsSdSoFAZ6RYHfAWe9NmjXBLVQpS8hqdx":0,"susdabGDNbhrnCa6ncrYo81u4s9GM8ecK2UwMyZiq4X":1.0956712534770618,"svtMpL5eQzdmB3uqK9NXaQkq8prGZoKQFNVJghdWCkV":0.0013556683331355098,"TuLipcqtGVXP9XR62wM8WWCm6a9vhLs7T1uoWBk6FDs":0.10999191759232636,"USDrbBQwQbQ2oWHUPfA8QBHcyVxKUq1xHyXsSLKdUq2":0,"UXPhBoR3qG4UCiGNJfV7MqhHyFqKN68g45GoYvAeL2M":0,"vSoLxydx6akxyMD9XEcPvGYNGq6Nn66oqVb3UkGkei7":163.25629617770738,"xxxxa1sKNGwFtw2kFn8XauW9xq8hBZ5kVtcSesTT9fW":0.05431615185332574,"YAWtS7vWCSRPckx1agB6sKidVXiXiDUfehXdEUSRGKE":0.0000032473725132311944,"z3dn17yLaGMKffVogeFHQ9zWVcXgqgf3PQnDsNs2g6M":0.0320264423843047,"zBTCug3er3tLyffELcvDNrKkCymbPWysGcWihESYfLg":95149.72465190063,"zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF":0.0009101812326883866,"ZEXy1pqteRu3n13kdyh4LwPQknkFk3GzmMYMuNadWPo":0.03119099314893894}
+2025-04-28 20:36:42 [INFO] 尝试从 Jupiter 获取代币价格...
+2025-04-28 20:36:42 [INFO] 发送请求到 Jupiter: https://quote-api.jup.ag/v4/tokens
+2025-04-28 20:36:43 [INFO] API 响应状态: 404
+2025-04-28 20:36:43 [WARN] 从 Jupiter 获取价格失败: HTTP 404
+2025-04-28 20:36:43 [WARN] API 响应数据: 
+2025-04-28 20:36:43 [WARN] 无法从任何数据源获取代币价格
+2025-04-28 20:37:45 [INFO] 获取代币 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump 的供应量信息...
+2025-04-28 20:37:46 [INFO] 代币供应量: 999970039.547754 (原始值: 999970039547754, 小数位: 6)
+2025-04-28 20:37:46 [INFO] 尝试从 Birdeye 获取代币价格...
+2025-04-28 20:37:46 [INFO] 发送请求到 Birdeye: https://public-api.birdeye.so/defi/price?address=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:37:46 [INFO] API 响应状态: 200
+2025-04-28 20:37:46 [INFO] Birdeye API 响应数据: {"data":{"value":0.0005175893436450597,"updateUnixTime":1745843861,"updateHumanTime":"2025-04-28T12:37:41","priceChange24h":85.42534247322128,"priceInNative":0.0000034257994640009636},"success":true}
+2025-04-28 20:37:46 [INFO] 从 Birdeye 获取到代币价格: $0.0005175893436450597
+2025-04-28 20:37:46 [INFO] 代币信息: 价格=$0.0005175893436450597, 供应量=999970039.547754, 市值=$0.5175738364342465M
+2025-04-28 20:43:33 [INFO] 获取代币 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump 的供应量信息...
+2025-04-28 20:43:33 [INFO] 代币供应量: 999970039.547754 (原始值: 999970039547754, 小数位: 6)
+2025-04-28 20:43:33 [INFO] 尝试从 Birdeye 获取代币价格...
+2025-04-28 20:43:33 [INFO] 发送请求到 Birdeye: https://public-api.birdeye.so/defi/price?address=8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:43:34 [INFO] API 响应状态: 200
+2025-04-28 20:43:34 [INFO] Birdeye API 响应数据: {"data":{"value":0.0005364319012812828,"updateUnixTime":1745844200,"updateHumanTime":"2025-04-28T12:43:20","priceChange24h":74.24318991173193,"priceInNative":0.0000035489655880809784},"success":true}
+2025-04-28 20:43:34 [INFO] 从 Birdeye 获取到代币价格: $0.0005364319012812828
+2025-04-28 20:43:34 [INFO] 代币信息: 价格=$0.0005364319012812828, 供应量=999970039.547754, 市值=$0.5364158295389212M
+2025-04-28 20:43:47 [INFO] === 启动监控程序 ===
+2025-04-28 20:43:47 [INFO] 
+检查 Bot 状态...
+2025-04-28 20:43:47 [INFO] 
+检查Token状态 (第 1 次尝试)...
+2025-04-28 20:43:47 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:43:47 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:43:47 [INFO] 测试网络延迟...
+2025-04-28 20:43:47 [INFO] 网络延迟: 23ms
+2025-04-28 20:43:47 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:43:47 [INFO] TCP连接成功，本地端口: 56494
+2025-04-28 20:43:47 [INFO] 测试HTTPS连接...
+2025-04-28 20:43:47 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:43:48 [INFO] HTTPS状态码: 302
+2025-04-28 20:43:48 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:43:48 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:43:48 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:43:48 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:43:48 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:43:49 [INFO] HTTPS状态码: 200
+2025-04-28 20:43:49 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:43:49 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:43:49 [INFO] 尝试使用端点: https://api.telegram.org
+2025-04-28 20:43:50 [INFO] Token状态: ✅ 有效
+2025-04-28 20:43:50 [INFO] Bot信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-04-28 20:43:50 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:43:50 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:43:50 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:43:50 [INFO] 测试网络延迟...
+2025-04-28 20:43:50 [INFO] 网络延迟: 2ms
+2025-04-28 20:43:50 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:43:50 [INFO] TCP连接成功，本地端口: 56510
+2025-04-28 20:43:50 [INFO] 测试HTTPS连接...
+2025-04-28 20:43:50 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:43:51 [INFO] HTTPS状态码: 302
+2025-04-28 20:43:51 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:43:51 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:43:51 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:43:51 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:43:51 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:43:52 [INFO] HTTPS状态码: 200
+2025-04-28 20:43:52 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:43:52 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:43:53 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:43:53 [INFO] 使用 API 端点: https://api.telegram.org
+2025-04-28 20:43:54 [INFO] Bot 信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-04-28 20:43:54 [INFO] 检查群组 1584537074...
+2025-04-28 20:43:54 [INFO] 群组 1584537074 信息: {
+  "id": 1584537074,
+  "first_name": "Joe",
+  "last_name": "S",
+  "username": "joe2140",
+  "type": "private",
+  "can_send_gift": true,
+  "active_usernames": [
+    "joe2140"
+  ],
+  "has_private_forwards": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": true,
+    "limited_gifts": true,
+    "unique_gifts": true,
+    "premium_subscription": true
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 1
+}
+2025-04-28 20:43:55 [INFO] 测试消息已发送到群组 1584537074: 500
+2025-04-28 20:43:55 [INFO] 检查群组 -4627711652...
+2025-04-28 20:43:55 [INFO] 群组 -4627711652 信息: {
+  "id": -4627711652,
+  "title": "KOL监控",
+  "type": "group",
+  "invite_link": "https://t.me/+GAP7ZyfNF-AxNGRl",
+  "permissions": {
+    "can_send_messages": true,
+    "can_send_media_messages": true,
+    "can_send_audios": true,
+    "can_send_documents": true,
+    "can_send_photos": true,
+    "can_send_videos": true,
+    "can_send_video_notes": true,
+    "can_send_voice_notes": true,
+    "can_send_polls": true,
+    "can_send_other_messages": true,
+    "can_add_web_page_previews": true,
+    "can_change_info": true,
+    "can_invite_users": true,
+    "can_pin_messages": true,
+    "can_manage_topics": true
+  },
+  "all_members_are_administrators": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": false,
+    "limited_gifts": false,
+    "unique_gifts": false,
+    "premium_subscription": false
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 4
+}
+2025-04-28 20:43:56 [INFO] 测试消息已发送到群组 -4627711652: 501
+2025-04-28 20:43:56 [INFO] 
+解析流动性池地址...
+2025-04-28 20:43:56 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 20:43:56 [INFO] 索引 11 的地址: HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwgeyHfgRsHp6
+2025-04-28 20:43:56 [INFO] 索引 12 的地址: 68rLBhwvJoV6GcqiZXwcdHMbwndcMU4PsbeJkhaVPZvW
+2025-04-28 20:43:56 [INFO] 解析的流动性池地址: HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwgeyHfgRsHp6, 68rLBhwvJoV6GcqiZXwcdHMbwndcMU4PsbeJkhaVPZvW
+2025-04-28 20:43:56 [INFO] 
+检查 Solana 连接...
+2025-04-28 20:43:56 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 20:43:56 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:43:56 [INFO] 
+开始监控地址...
+2025-04-28 20:43:56 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 20:43:57 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:43:57 [INFO] 成功建立 Solana 连接
+2025-04-28 20:43:57 [INFO] 添加监控地址: 张三|AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx
+2025-04-28 20:43:57 [INFO] 添加监控地址: Ansem|AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm
+2025-04-28 20:43:57 [INFO] 添加监控地址: 王五|GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW
+2025-04-28 20:43:57 [INFO] 添加监控地址: 小筑|6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP
+2025-04-28 20:43:57 [INFO] 添加监控地址: 搞钱小猫|EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE
+2025-04-28 20:43:57 [INFO] 添加监控地址: 凉粉小刀|3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi
+2025-04-28 20:43:57 [INFO] 添加监控地址: robo|Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu
+2025-04-28 20:43:57 [INFO] 添加监控地址: 学长|Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd
+2025-04-28 20:43:57 [INFO] 添加监控地址: 王小二|71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC
+2025-04-28 20:43:57 [INFO] 添加监控地址: 川木|CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT
+2025-04-28 20:43:57 [INFO] 添加监控地址: POW|8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd
+2025-04-28 20:43:57 [INFO] 添加监控地址: CryptoD|G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc
+2025-04-28 20:43:57 [INFO] 添加监控地址: 女王XX|3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1
+2025-04-28 20:43:57 [INFO] 添加监控地址: 冷静|Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH
+2025-04-28 20:43:57 [INFO] 开始订阅交易日志...
+2025-04-28 20:43:57 [INFO] 已订阅地址 AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx 的交易日志，订阅 ID: 0
+2025-04-28 20:43:58 [INFO] 已订阅地址 AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm 的交易日志，订阅 ID: 1
+2025-04-28 20:43:59 [INFO] 已订阅地址 GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW 的交易日志，订阅 ID: 2
+2025-04-28 20:44:00 [INFO] 已订阅地址 6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP 的交易日志，订阅 ID: 3
+2025-04-28 20:44:01 [INFO] 已订阅地址 EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE 的交易日志，订阅 ID: 4
+2025-04-28 20:44:02 [INFO] 等待 1 秒后继续下一批订阅...
+2025-04-28 20:44:03 [INFO] 已订阅地址 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi 的交易日志，订阅 ID: 5
+2025-04-28 20:44:04 [INFO] 已订阅地址 Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu 的交易日志，订阅 ID: 6
+2025-04-28 20:44:05 [INFO] 已订阅地址 Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd 的交易日志，订阅 ID: 7
+2025-04-28 20:44:06 [INFO] 已订阅地址 71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC 的交易日志，订阅 ID: 8
+2025-04-28 20:44:07 [INFO] 已订阅地址 CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT 的交易日志，订阅 ID: 9
+2025-04-28 20:44:08 [INFO] 等待 1 秒后继续下一批订阅...
+2025-04-28 20:44:09 [INFO] 已订阅地址 8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd 的交易日志，订阅 ID: 10
+2025-04-28 20:44:10 [INFO] 已订阅地址 G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc 的交易日志，订阅 ID: 11
+2025-04-28 20:44:11 [INFO] 已订阅地址 3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1 的交易日志，订阅 ID: 12
+2025-04-28 20:44:12 [INFO] 已订阅地址 Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH 的交易日志，订阅 ID: 13
+2025-04-28 20:44:13 [INFO] 监控程序正在运行...
+2025-04-28 20:45:14 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:45:22 [INFO] 开始解析交易: 3aNVkHPuU8g2NMD8e71qB6QPZ9avBWghQBUkysTD2RSRD2wsqx7xpFrx7UT5jJ25WPnXu43YdhsBzfCZi5Fk7hM2
+2025-04-28 20:45:23 [INFO] 交易解析成功:
+2025-04-28 20:45:23 [INFO] 交易详情:
+2025-04-28 20:45:23 [INFO] 发起地址: GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW
+2025-04-28 20:45:23 [INFO] 交易类型: 卖出
+2025-04-28 20:45:23 [INFO] SOL变化: 0.0011014800000000002
+2025-04-28 20:45:23 [INFO] 代币合约: 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump
+2025-04-28 20:45:23 [INFO] 代币变化: -300.11471800000004
+2025-04-28 20:45:23 [INFO] 开始构建通知消息...
+2025-04-28 20:45:23 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 20:45:23 [INFO] 获取代币 8Qtbdsz1bKN1gi9U8xgvBEE8b7vhAdzqDKzKGCnmpump 的供应量信息...
+2025-04-28 20:45:24 [INFO] 代币供应量: 999970039.547754 (原始值: 999970039547754, 小数位: 6)
+2025-04-28 20:45:24 [WARN] 交易错误: [object Object]
+2025-04-28 20:45:25 [INFO] Birdeye API 响应数据: {"data":{"value":0.0005603742193671102,"updateUnixTime":1745844313,"updateHumanTime":"2025-04-28T12:45:13","priceChange24h":82.02010598848183,"priceInNative":0.0000037032439042193197},"success":true}
+2025-04-28 20:45:25 [INFO] 代币信息: 价格=$0.0005603742193671102, 供应量=999970039.547754, 市值=$0.560357430302071M
+2025-04-28 20:45:25 [INFO] 通知消息内容:
+2025-04-28 20:45:25 [INFO] 尝试发送 Telegram 通知到 1584537074 (第 1 次)...
+2025-04-28 20:45:25 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:45:25 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:45:25 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:45:25 [INFO] 测试网络延迟...
+2025-04-28 20:45:25 [INFO] 网络延迟: 3ms
+2025-04-28 20:45:25 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:45:25 [INFO] TCP连接成功，本地端口: 56660
+2025-04-28 20:45:25 [INFO] 测试HTTPS连接...
+2025-04-28 20:45:25 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:45:26 [INFO] HTTPS状态码: 302
+2025-04-28 20:45:26 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:45:26 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:45:26 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:45:26 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:45:26 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:45:26 [WARN] 交易错误: [object Object]
+2025-04-28 20:45:27 [INFO] HTTPS状态码: 200
+2025-04-28 20:45:27 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:45:27 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:45:28 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:45:28 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 20:45:29 [INFO] ✅ Telegram 通知发送成功到 1584537074
+2025-04-28 20:45:29 [INFO] 消息 ID: 502
+2025-04-28 20:45:29 [INFO] 尝试发送 Telegram 通知到 -4627711652 (第 1 次)...
+2025-04-28 20:45:29 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:45:29 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:45:29 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:45:29 [INFO] 测试网络延迟...
+2025-04-28 20:45:29 [INFO] 网络延迟: 3ms
+2025-04-28 20:45:29 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:45:29 [INFO] TCP连接成功，本地端口: 56690
+2025-04-28 20:45:29 [INFO] 测试HTTPS连接...
+2025-04-28 20:45:29 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:45:30 [INFO] HTTPS状态码: 302
+2025-04-28 20:45:30 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:45:30 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:45:30 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:45:30 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:45:30 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:45:32 [INFO] HTTPS状态码: 200
+2025-04-28 20:45:32 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:45:31 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37489",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:45:32 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:45:32 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 20:45:33 [INFO] ✅ Telegram 通知发送成功到 -4627711652
+2025-04-28 20:45:33 [INFO] 消息 ID: 503
+2025-04-28 20:45:33 [INFO] 开始发送邮件通知...
+2025-04-28 20:45:37 [INFO] ✅ 邮件通知发送成功
+2025-04-28 20:45:37 [INFO] 邮件 ID: <366fad23-9854-865e-ec0d-f03ba1a528c6@gmail.com>
+2025-04-28 20:45:37 [INFO] 接收地址: 411532124@qq.com, jiawenmg@gmail.com
+2025-04-28 20:46:14 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:47:16 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:48:16 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:48:21 [INFO] 开始解析交易: 3iPqY92UqCJhHpQ7drF8M7bfF216PbYANfb43mnaUMLLB99dFFXouuE2W1THqzr929GRzXNHEd1rtLn2F5MqVQkn
+2025-04-28 20:48:22 [INFO] 交易解析成功:
+2025-04-28 20:48:22 [INFO] 交易详情:
+2025-04-28 20:48:22 [INFO] 发起地址: 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi
+2025-04-28 20:48:22 [INFO] 交易类型: 卖出
+2025-04-28 20:48:22 [INFO] SOL变化: -0.0002776949999999667
+2025-04-28 20:48:22 [INFO] 代币合约: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+2025-04-28 20:48:22 [INFO] 代币变化: -4000
+2025-04-28 20:48:22 [INFO] 开始构建通知消息...
+2025-04-28 20:48:22 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 20:48:22 [INFO] 获取代币 EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v 的供应量信息...
+2025-04-28 20:48:22 [INFO] 代币供应量: 10362525948.944172 (原始值: 10362525948944171, 小数位: 6)
+2025-04-28 20:48:23 [INFO] Birdeye API 响应数据: {"data":{"value":1.00001,"updateUnixTime":1745844499,"updateHumanTime":"2025-04-28T12:48:19","priceChange24h":-0.0006119901347077612,"priceInNative":0.0066130645829667115},"success":true}
+2025-04-28 20:48:23 [INFO] 代币信息: 价格=$1.00001, 供应量=10362525948.944172, 市值=$10362.629574203664M
+2025-04-28 20:48:23 [INFO] 通知消息内容:
+2025-04-28 20:48:23 [INFO] 尝试发送 Telegram 通知到 1584537074 (第 1 次)...
+2025-04-28 20:48:23 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:48:23 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:48:23 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:48:23 [INFO] 测试网络延迟...
+2025-04-28 20:48:23 [INFO] 网络延迟: 3ms
+2025-04-28 20:48:23 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:48:23 [INFO] TCP连接成功，本地端口: 56990
+2025-04-28 20:48:23 [INFO] 测试HTTPS连接...
+2025-04-28 20:48:23 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:24 [INFO] HTTPS状态码: 302
+2025-04-28 20:48:24 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:24 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:48:24 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:48:24 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:48:24 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:26 [INFO] HTTPS状态码: 200
+2025-04-28 20:48:26 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:26 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37489",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:48:27 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:48:27 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 20:48:28 [INFO] ✅ Telegram 通知发送成功到 1584537074
+2025-04-28 20:48:28 [INFO] 消息 ID: 504
+2025-04-28 20:48:28 [INFO] 尝试发送 Telegram 通知到 -4627711652 (第 1 次)...
+2025-04-28 20:48:28 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:48:28 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:48:28 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:48:28 [INFO] 测试网络延迟...
+2025-04-28 20:48:28 [INFO] 网络延迟: 3ms
+2025-04-28 20:48:28 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:48:28 [INFO] TCP连接成功，本地端口: 57016
+2025-04-28 20:48:28 [INFO] 测试HTTPS连接...
+2025-04-28 20:48:28 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:29 [INFO] 开始解析交易: cg5dSxmfcS3MoGe4eTsFdMVQSsCauhAHy6fYPhwdTXVHGZjDb4Fgkq6vw3AnUX8VLBKiMCo5XepBdcHvArZJuS9
+2025-04-28 20:48:29 [INFO] HTTPS状态码: 302
+2025-04-28 20:48:29 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:29 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:48:29 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:48:29 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:48:29 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:29 [INFO] 交易解析成功:
+2025-04-28 20:48:29 [INFO] 交易详情:
+2025-04-28 20:48:29 [INFO] 发起地址: 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi
+2025-04-28 20:48:29 [INFO] 交易类型: 卖出
+2025-04-28 20:48:29 [INFO] SOL变化: -0.0012731180000000175
+2025-04-28 20:48:29 [INFO] 代币合约: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+2025-04-28 20:48:29 [INFO] 代币变化: -4000
+2025-04-28 20:48:29 [INFO] 开始构建通知消息...
+2025-04-28 20:48:29 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 20:48:29 [INFO] 获取代币 EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v 的供应量信息...
+2025-04-28 20:48:30 [INFO] 代币供应量: 10362525948.944172 (原始值: 10362525948944171, 小数位: 6)
+2025-04-28 20:48:30 [INFO] HTTPS状态码: 200
+2025-04-28 20:48:30 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:30 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:48:30 [INFO] Birdeye API 响应数据: {"data":{"value":1.00003,"updateUnixTime":1745844506,"updateHumanTime":"2025-04-28T12:48:26","priceChange24h":0.0013879776258028374,"priceInNative":0.006613201882229239},"success":true}
+2025-04-28 20:48:30 [INFO] 代币信息: 价格=$1.00003, 供应量=10362525948.944172, 市值=$10362.836824722639M
+2025-04-28 20:48:30 [INFO] 通知消息内容:
+2025-04-28 20:48:30 [INFO] 尝试发送 Telegram 通知到 1584537074 (第 1 次)...
+2025-04-28 20:48:30 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:48:30 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:48:30 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:48:30 [INFO] 测试网络延迟...
+2025-04-28 20:48:30 [INFO] 网络延迟: 7ms
+2025-04-28 20:48:30 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:48:30 [INFO] TCP连接成功，本地端口: 57042
+2025-04-28 20:48:30 [INFO] 测试HTTPS连接...
+2025-04-28 20:48:30 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:31 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:48:31 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 20:48:31 [INFO] ✅ Telegram 通知发送成功到 -4627711652
+2025-04-28 20:48:31 [INFO] 消息 ID: 505
+2025-04-28 20:48:31 [INFO] 开始发送邮件通知...
+2025-04-28 20:48:31 [INFO] HTTPS状态码: 302
+2025-04-28 20:48:31 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:31 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:48:31 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:48:31 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:48:31 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:33 [INFO] HTTPS状态码: 200
+2025-04-28 20:48:33 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:33 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:48:34 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:48:34 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 20:48:34 [INFO] ✅ Telegram 通知发送成功到 1584537074
+2025-04-28 20:48:34 [INFO] 消息 ID: 506
+2025-04-28 20:48:34 [INFO] 尝试发送 Telegram 通知到 -4627711652 (第 1 次)...
+2025-04-28 20:48:34 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:48:34 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:48:34 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:48:34 [INFO] 测试网络延迟...
+2025-04-28 20:48:34 [INFO] 网络延迟: 3ms
+2025-04-28 20:48:34 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:48:34 [INFO] TCP连接成功，本地端口: 57058
+2025-04-28 20:48:34 [INFO] 测试HTTPS连接...
+2025-04-28 20:48:34 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:35 [INFO] HTTPS状态码: 302
+2025-04-28 20:48:35 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:35 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:48:35 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:48:35 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:48:35 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:36 [INFO] ✅ 邮件通知发送成功
+2025-04-28 20:48:36 [INFO] 邮件 ID: <39a6a0bb-fc14-dc6a-ea35-bd17b9fa05e6@gmail.com>
+2025-04-28 20:48:36 [INFO] 接收地址: 411532124@qq.com, jiawenmg@gmail.com
+2025-04-28 20:48:37 [INFO] HTTPS状态码: 200
+2025-04-28 20:48:37 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:37 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:48:37 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:48:37 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 20:48:38 [INFO] ✅ Telegram 通知发送成功到 -4627711652
+2025-04-28 20:48:38 [INFO] 消息 ID: 507
+2025-04-28 20:48:38 [INFO] 开始发送邮件通知...
+2025-04-28 20:48:40 [INFO] ✅ 邮件通知发送成功
+2025-04-28 20:48:40 [INFO] 邮件 ID: <b00ecc4a-8417-ae9d-678b-0303ce762d0c@gmail.com>
+2025-04-28 20:48:40 [INFO] 接收地址: 411532124@qq.com, jiawenmg@gmail.com
+2025-04-28 20:48:46 [INFO] 开始解析交易: 2ZVdUyL2d7GeyhzjfxP3ogFbDDtZtJW5QceQTQSjw7CJ1ukMm1oVK7dWKqUTraxShCsWDc4qTnrxNrq6SYQ55XUt
+2025-04-28 20:48:47 [INFO] 交易解析成功:
+2025-04-28 20:48:47 [INFO] 交易详情:
+2025-04-28 20:48:47 [INFO] 发起地址: 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi
+2025-04-28 20:48:47 [INFO] 交易类型: 卖出
+2025-04-28 20:48:47 [INFO] SOL变化: -0.001529522999999977
+2025-04-28 20:48:47 [INFO] 代币合约: EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v
+2025-04-28 20:48:47 [INFO] 代币变化: -4000
+2025-04-28 20:48:47 [INFO] 开始构建通知消息...
+2025-04-28 20:48:47 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 20:48:47 [INFO] 获取代币 EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v 的供应量信息...
+2025-04-28 20:48:47 [INFO] 代币供应量: 10362525842.298847 (原始值: 10362525842298849, 小数位: 6)
+2025-04-28 20:48:48 [INFO] Birdeye API 响应数据: {"data":{"value":0.99998488,"updateUnixTime":1745844524,"updateHumanTime":"2025-04-28T12:48:44","priceChange24h":-0.0031239496419305664,"priceInNative":0.006619371331208747},"success":true}
+2025-04-28 20:48:48 [INFO] 代币信息: 价格=$0.99998488, 供应量=10362525842.298847, 市值=$10362.369160908112M
+2025-04-28 20:48:48 [INFO] 通知消息内容:
+2025-04-28 20:48:48 [INFO] 尝试发送 Telegram 通知到 1584537074 (第 1 次)...
+2025-04-28 20:48:48 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:48:48 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:48:48 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:48:48 [INFO] 测试网络延迟...
+2025-04-28 20:48:48 [INFO] 网络延迟: 2ms
+2025-04-28 20:48:48 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:48:48 [INFO] TCP连接成功，本地端口: 57098
+2025-04-28 20:48:48 [INFO] 测试HTTPS连接...
+2025-04-28 20:48:48 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:49 [INFO] HTTPS状态码: 302
+2025-04-28 20:48:49 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:49 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:48:49 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:48:49 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:48:49 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:50 [INFO] HTTPS状态码: 200
+2025-04-28 20:48:50 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:50 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:48:51 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:48:51 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 20:48:52 [INFO] ✅ Telegram 通知发送成功到 1584537074
+2025-04-28 20:48:52 [INFO] 消息 ID: 508
+2025-04-28 20:48:52 [INFO] 尝试发送 Telegram 通知到 -4627711652 (第 1 次)...
+2025-04-28 20:48:52 [INFO] 测试 API 端点: https://api.telegram.org
+2025-04-28 20:48:52 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-04-28 20:48:52 [INFO] DNS解析结果: 66.220.149.32
+2025-04-28 20:48:52 [INFO] 测试网络延迟...
+2025-04-28 20:48:52 [INFO] 网络延迟: 3ms
+2025-04-28 20:48:52 [INFO] 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 20:48:52 [INFO] TCP连接成功，本地端口: 57116
+2025-04-28 20:48:52 [INFO] 测试HTTPS连接...
+2025-04-28 20:48:52 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:53 [INFO] HTTPS状态码: 302
+2025-04-28 20:48:53 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:53 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 20:48:53 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-04-28 20:48:53 [INFO] 测试重定向目标: core.telegram.org
+2025-04-28 20:48:53 [INFO] 通过代理 127.0.0.1:7897 连接...
+2025-04-28 20:48:54 [INFO] HTTPS状态码: 200
+2025-04-28 20:48:54 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 12:48:54 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 20:48:55 [INFO] API 端点 https://api.telegram.org 可用
+2025-04-28 20:48:55 [INFO] 使用 Telegram API 端点: https://api.telegram.org
+2025-04-28 20:48:55 [INFO] ✅ Telegram 通知发送成功到 -4627711652
+2025-04-28 20:48:55 [INFO] 消息 ID: 509
+2025-04-28 20:48:55 [INFO] 开始发送邮件通知...
+2025-04-28 20:48:59 [INFO] ✅ 邮件通知发送成功
+2025-04-28 20:48:59 [INFO] 邮件 ID: <25d0cb4a-e6f2-d1cc-e027-3e56a291404f@gmail.com>
+2025-04-28 20:48:59 [INFO] 接收地址: 411532124@qq.com, jiawenmg@gmail.com
+2025-04-28 20:49:16 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:50:17 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:51:17 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:51:39 [INFO] 开始解析交易: 3jrhkkru6LozjvN1AqBAjnQvShHxXW37JiEgpMdkBdgJnKTDVYZ6umcHtHw9zoywzwQRVyEuUzZXdC7YjxefBRpy
+2025-04-28 20:51:40 [INFO] 交易解析成功:
+2025-04-28 20:51:40 [INFO] 交易详情:
+2025-04-28 20:51:40 [INFO] 发起地址: GH5dBmrBejkYf88jEaLRqXPH31RXHXa3GzGEf6ZjJqT4
+2025-04-28 20:51:40 [INFO] 交易类型: 卖出
+2025-04-28 20:51:40 [INFO] SOL变化: -0.002145779999999986
+2025-04-28 20:51:40 [INFO] 代币合约: 
+2025-04-28 20:51:40 [INFO] 代币变化: 0
+2025-04-28 20:51:40 [INFO] 地址 GH5dBmrBejkYf88jEaLRqXPH31RXHXa3GzGEf6ZjJqT4 不在监控名单中，跳过通知
+2025-04-28 20:52:18 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:52:40 [INFO] 开始解析交易: 4x8xYnDxbZXCatPWLizGaQQtk3GyEjRFhHw2MW1uMp7A6gTwZa6VpF3aCZ7752MMdsBr5bc54R297AAi1JEH1ZhJ
+2025-04-28 20:52:41 [INFO] 交易解析成功:
+2025-04-28 20:52:41 [INFO] 交易详情:
+2025-04-28 20:52:41 [INFO] 发起地址: HB6s7RDKTSzRB52UjJzLBG4nNNBHk2jHhWbM4rUH9t3o
+2025-04-28 20:52:41 [INFO] 交易类型: 卖出
+2025-04-28 20:52:41 [INFO] SOL变化: -0.002145779999999986
+2025-04-28 20:52:41 [INFO] 代币合约: 
+2025-04-28 20:52:41 [INFO] 代币变化: 0
+2025-04-28 20:52:41 [INFO] 地址 HB6s7RDKTSzRB52UjJzLBG4nNNBHk2jHhWbM4rUH9t3o 不在监控名单中，跳过通知
+2025-04-28 20:53:18 [INFO] 连接测试成功，节点版本:
+2025-04-28 20:54:19 [INFO] 连接测试成功，节点版本:
