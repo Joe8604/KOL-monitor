@@ -618,6 +618,12 @@ async function sendNotifications(txInfo) {
             return;
         }
 
+          // 如果没有代币合约信息，不发送通知
+        if (!txInfo.tokenContract || txInfo.tokenChange === '0') {
+            logger.info('没有代币合约信息，跳过通知');
+            return;
+        }
+
         logger.info('开始构建通知消息...');
         
         // 获取地址对应的昵称
