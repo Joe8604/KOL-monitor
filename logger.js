@@ -14,13 +14,13 @@ const logFormat = winston.format.combine(
     winston.format.printf(({ timestamp, level, message }) => {
         // 为不同级别的日志添加不同的前缀
         const prefix = {
-            info: 'ℹ️',
-            error: '❌',
-            warn: '⚠️',
-            debug: '🔍'
-        }[level] || '📝';
+            info: '[INFO]',
+            error: '[ERROR]',
+            warn: '[WARN]',
+            debug: '[DEBUG]'
+        }[level] || '[LOG]';
         
-        return `${timestamp} ${prefix} [${level.toUpperCase()}] ${message}`;
+        return `${timestamp} ${prefix} ${message}`;
     })
 );
 
