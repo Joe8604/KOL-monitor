@@ -13942,3 +13942,214 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
 2025-04-28 18:21:40 [INFO]: 连接测试成功，节点版本:
 2025-04-28 18:22:40 [INFO]: 连接测试成功，节点版本:
 2025-04-28 18:23:41 [INFO]: 连接测试成功，节点版本:
+2025-04-28 18:47:05 [INFO]: === 启动监控程序 ===
+2025-04-28 18:47:05 [INFO]: 
+检查 Bot 状态...
+2025-04-28 18:47:05 [INFO]: 
+检查Token状态 (第 1 次尝试)...
+2025-04-28 18:47:05 [INFO]: 
+测试DNS解析 api.telegram.org...
+2025-04-28 18:47:05 [INFO]: DNS解析结果: 199.59.148.7
+2025-04-28 18:47:05 [INFO]: 测试网络延迟...
+2025-04-28 18:47:05 [INFO]: 网络延迟: 25ms
+2025-04-28 18:47:05 [INFO]: 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 18:47:05 [INFO]: TCP连接成功，本地端口: 60700
+2025-04-28 18:47:05 [INFO]: 测试HTTPS连接...
+2025-04-28 18:47:05 [INFO]: 通过代理 127.0.0.1:7897 连接...
+2025-04-28 18:47:07 [INFO]: HTTPS状态码: 302
+2025-04-28 18:47:07 [INFO]: HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 10:47:07 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 18:47:07 [INFO]: 检测到重定向: https://core.telegram.org/bots
+2025-04-28 18:47:07 [INFO]: 测试重定向目标: core.telegram.org
+2025-04-28 18:47:07 [INFO]: 通过代理 127.0.0.1:7897 连接...
+2025-04-28 18:47:08 [INFO]: HTTPS状态码: 200
+2025-04-28 18:47:08 [INFO]: HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 10:47:08 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 18:47:08 [INFO]: 尝试使用端点: https://api.telegram.org
+2025-04-28 18:47:09 [INFO]: Token状态: ✅ 有效
+2025-04-28 18:47:09 [INFO]: Bot信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-04-28 18:47:09 [INFO]: 测试 API 端点: https://api.telegram.org
+2025-04-28 18:47:09 [INFO]: 
+测试DNS解析 api.telegram.org...
+2025-04-28 18:47:09 [INFO]: DNS解析结果: 199.59.148.7
+2025-04-28 18:47:09 [INFO]: 测试网络延迟...
+2025-04-28 18:47:09 [INFO]: 网络延迟: 3ms
+2025-04-28 18:47:09 [INFO]: 尝试TCP连接到 api.telegram.org:443...
+2025-04-28 18:47:09 [INFO]: TCP连接成功，本地端口: 60720
+2025-04-28 18:47:09 [INFO]: 测试HTTPS连接...
+2025-04-28 18:47:09 [INFO]: 通过代理 127.0.0.1:7897 连接...
+2025-04-28 18:47:10 [INFO]: HTTPS状态码: 302
+2025-04-28 18:47:10 [INFO]: HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 10:47:10 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-04-28 18:47:10 [INFO]: 检测到重定向: https://core.telegram.org/bots
+2025-04-28 18:47:10 [INFO]: 测试重定向目标: core.telegram.org
+2025-04-28 18:47:10 [INFO]: 通过代理 127.0.0.1:7897 连接...
+2025-04-28 18:47:11 [INFO]: HTTPS状态码: 200
+2025-04-28 18:47:11 [INFO]: HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Mon, 28 Apr 2025 10:47:11 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-04-28 18:47:12 [INFO]: API 端点 https://api.telegram.org 可用
+2025-04-28 18:47:12 [INFO]: 使用 API 端点: https://api.telegram.org
+2025-04-28 18:47:13 [INFO]: Bot 信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-04-28 18:47:13 [INFO]: 检查群组 1584537074...
+2025-04-28 18:47:13 [INFO]: 群组 1584537074 信息: {
+  "id": 1584537074,
+  "first_name": "Joe",
+  "last_name": "S",
+  "username": "joe2140",
+  "type": "private",
+  "can_send_gift": true,
+  "active_usernames": [
+    "joe2140"
+  ],
+  "has_private_forwards": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": true,
+    "limited_gifts": true,
+    "unique_gifts": true,
+    "premium_subscription": true
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 1
+}
+2025-04-28 18:47:14 [INFO]: 测试消息已发送到群组 1584537074: 490
+2025-04-28 18:47:14 [INFO]: 检查群组 -4627711652...
+2025-04-28 18:47:14 [INFO]: 群组 -4627711652 信息: {
+  "id": -4627711652,
+  "title": "KOL监控",
+  "type": "group",
+  "invite_link": "https://t.me/+GAP7ZyfNF-AxNGRl",
+  "permissions": {
+    "can_send_messages": true,
+    "can_send_media_messages": true,
+    "can_send_audios": true,
+    "can_send_documents": true,
+    "can_send_photos": true,
+    "can_send_videos": true,
+    "can_send_video_notes": true,
+    "can_send_voice_notes": true,
+    "can_send_polls": true,
+    "can_send_other_messages": true,
+    "can_add_web_page_previews": true,
+    "can_change_info": true,
+    "can_invite_users": true,
+    "can_pin_messages": true,
+    "can_manage_topics": true
+  },
+  "all_members_are_administrators": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": false,
+    "limited_gifts": false,
+    "unique_gifts": false,
+    "premium_subscription": false
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 4
+}
+2025-04-28 18:47:15 [INFO]: 测试消息已发送到群组 -4627711652: 491
+2025-04-28 18:47:15 [INFO]: 
+解析流动性池地址...
+2025-04-28 18:47:15 [INFO]: 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 18:47:15 [INFO]: 索引 11 的地址: HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwgeyHfgRsHp6
+2025-04-28 18:47:15 [INFO]: 索引 12 的地址: 68rLBhwvJoV6GcqiZXwcdHMbwndcMU4PsbeJkhaVPZvW
+2025-04-28 18:47:15 [INFO]: 解析的流动性池地址: HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwgeyHfgRsHp6, 68rLBhwvJoV6GcqiZXwcdHMbwndcMU4PsbeJkhaVPZvW
+2025-04-28 18:47:15 [INFO]: 
+检查 Solana 连接...
+2025-04-28 18:47:15 [INFO]: 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 18:47:15 [INFO]: 连接测试成功，节点版本:
+2025-04-28 18:47:15 [INFO]: 
+开始监控地址...
+2025-04-28 18:47:15 [INFO]: 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-04-28 18:47:16 [INFO]: 连接测试成功，节点版本:
+2025-04-28 18:47:16 [INFO]: 成功建立 Solana 连接
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 张三|AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx
+2025-04-28 18:47:16 [INFO]: 添加监控地址: Ansem|AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 王五|GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 小筑|6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 搞钱小猫|EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 凉粉小刀|3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi
+2025-04-28 18:47:16 [INFO]: 添加监控地址: robo|Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 学长|Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 王小二|71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 川木|CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT
+2025-04-28 18:47:16 [INFO]: 添加监控地址: POW|8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd
+2025-04-28 18:47:16 [INFO]: 添加监控地址: CryptoD|G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 女王XX|3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1
+2025-04-28 18:47:16 [INFO]: 添加监控地址: 冷静|Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH
+2025-04-28 18:47:16 [INFO]: 开始订阅交易日志...
+2025-04-28 18:47:16 [INFO]: 已订阅地址 AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx 的交易日志，订阅 ID: 0
+2025-04-28 18:47:17 [INFO]: 已订阅地址 AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm 的交易日志，订阅 ID: 1
+2025-04-28 18:47:18 [INFO]: 已订阅地址 GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW 的交易日志，订阅 ID: 2
+2025-04-28 18:47:19 [INFO]: 已订阅地址 6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP 的交易日志，订阅 ID: 3
+2025-04-28 18:47:20 [INFO]: 已订阅地址 EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE 的交易日志，订阅 ID: 4
+2025-04-28 18:47:21 [INFO]: 等待 1 秒后继续下一批订阅...
+2025-04-28 18:47:22 [INFO]: 已订阅地址 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi 的交易日志，订阅 ID: 5
+2025-04-28 18:47:23 [INFO]: 已订阅地址 Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu 的交易日志，订阅 ID: 6
+2025-04-28 18:47:24 [INFO]: 已订阅地址 Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd 的交易日志，订阅 ID: 7
+2025-04-28 18:47:25 [INFO]: 已订阅地址 71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC 的交易日志，订阅 ID: 8
+2025-04-28 18:47:26 [INFO]: 已订阅地址 CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT 的交易日志，订阅 ID: 9
+2025-04-28 18:47:27 [INFO]: 等待 1 秒后继续下一批订阅...
+2025-04-28 18:47:28 [INFO]: 已订阅地址 8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd 的交易日志，订阅 ID: 10
+2025-04-28 18:47:29 [INFO]: 已订阅地址 G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc 的交易日志，订阅 ID: 11
+2025-04-28 18:47:30 [INFO]: 已订阅地址 3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1 的交易日志，订阅 ID: 12
+2025-04-28 18:47:31 [INFO]: 已订阅地址 Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH 的交易日志，订阅 ID: 13
+2025-04-28 18:47:32 [INFO]: 监控程序正在运行...
+2025-04-28 18:48:33 [INFO]: 连接测试成功，节点版本:
+2025-04-28 18:49:33 [INFO]: 连接测试成功，节点版本:

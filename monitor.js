@@ -1,6 +1,7 @@
 const { Connection, PublicKey } = require('@solana/web3.js');
 const axios = require('axios');
 require('dotenv').config();
+const logger = require('./logger');
 
 // 初始化 Solana 连接
 const connection = new Connection(process.env.RPC_ENDPOINT, 'confirmed');
@@ -13,7 +14,7 @@ async function parseTransaction(signature, address) {
     });
     
     if (!tx || !tx.meta || !tx.transaction) {
-      console.log('无法获取交易详情');
+      logger.warn(`无法获取交易详情: ${signature}`);
       return null;
     }
 
@@ -94,7 +95,7 @@ async function parseTransaction(signature, address) {
     return tradeInfo;
 
   } catch (error) {
-    console.error(`解析交易失败: ${error.message}`);
+    logger.error(`解析交易失败: ${error.message}`);
     return null;
   }
 }
@@ -113,9 +114,9 @@ async function sendNotification(tradeInfo) {
 
   try {
     await axios.post(process.env.NOTIFICATION_URL, message);
-    console.log('通知发送成功:', message);
+    logger.info(`通知发送成功: ${JSON.stringify(message)}`);
   } catch (error) {
-    console.error('发送通知失败:', error.message);
+    logger.error(`发送通知失败: ${error.message}`);
   }
 }
 
@@ -131,17 +132,17 @@ async function monitorTransactions() {
             await sendNotification(tradeInfo);
           }
         } catch (error) {
-          console.error('处理交易失败:', error.message);
+          logger.error(`处理交易失败: ${error.message}`);
         }
       },
       'confirmed'
     );
 
-    console.log('开始监控交易...');
+    logger.info(`已订阅地址 ${process.env.MONITOR_ADDRESS} 的交易日志，订阅 ID: ${subscription}`);
     return subscription;
 
   } catch (error) {
-    console.error('启动监控失败:', error.message);
+    logger.error(`启动监控失败: ${error.message}`);
     return null;
   }
 }
@@ -149,31 +150,31 @@ async function monitorTransactions() {
 // 启动监控
 async function startMonitoring() {
   try {
-    console.log('正在连接到 Solana 节点...');
+    logger.info('正在连接到 Solana 节点...');
     const version = await connection.getVersion();
-    console.log('成功连接到 Solana 节点，版本:', version);
+    logger.info(`成功连接到 Solana 节点，版本: ${version}`);
 
     // 验证监控地址
     try {
       const monitorAddress = new PublicKey(process.env.MONITOR_ADDRESS);
-      console.log('监控地址有效:', monitorAddress.toBase58());
+      logger.info(`监控地址有效: ${monitorAddress.toBase58()}`);
     } catch (error) {
-      console.error('无效的监控地址:', error.message);
+      logger.error(`无效的监控地址: ${error.message}`);
       return;
     }
 
     // 开始监控交易
     const subscription = await monitorTransactions();
     if (!subscription) {
-      console.error('无法启动交易监控');
+      logger.error('无法启动交易监控');
       return;
     }
 
-    console.log('交易监控已启动');
+    logger.info('交易监控已启动');
     
     // 处理程序退出
     process.on('SIGINT', async () => {
-      console.log('正在停止监控...');
+      logger.info('正在停止监控...');
       if (subscription) {
         await subscription.unsubscribe();
       }
@@ -181,7 +182,7 @@ async function startMonitoring() {
     });
 
   } catch (error) {
-    console.error('启动监控失败:', error.message);
+    logger.error(`启动监控失败: ${error.message}`);
   }
 }
 
