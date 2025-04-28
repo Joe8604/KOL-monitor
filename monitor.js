@@ -6,6 +6,36 @@ const logger = require('./logger');
 // 初始化 Solana 连接
 const connection = new Connection(process.env.RPC_ENDPOINT, 'confirmed');
 
+// 获取代币市值信息
+async function getTokenMarketData(tokenAddress) {
+  try {
+    // 使用 CoinGecko API 获取代币信息
+    const response = await axios.get(`https://api.coingecko.com/api/v3/coins/solana/contract/${tokenAddress}`, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    });
+    
+    if (!response.data || !response.data.market_data) {
+      logger.warn(`无法获取代币市值信息: 数据格式不正确`);
+      return null;
+    }
+
+    const marketData = response.data.market_data;
+    
+    return {
+      price: marketData.current_price?.usd || 0,
+      marketCap: marketData.market_cap?.usd || 0,
+      volume24h: marketData.total_volume?.usd || 0,
+      priceChange24h: marketData.price_change_percentage_24h || 0
+    };
+  } catch (error) {
+    logger.warn(`无法获取代币市值信息: ${error.message}`);
+    return null;
+  }
+}
+
 // 修改交易解析函数
 async function parseTransaction(signature, address) {
   try {
@@ -80,16 +110,24 @@ async function parseTransaction(signature, address) {
       }
     }
 
+    // 获取代币市值信息
+    const tokenContract = Object.keys(tokenChanges).find(mint => mint !== solMint);
+    let marketData = null;
+    if (tokenContract) {
+      marketData = await getTokenMarketData(tokenContract);
+    }
+
     // 构建交易信息对象
     const tradeInfo = {
       address: address,
       transactionType: transactionType,
       solChange: tokenChanges[solMint] ? (tokenChanges[solMint].post - tokenChanges[solMint].pre) : 0,
-      tokenContract: Object.keys(tokenChanges).find(mint => mint !== solMint) || 'N/A',
+      tokenContract: tokenContract || 'N/A',
       tokenChange: Object.entries(tokenChanges)
         .filter(([mint]) => mint !== solMint)
         .map(([_, change]) => change.post - change.pre)
-        .find(change => change !== 0) || 0
+        .find(change => change !== 0) || 0,
+      marketData: marketData
     };
 
     return tradeInfo;
@@ -109,7 +147,13 @@ async function sendNotification(tradeInfo) {
     transactionType: tradeInfo.transactionType,
     solChange: tradeInfo.solChange,
     tokenContract: tradeInfo.tokenContract,
-    tokenChange: tradeInfo.tokenChange
+    tokenChange: tradeInfo.tokenChange,
+    marketData: tradeInfo.marketData ? {
+      price: tradeInfo.marketData.price,
+      marketCap: tradeInfo.marketData.marketCap,
+      volume24h: tradeInfo.marketData.volume24h,
+      priceChange24h: tradeInfo.marketData.priceChange24h
+    } : null
   };
 
   try {
