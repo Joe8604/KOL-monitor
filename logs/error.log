@@ -1,0 +1,305 @@
+2025-04-27 21:23:17 [ERROR]: 连接测试失败:
+2025-04-27 21:25:45 [ERROR]: 处理交易日志时出错: txInfo.address.toLowerCase is not a function
+2025-04-27 21:25:45 [ERROR]: 错误堆栈: TypeError: txInfo.address.toLowerCase is not a function
+    at file:///C:/Users/5520/Desktop/kol-monitor/index.js:474:77
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-27 21:31:01 [ERROR]: ❌ Telegram通知发送失败 (第 1 次): request to https://api.telegram.org/bot7928666221:[REDACTED]/sendMessage failed, reason: Client network socket disconnected before secure TLS connection was established
+2025-04-27 21:34:07 [ERROR]: Bot状态检查失败: request to https://api.telegram.org/bot7928666221:[REDACTED]/getMe failed, reason: Client network socket disconnected before secure TLS connection was established
+2025-04-27 21:44:44 [ERROR]: HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-27 21:44:50 [ERROR]: HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-27 21:44:50 [ERROR]: HTTPS请求错误: socket hang up
+2025-04-27 21:45:00 [ERROR]: 端点 https://api.telegram.org 请求失败: fetch failed
+2025-04-27 21:45:03 [ERROR]: 端点 https://api1.telegram.org 请求失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-27 21:45:06 [ERROR]: 端点 https://api2.telegram.org 请求失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-27 21:45:06 [ERROR]: Token状态检查失败 (第 1 次): 所有API端点均不可用
+2025-04-27 21:45:26 [ERROR]: 端点 https://api.telegram.org 请求失败: fetch failed
+2025-04-27 21:45:30 [ERROR]: 端点 https://api1.telegram.org 请求失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-27 21:45:32 [ERROR]: 端点 https://api2.telegram.org 请求失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-27 21:45:32 [ERROR]: Token状态检查失败 (第 2 次): 所有API端点均不可用
+2025-04-27 21:50:57 [ERROR]: API端点测试失败: fetch failed
+2025-04-27 21:51:03 [ERROR]: HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-27 21:51:08 [ERROR]: HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-27 21:51:08 [ERROR]: HTTPS请求错误: socket hang up
+2025-04-27 21:51:21 [ERROR]: API端点测试失败: fetch failed
+2025-04-27 21:51:26 [ERROR]: API端点测试失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-27 21:51:26 [ERROR]: ❌ Telegram通知发送失败 (第 1 次): 所有API端点均不可用
+2025-04-27 21:53:03 [ERROR]: HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-27 21:53:08 [ERROR]: HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-27 21:53:08 [ERROR]: HTTPS请求错误: socket hang up
+2025-04-27 21:57:31 [ERROR]: HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-27 21:57:36 [ERROR]: HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-27 21:57:36 [ERROR]: HTTPS请求错误: socket hang up
+2025-04-27 21:57:43 [ERROR]: HTTPS连接失败 (第 2 次): HTTPS请求超时
+2025-04-27 21:57:43 [ERROR]: HTTPS请求错误: socket hang up
+2025-04-27 21:57:58 [ERROR]: API端点测试失败: fetch failed
+2025-04-27 21:58:05 [ERROR]: API端点测试失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-27 21:58:12 [ERROR]: API端点测试失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-27 21:58:12 [ERROR]: ❌ Telegram通知发送失败 (第 1 次): 所有API端点均不可用
+2025-04-27 22:03:22 [ERROR]: 解析交易失败: fetch failed
+2025-04-27 22:03:22 [ERROR]: 错误堆栈: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13502:13
+    at async ClientBrowser.callServer (C:\Users\5520\Desktop\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:5061:17)
+2025-04-27 22:17:58 [ERROR]: 解析交易失败 (第 1 次尝试): At path: meta.innerInstructions.0.instructions.0.accounts -- Expected an array value, but received: undefined
+2025-04-27 22:17:58 [ERROR]: 错误堆栈:
+2025-04-27 22:18:00 [ERROR]: 解析交易失败 (第 2 次尝试): At path: meta.innerInstructions.0.instructions.0.accounts -- Expected an array value, but received: undefined
+2025-04-27 22:18:00 [ERROR]: 错误堆栈:
+2025-04-27 22:18:12 [ERROR]: 解析交易失败 (第 3 次尝试): fetch failed
+2025-04-27 22:18:12 [ERROR]: 错误堆栈:
+2025-04-27 22:20:49 [ERROR]: 解析交易失败 (第 1 次尝试): At path: meta.innerInstructions.0.instructions.0.accounts -- Expected an array value, but received: undefined
+2025-04-27 22:20:49 [ERROR]: 错误堆栈:
+2025-04-27 22:20:50 [ERROR]: 解析交易失败 (第 2 次尝试): At path: meta.innerInstructions.0.instructions.0.accounts -- Expected an array value, but received: undefined
+2025-04-27 22:20:50 [ERROR]: 错误堆栈:
+2025-04-27 22:20:59 [ERROR]: 解析交易失败 (第 1 次尝试): At path: transaction.message.accountKeys.0 -- Expected a string, but received: [object Object]
+2025-04-27 22:20:59 [ERROR]: 错误堆栈:
+2025-04-27 22:21:01 [ERROR]: 解析交易失败 (第 1 次尝试): At path: transaction.message.accountKeys.0 -- Expected a string, but received: [object Object]
+2025-04-27 22:21:01 [ERROR]: 错误堆栈:
+2025-04-27 22:21:01 [ERROR]: 解析交易失败 (第 2 次尝试): 403 Forbidden: {"error":"message: API key is not allowed to access blockchain, json-rpc code: -32052, rest code: 403"}
+2025-04-27 22:21:01 [ERROR]: 错误堆栈:
+2025-04-27 22:21:02 [ERROR]: 解析交易失败 (第 3 次尝试): fetch failed
+2025-04-27 22:21:02 [ERROR]: 错误堆栈:
+2025-04-27 22:21:03 [ERROR]: 解析交易失败 (第 2 次尝试): 401 Unauthorized: {"message":"Usage without a token is no longer available. For future use, register and receive a free API token https://app.extrnode.com"}
+
+2025-04-27 22:21:03 [ERROR]: 错误堆栈:
+2025-04-27 22:21:04 [ERROR]: 解析交易失败 (第 3 次尝试): At path: transaction.message.accountKeys.0 -- Expected a string, but received: [object Object]
+2025-04-27 22:21:04 [ERROR]: 错误堆栈:
+2025-04-27 22:21:11 [ERROR]: 解析交易失败 (第 3 次尝试): 429 Too Many Requests: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<title>Access denied | solana-mainnet.g.alchemy.com used Cloudflare to restrict access</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+<script>
+(function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode:1015,helpful:a,version:1}};b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+
+<script defer src="https://performance.radar.cloudflare.com/beacon.js"></script>
+</head>
+<body>
+  <div id="cf-wrapper">
+    <div class="cf-alert cf-alert-error cf-cookie-error hidden" id="cookie-alert" data-translate="enable_cookies">Please enable cookies.</div>
+    <div id="cf-error-details" class="p-0">
+      <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased">
+         <h1 class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight">
+           <span data-translate="error">Error</span>
+           <span>1015</span>
+         </h1>
+         <span class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 936ef703ccb3263f &bull;</span>
+         <span class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed">2025-04-27 14:21:11 UTC</span>
+        <h2 class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light">You are being rate limited</h2>
+      </header>
+
+      <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+          <div id="what-happened-section" class="w-1/2 md:w-full">
+            <h2 class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased" data-translate="what_happened">What happened?</h2>
+            <p>The owner of this website (solana-mainnet.g.alchemy.com) has banned you temporarily from accessing this website.</p>
+            
+          </div>
+
+          
+      </section>
+
+      <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded" id="feedback-button-yes" type="button">Yes</button>
+        <button class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded" id="feedback-button-no" type="button">No</button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div>
+
+
+      <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">936ef703ccb3263f</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">2406:8c00:0:3438:133:18:43:169</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div><!-- /#cf-error-details -->
+  </div><!-- /#cf-wrapper -->
+
+  <script>
+  window._cf_translation = {};
+  
+  
+</script>
+
+</body>
+</html>
+
+2025-04-27 22:21:11 [ERROR]: 错误堆栈:
+2025-04-27 22:22:28 [ERROR]: 解析交易失败 (第 1 次尝试): Cannot read properties of undefined (reading 'find')
+2025-04-27 22:22:28 [ERROR]: 错误堆栈:
+2025-04-27 22:22:30 [ERROR]: 解析交易失败 (第 2 次尝试): Cannot read properties of undefined (reading 'find')
+2025-04-27 22:22:30 [ERROR]: 错误堆栈:
+2025-04-27 22:22:42 [ERROR]: 解析交易失败 (第 3 次尝试): fetch failed
+2025-04-27 22:22:42 [ERROR]: 错误堆栈:
+2025-04-27 22:25:30 [ERROR]: 解析交易失败 (第 1 次尝试): Cannot read properties of undefined (reading 'find')
+2025-04-27 22:25:30 [ERROR]: 错误堆栈:
+2025-04-27 22:25:32 [ERROR]: 解析交易失败 (第 2 次尝试): Cannot read properties of undefined (reading 'find')
+2025-04-27 22:25:32 [ERROR]: 错误堆栈:
+2025-04-27 22:25:44 [ERROR]: 解析交易失败 (第 3 次尝试): fetch failed
+2025-04-27 22:25:44 [ERROR]: 错误堆栈:
+2025-04-27 22:34:00 [ERROR]: 解析交易失败 (第 1 次尝试): accountKeys[0]?.toBase58 is not a function
+2025-04-27 22:34:00 [ERROR]: 错误堆栈:
+2025-04-27 22:34:02 [ERROR]: 解析交易失败 (第 2 次尝试): accountKeys[0]?.toBase58 is not a function
+2025-04-27 22:34:02 [ERROR]: 错误堆栈:
+2025-04-27 22:34:14 [ERROR]: 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-04-27 22:34:15 [ERROR]: 新节点 https://rpc.ankr.com/solana 测试失败: 403 Forbidden: {"error":"message: API key is not allowed to access blockchain, json-rpc code: -32052, rest code: 403"}
+2025-04-27 22:34:16 [ERROR]: 新节点 https://solana-mainnet.rpc.extrnode.com 测试失败: 401 Unauthorized: {"message":"Usage without a token is no longer available. For future use, register and receive a free API token https://app.extrnode.com"}
+
+2025-04-27 22:34:25 [ERROR]: 新节点 https://solana-mainnet.g.alchemy.com/v2/demo 测试失败: 429 Too Many Requests: <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<title>Access denied | solana-mainnet.g.alchemy.com used Cloudflare to restrict access</title>
+<meta charset="UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/main.css" />
+
+
+<script>
+(function(){if(document.addEventListener&&window.XMLHttpRequest&&JSON&&JSON.stringify){var e=function(a){var c=document.getElementById("error-feedback-survey"),d=document.getElementById("error-feedback-success"),b=new XMLHttpRequest;a={event:"feedback clicked",properties:{errorCode:1015,helpful:a,version:1}};b.open("POST","https://sparrow.cloudflare.com/api/v1/event");b.setRequestHeader("Content-Type","application/json");b.setRequestHeader("Sparrow-Source-Key","c771f0e4b54944bebf4261d44bd79a1e");
+b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove("feedback-hidden")};document.addEventListener("DOMContentLoaded",function(){var a=document.getElementById("error-feedback"),c=document.getElementById("feedback-button-yes"),d=document.getElementById("feedback-button-no");"classList"in a&&(a.classList.remove("feedback-hidden"),c.addEventListener("click",function(){e(!0)}),d.addEventListener("click",function(){e(!1)}))})}})();
+</script>
+
+<script defer src="https://performance.radar.cloudflare.com/beacon.js"></script>
+</head>
+<body>
+  <div id="cf-wrapper">
+    <div class="cf-alert cf-alert-error cf-cookie-error hidden" id="cookie-alert" data-translate="enable_cookies">Please enable cookies.</div>
+    <div id="cf-error-details" class="p-0">
+      <header class="mx-auto pt-10 lg:pt-6 lg:px-8 w-240 lg:w-full mb-15 antialiased">
+         <h1 class="inline-block md:block mr-2 md:mb-2 font-light text-60 md:text-3xl text-black-dark leading-tight">
+           <span data-translate="error">Error</span>
+           <span>1015</span>
+         </h1>
+         <span class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed">Ray ID: 936f0a662d5bd77f &bull;</span>
+         <span class="inline-block md:block heading-ray-id font-mono text-15 lg:text-sm lg:leading-relaxed">2025-04-27 14:34:25 UTC</span>
+        <h2 class="text-gray-600 leading-1.3 text-3xl lg:text-2xl font-light">You are being rate limited</h2>
+      </header>
+
+      <section class="w-240 lg:w-full mx-auto mb-8 lg:px-8">
+          <div id="what-happened-section" class="w-1/2 md:w-full">
+            <h2 class="text-3xl leading-tight font-normal mb-4 text-black-dark antialiased" data-translate="what_happened">What happened?</h2>
+            <p>The owner of this website (solana-mainnet.g.alchemy.com) has banned you temporarily from accessing this website.</p>
+            
+          </div>
+
+          
+      </section>
+
+      <div class="feedback-hidden py-8 text-center" id="error-feedback">
+    <div id="error-feedback-survey" class="footer-line-wrapper">
+        Was this page helpful?
+        <button class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded" id="feedback-button-yes" type="button">Yes</button>
+        <button class="border border-solid bg-white cf-button cursor-pointer ml-4 px-4 py-2 rounded" id="feedback-button-no" type="button">No</button>
+    </div>
+    <div class="feedback-success feedback-hidden" id="error-feedback-success">
+        Thank you for your feedback!
+    </div>
+</div>
+
+
+      <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
+  <p class="text-13">
+    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">936f0a662d5bd77f</strong></span>
+    <span class="cf-footer-separator sm:hidden">&bull;</span>
+    <span id="cf-footer-item-ip" class="cf-footer-item hidden sm:block sm:mb-1">
+      Your IP:
+      <button type="button" id="cf-footer-ip-reveal" class="cf-footer-ip-reveal-btn">Click to reveal</button>
+      <span class="hidden" id="cf-footer-ip">2406:8c00:0:3438:133:18:43:169</span>
+      <span class="cf-footer-separator sm:hidden">&bull;</span>
+    </span>
+    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
+    
+  </p>
+  <script>(function(){function d(){var b=a.getElementById("cf-footer-item-ip"),c=a.getElementById("cf-footer-ip-reveal");b&&"classList"in b&&(b.classList.remove("hidden"),c.addEventListener("click",function(){c.classList.add("hidden");a.getElementById("cf-footer-ip").classList.remove("hidden")}))}var a=document;document.addEventListener&&a.addEventListener("DOMContentLoaded",d)})();</script>
+</div><!-- /.error-footer -->
+
+
+    </div><!-- /#cf-error-details -->
+  </div><!-- /#cf-wrapper -->
+
+  <script>
+  window._cf_translation = {};
+  
+  
+</script>
+
+</body>
+</html>
+
+2025-04-27 22:34:25 [ERROR]: 解析交易失败 (第 3 次尝试): 所有 RPC 节点均不可用
+2025-04-27 22:34:25 [ERROR]: 错误堆栈:
+2025-04-27 22:38:49 [ERROR]: 解析交易失败 (第 1 次尝试): log is not defined
+2025-04-27 22:38:49 [ERROR]: 错误堆栈:
+2025-04-27 22:38:51 [ERROR]: 解析交易失败 (第 2 次尝试): log is not defined
+2025-04-27 22:38:51 [ERROR]: 错误堆栈:
+2025-04-27 22:39:03 [ERROR]: 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-04-27 22:39:24 [ERROR]: 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-04-27 22:39:44 [ERROR]: 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-04-27 22:40:05 [ERROR]: 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-04-27 22:40:26 [ERROR]: 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-04-27 22:40:26 [ERROR]: 解析交易失败 (第 3 次尝试): 所有 RPC 节点均不可用
+2025-04-27 22:40:26 [ERROR]: 错误堆栈:
+2025-04-27 23:34:23 [ERROR]: 连接测试失败:
+2025-04-27 23:34:34 [ERROR]: 连接测试失败:
+2025-04-27 23:34:49 [ERROR]: 连接检查失败: Assignment to constant variable.
+2025-04-28 00:04:31 [ERROR]: 处理交易日志时出错: Cannot read properties of undefined (reading 'map')
+2025-04-28 00:04:31 [ERROR]: 错误堆栈: TypeError: Cannot read properties of undefined (reading 'map')
+    at file:///C:/Users/5520/Desktop/kol-monitor/index.js:450:77
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-04-28 00:06:15 [ERROR]: 解析交易失败: key.toBase58 is not a function
+2025-04-28 00:10:34 [ERROR]: 解析交易失败: key.toBase58 is not a function
+2025-04-28 00:13:34 [ERROR]: 解析交易失败: key.toBase58 is not a function
+2025-04-28 00:15:44 [ERROR]: 解析交易失败: key.toBase58 is not a function
+2025-04-28 00:21:09 [ERROR]: 解析交易失败: key.toBase58 is not a function
+2025-04-28 00:21:10 [ERROR]: 发送通知时出错:
+2025-04-28 00:21:10 [ERROR]: 错误堆栈:
+2025-04-28 00:21:10 [ERROR]: 处理交易日志时出错: Cannot read properties of undefined (reading 'forEach')
+2025-04-28 00:24:29 [ERROR]: 解析交易失败: key.toBase58 is not a function
+2025-04-28 10:59:09 [ERROR]: 测量网络延迟失败 (第 1 次): 连接超时
+2025-04-28 10:59:16 [ERROR]: 测量网络延迟失败 (第 2 次): 连接超时
+2025-04-28 10:59:24 [ERROR]: 测量网络延迟失败 (第 3 次): 连接超时
+2025-04-28 10:59:24 [ERROR]: 网络连接测试失败 (第 1 次): 连接超时
+2025-04-28 10:59:31 [ERROR]: 测量网络延迟失败 (第 1 次): 连接超时
+2025-04-28 10:59:38 [ERROR]: 测量网络延迟失败 (第 2 次): 连接超时
+2025-04-28 10:59:45 [ERROR]: 测量网络延迟失败 (第 3 次): 连接超时
+2025-04-28 10:59:45 [ERROR]: 网络连接测试失败 (第 2 次): 连接超时
+2025-04-28 10:59:52 [ERROR]: 测量网络延迟失败 (第 1 次): 连接超时
+2025-04-28 11:08:51 [ERROR]: 连接测试失败:
+2025-04-28 11:16:38 [ERROR]: 监控地址 张三|AHd2SmZp66MFkNNqzCxCGgpBD6sTGMnu2N6Hd6zV6Sfx 时出错: Non-base58 character
+2025-04-28 11:16:38 [ERROR]: 监控地址 李四|HLnE7VVz6nYED274eW7sFzLdt8fLDRf3hJHqX3xWjBiu 时出错: Non-base58 character
+2025-04-28 11:16:38 [ERROR]: 监控地址 王五|GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW 时出错: Non-base58 character
+2025-04-28 11:22:53 [ERROR]: 解析流动性池地址失败: failed to get info about account 2hGypwKXKRW9zkjZ5tt9eSV1m9KREcseqLfK9qvTyAPb: TypeError: fetch failed
+2025-04-28 11:42:18 [ERROR]: Bot 状态检查失败: 400: Bad Request: chat not found
+2025-04-28 18:07:00 [ERROR]: HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-04-28 18:07:00 [ERROR]: HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
