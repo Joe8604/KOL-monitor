@@ -734,6 +734,12 @@ async function sendNotifications(txInfo, connection) {
             return;
         }
 
+        // 检查是否是 USDC 代币
+        if (txInfo.tokenContract === 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v') {
+            logger.info('检测到 USDC 代币交易，跳过通知');
+            return;
+        }
+
         // 如果没有代币合约信息，不发送通知
         if (!txInfo.tokenContract || txInfo.tokenChange === '0') {
             logger.info('没有代币合约信息，跳过通知');
