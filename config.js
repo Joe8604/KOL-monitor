@@ -9,8 +9,8 @@ const config = {
         wsEndpoint: process.env.WS_ENDPOINT
     },
     email: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.EMAIL_USER_1,
+        pass: process.env.EMAIL_PASS_1,
         to: process.env.EMAIL_TO
     }
 };

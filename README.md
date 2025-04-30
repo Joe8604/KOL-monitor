@@ -4,7 +4,6 @@
 
 ## 部署到 Railway
 
-1. 在 [Railway](https://railway.app) 注册账号
 2. 创建新项目
 3. 连接 GitHub 仓库
 4. 配置环境变量：
@@ -12,8 +11,12 @@
    - `TELEGRAM_CHAT_ID`: Telegram 聊天 ID
    - `RPC_ENDPOINT`: Solana RPC 节点地址
    - `WS_ENDPOINT`: Solana WebSocket 节点地址
-   - `EMAIL_USER`: 邮件发送账号
-   - `EMAIL_PASS`: 邮件发送密码
+   - `EMAIL_USER1`: 邮件1发送账号
+   - `EMAIL_PASS1`: 邮件1发送密码
+   - `EMAIL_USER2`: 邮件2发送账号
+   - `EMAIL_PASS2`: 邮件2发送密码
+   - `EMAIL_USER3`: 邮件1发送账号
+   - `EMAIL_PASS3`: 邮件1发送密码
    - `EMAIL_TO`: 接收通知的邮箱地址
 
 ## 本地开发
@@ -34,10 +37,14 @@
 - `TELEGRAM_BOT_TOKEN`: Telegram 机器人的 API token
 - `TELEGRAM_CHAT_ID`: 接收通知的 Telegram 聊天 ID
 - `RPC_ENDPOINT`: Solana RPC 节点地址（例如：https://api.mainnet-beta.solana.com）
-- `WS_ENDPOINT`: Solana WebSocket 节点地址（例如：wss://api.mainnet-beta.solana.com）
-- `EMAIL_USER`: 用于发送通知的邮箱账号
-- `EMAIL_PASS`: 邮箱账号的密码或应用专用密码
-- `EMAIL_TO`: 接收通知的邮箱地址
+- `WS_ENDPOINT`: Solana WebSocket 节点地址（例如：wss://api.mainnet-beta.solana.com
+- `EMAIL_USER_1`: 邮件1发送账号
+- `EMAIL_PASS_1`: 邮件1发送密码
+- `EMAIL_USER_2`: 邮件2发送账号
+- `EMAIL_PASS_2`: 邮件2发送密码
+- `EMAIL_USER_3`: 邮件3发送账号
+- `EMAIL_PASS_3`: 邮件3发送密码
+- `EMAIL_TO`: 接收通知的邮箱地址（多个邮箱用逗号分隔） 
 
 ## 功能特点
 
@@ -67,4 +74,7 @@ npm start
 1. 确保RPC节点稳定可靠
 2. 建议使用专用邮箱发送通知
 3. 定期检查监控状态
-4. 注意保护敏感信息 
+4. 注意保护敏感信息
+
+
+

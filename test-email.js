@@ -21,19 +21,19 @@ const logger = winston.createLogger({
 });
 
 // 获取环境变量
-const EMAIL_USER = process.env.EMAIL_USER;
-const EMAIL_PASS = process.env.EMAIL_PASS;
+const EMAIL_USER = process.env.EMAIL_USER_1;
+const EMAIL_PASS = process.env.EMAIL_PASS_1;
 const EMAIL_TO = process.env.EMAIL_TO;
 
 // 验证环境变量
 if (!EMAIL_USER || !EMAIL_PASS || !EMAIL_TO) {
-    logger.error('缺少必要的环境变量：EMAIL_USER, EMAIL_PASS 或 EMAIL_TO');
+    logger.error('缺少必要的环境变量：EMAIL_USER_1, EMAIL_PASS_1 或 EMAIL_TO');
     process.exit(1);
 }
 
 // 创建邮件发送器
 const transporter = nodemailer.createTransport({
-    host: 'smtp.qq.com',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
