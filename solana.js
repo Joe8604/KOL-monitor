@@ -1,4 +1,8 @@
 import { Connection, PublicKey } from '@solana/web3.js';
+import dotenv from 'dotenv';
+
+// 加载环境变量
+dotenv.config();
 
 // Configuration
 const RPC_NODES = [
@@ -8,14 +12,26 @@ const RPC_NODES = [
     'https://rpc.ankr.com/solana',
     'https://solana-mainnet.rpc.extrnode.com',
     'https://solana-mainnet.g.alchemy.com/v2/demo'
-];
+].filter(Boolean);
+
+console.log('RPC_ENDPOINT:', process.env.RPC_ENDPOINT);
+console.log('Available RPC nodes:', RPC_NODES);
 
 let currentRpcIndex = 0;
 let subscriptions = new Map();
 
 export async function createSolanaConnection() {
+    if (RPC_NODES.length === 0) {
+        throw new Error('No valid RPC nodes available');
+    }
+    
     const rpcEndpoint = RPC_NODES[currentRpcIndex];
     console.log(`Connecting to RPC node: ${rpcEndpoint}`);
+    
+    if (!rpcEndpoint.startsWith('http')) {
+        throw new Error(`Invalid RPC endpoint: ${rpcEndpoint}`);
+    }
+    
     return new Connection(rpcEndpoint, 'confirmed');
 }
 

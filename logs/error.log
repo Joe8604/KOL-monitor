@@ -322,3 +322,86 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
 2025-04-28 20:00:38 [ERROR] API 响应数据: {"success":false,"message":"Unauthorized"}
 2025-04-28 20:20:28 [ERROR] API 响应状态: 401
 2025-04-28 20:20:28 [ERROR] API 响应数据: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 17:07:45 [ERROR] 发送通知时出错:
+2025-04-30 17:07:45 [ERROR] 处理交易日志时出错: connection is not defined
+2025-04-30 17:15:30 [ERROR] 发送通知时出错:
+2025-04-30 17:15:30 [ERROR] 处理交易日志时出错: connection is not defined
+2025-04-30 17:19:53 [ERROR] 发送通知时出错:
+2025-04-30 17:19:53 [ERROR] 处理交易日志时出错: connection is not defined
+2025-04-30 17:24:25 [ERROR] 监控地址时出错: Non-base58 character
+2025-04-30 17:26:40 [ERROR] 发送通知时出错:
+2025-04-30 17:26:40 [ERROR] 处理交易日志时出错: connection is not defined
+2025-04-30 17:28:55 [ERROR] 监控地址时出错: Endpoint URL must start with `http:` or `https:`.
+2025-04-30 17:30:59 [ERROR] 监控地址时出错: Endpoint URL must start with `http:` or `https:`.
+2025-04-30 17:37:01 [ERROR] 监控地址时出错: Endpoint URL must start with `http:` or `https:`.
+2025-04-30 17:38:13 [ERROR] 监控地址时出错: Endpoint URL must start with `http:` or `https:`.
+2025-04-30 17:41:03 [ERROR] 监控地址时出错: Endpoint URL must start with `http:` or `https:`.
+2025-04-30 17:51:39 [ERROR] 发送通知时出错:
+2025-04-30 17:51:39 [ERROR] 处理交易日志时出错: connection is not defined
+2025-04-30 18:11:14 [ERROR] 解析代币元数据失败:
+2025-04-30 18:13:17 [ERROR] 解析代币元数据失败:
+2025-04-30 18:13:25 [ERROR] 测试端点 https://api.telegram.org 时出错: fetch failed
+2025-04-30 18:13:30 [ERROR] 测试端点 https://api1.telegram.org 时出错: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-30 18:13:35 [ERROR] 测试端点 https://api2.telegram.org 时出错: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-30 18:13:38 [ERROR] 测试端点 https://api3.telegram.org 时出错: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-30 18:13:42 [ERROR] 测试端点 https://api4.telegram.org 时出错: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-30 18:13:49 [ERROR] 测试端点 https://api5.telegram.org 时出错: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-30 18:13:54 [ERROR] 测试端点 https://api6.telegram.org 时出错: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-30 18:13:59 [ERROR] 测试端点 https://api7.telegram.org 时出错: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-30 18:14:05 [ERROR] 测试端点 https://api8.telegram.org 时出错: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-04-30 18:14:05 [ERROR] ❌ Telegram 通知发送失败到 1584537074 (第 1 次): 所有 API 端点均不可用
+2025-04-30 18:14:16 [ERROR] HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-30 18:14:16 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-04-30 18:14:16 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-04-30 18:14:30 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-04-30 18:14:30 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-04-30 18:14:30 [ERROR] HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-04-30 18:27:28 [ERROR] 获取代币市值失败: 获取代币元数据失败: 401
+2025-04-30 18:29:35 [ERROR] 获取代币市值失败: 获取代币元数据失败: 401
+2025-04-30 18:40:09 [ERROR] 获取代币元数据失败 (第 1 次尝试): lastRequestTime is not defined
+2025-04-30 18:40:14 [ERROR] 获取代币元数据失败 (第 2 次尝试): lastRequestTime is not defined
+2025-04-30 18:40:19 [ERROR] 获取代币元数据失败 (第 3 次尝试): lastRequestTime is not defined
+2025-04-30 18:40:19 [ERROR] 获取代币市值失败: lastRequestTime is not defined
+2025-04-30 18:40:29 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-04-30 18:40:29 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-04-30 18:44:39 [ERROR] 获取代币元数据失败 (第 1 次尝试): lastRequestTime is not defined
+2025-04-30 18:44:44 [ERROR] 获取代币元数据失败 (第 2 次尝试): lastRequestTime is not defined
+2025-04-30 18:44:49 [ERROR] 获取代币元数据失败 (第 3 次尝试): lastRequestTime is not defined
+2025-04-30 18:44:49 [ERROR] 获取代币市值失败: lastRequestTime is not defined
+2025-04-30 18:46:45 [ERROR] 获取代币元数据失败 (第 1 次尝试): lastRequestTime is not defined
+2025-04-30 18:46:50 [ERROR] 获取代币元数据失败 (第 2 次尝试): lastRequestTime is not defined
+2025-04-30 18:50:20 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 18:50:20 [ERROR] 获取代币元数据失败 (第 1 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 18:50:26 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 18:50:26 [ERROR] 获取代币元数据失败 (第 2 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 18:50:32 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 18:50:32 [ERROR] 获取代币元数据失败 (第 3 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 18:50:32 [ERROR] 获取代币市值失败: API 请求失败: 401 Unauthorized
+2025-04-30 18:57:52 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 18:57:52 [ERROR] 获取代币元数据失败 (第 1 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 18:57:57 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 18:57:57 [ERROR] 获取代币元数据失败 (第 2 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 18:58:03 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 18:58:03 [ERROR] 获取代币元数据失败 (第 3 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 18:58:03 [ERROR] 获取代币市值失败: API 请求失败: 401 Unauthorized
+2025-04-30 19:12:19 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 19:12:19 [ERROR] 获取代币元数据失败 (第 1 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 19:12:25 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 19:12:25 [ERROR] 获取代币元数据失败 (第 2 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 19:12:30 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 19:12:30 [ERROR] 获取代币元数据失败 (第 3 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 19:12:30 [ERROR] 获取代币市值失败: API 请求失败: 401 Unauthorized
+2025-04-30 19:30:51 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 19:30:51 [ERROR] 获取代币元数据失败 (第 1 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 19:30:57 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 19:30:57 [ERROR] 获取代币元数据失败 (第 2 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 19:31:03 [ERROR] API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 19:31:03 [ERROR] 获取代币元数据失败 (第 3 次尝试): API 请求失败: 401 Unauthorized
+2025-04-30 19:31:03 [ERROR] 获取代币市值失败: API 请求失败: 401 Unauthorized
+2025-04-30 20:15:24 [ERROR] Solscan API 错误响应: 
+2025-04-30 20:15:24 [ERROR] 获取代币信息失败: Solscan API 请求失败: 404 Not Found
+2025-04-30 20:22:20 [ERROR] Solscan API 错误响应: 
+2025-04-30 20:22:20 [ERROR] 获取代币信息失败: Solscan API 请求失败: 404 Not Found
+2025-04-30 20:24:08 [ERROR] Birdeye API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
+2025-04-30 20:24:08 [ERROR] 获取代币信息失败: Birdeye API 请求失败: 401 Unauthorized
+2025-04-30 20:32:16 [ERROR] 获取代币信息失败: Cannot read properties of undefined (reading 'toLocaleString')
