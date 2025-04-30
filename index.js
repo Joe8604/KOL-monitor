@@ -4,11 +4,36 @@ import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { initializeBot, sendMessage } from './telegram.js';
-import { startMonitoring } from './solana.js';
+import { createSolanaConnection, startMonitoring } from './solana.js';
 import { sleep, testLatency, testTCP, testHTTPS, validateBotToken, checkTokenStatus, testNetworkConnection } from './utils.js';
 import logger from './logger.js';
 import dns from 'dns';
 import { Telegraf } from 'telegraf';
+import fetch from 'node-fetch';
+
+// Token Metadata Program ID
+const TOKEN_METADATA_PROGRAM = new PublicKey('metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s');
+
+// 请求限制配置
+const REQUEST_LIMIT = {
+    maxRetries: 3,
+    retryDelay: 5000, // 5秒
+    rateLimit: 5, // 每秒最多5个请求
+    rateWindow: 1000, // 1秒
+    dailyLimit: 10000, // 每天最多10000个请求
+    minuteLimit: 300 // 每分钟最多300个请求
+};
+
+// 请求计数
+let requestCount = {
+    daily: 0,
+    minute: 0,
+    lastMinuteReset: Date.now(),
+    lastDailyReset: Date.now()
+};
+
+// 上次请求时间
+let lastRequestTime = 0;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -20,10 +45,9 @@ dotenv.config({ path: envPath });
 
 // 打印环境变量以调试
 console.log('Environment variables:', {
-    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN ? 'set' : 'not set',
-    TELEGRAM_CHAT_IDS: process.env.TELEGRAM_CHAT_IDS?.split(',')?.filter(Boolean)?.length > 0 ? 'set' : 'not set',
-    RPC_ENDPOINT: process.env.RPC_ENDPOINT ? 'set' : 'not set',
-    KOL_ADDRESSES: process.env.KOL_ADDRESSES?.split(',')?.filter(Boolean)?.length > 0 ? 'set' : 'not set'
+    EMAIL_USER: process.env.EMAIL_USER ? 'set' : 'not set',
+    EMAIL_PASS: process.env.EMAIL_PASS ? 'set' : 'not set',
+    EMAIL_TO: process.env.EMAIL_TO ? 'set' : 'not set'
 });
 
 // 配置 Solana 连接
@@ -61,8 +85,18 @@ if (KOL_ADDRESSES.length === 0) {
 const POOL_ADDRESSES = ['POOL_ADDRESS_11', 'POOL_ADDRESS_12']; // 替换为实际解析地址
 
 // 配置通知
-const EMAIL_USER = process.env.EMAIL_USER;
-const EMAIL_PASS = process.env.EMAIL_PASS;
+const EMAIL_USERS = [
+    process.env.EMAIL_USER_1,
+    process.env.EMAIL_USER_2,
+    process.env.EMAIL_USER_3
+].filter(Boolean);
+
+const EMAIL_PASSWORDS = [
+    process.env.EMAIL_PASS_1,
+    process.env.EMAIL_PASS_2,
+    process.env.EMAIL_PASS_3
+].filter(Boolean);
+
 const EMAIL_TO = process.env.EMAIL_TO;
 
 // 配置网络选项
@@ -183,18 +217,24 @@ async function checkBotStatus() {
 }
 
 // 初始化邮件发送器
-const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
-    auth: { user: EMAIL_USER, pass: EMAIL_PASS },
-    pool: true,
-    maxConnections: 5,
-    maxMessages: 100,
-    rateDelta: 1000,
-    rateLimit: 5,
-    tls: { rejectUnauthorized: false, ciphers: 'HIGH' },
-    debug: true
+const transporters = EMAIL_USERS.map((user, index) => {
+    return nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: { 
+            user: user, 
+            pass: EMAIL_PASSWORDS[index]
+        },
+        tls: {
+            rejectUnauthorized: false
+        },
+        debug: true,
+        logger: true,
+        connectionTimeout: 10000,
+        greetingTimeout: 10000,
+        socketTimeout: 10000
+    });
 });
 
 // 连接管理
@@ -447,14 +487,41 @@ async function parseTransaction(connection, signature) {
     }
 }
 
+// 解析代币元数据
+function parseMetadata(data) {
+    try {
+        // 跳过前8个字节（版本和密钥类型）
+        const offset = 8;
+        
+        // 解析名称
+        const nameLength = data.readUInt32LE(offset);
+        const nameOffset = offset + 4;
+        const name = data.slice(nameOffset, nameOffset + nameLength).toString('utf8');
+        
+        // 解析符号
+        const symbolLength = data.readUInt32LE(nameOffset + nameLength);
+        const symbolOffset = nameOffset + nameLength + 4;
+        const symbol = data.slice(symbolOffset, symbolOffset + symbolLength).toString('utf8');
+        
+        return {
+            name: name,
+            symbol: symbol
+        };
+    } catch (error) {
+        logger.error('解析代币元数据失败:', error.message);
+        return null;
+    }
+}
+
 // 监控地址
 async function monitorAddresses() {
-    let connection;
     try {
-        connection = await waitForConnection();
-        logger.info('成功建立 Solana 连接');
-
-        // 收集所有需要监控的地址
+        logger.info('开始监控地址...');
+        
+        // 创建 Solana 连接
+        const connection = await createSolanaConnection();
+        
+        // 将地址转换为 PublicKey 对象
         const publicKeys = [];
         for (const address of KOL_ADDRESSES) {
             try {
@@ -509,7 +576,7 @@ async function monitorAddresses() {
                                 logger.info(`代币变化: ${txInfo.tokenChange}`);
 
                                 // 发送通知
-                                await sendNotifications(txInfo);
+                                await sendNotifications(txInfo, connection);
 
                             } catch (error) {
                                 logger.error(`处理交易日志时出错: ${error.message}`);
@@ -540,6 +607,58 @@ async function monitorAddresses() {
     }
 }
 
+// 重置计数器
+function resetCounters() {
+    const now = Date.now();
+    
+    // 每分钟重置
+    if (now - requestCount.lastMinuteReset >= 60000) {
+        requestCount.minute = 0;
+        requestCount.lastMinuteReset = now;
+    }
+    
+    // 每天重置
+    if (now - requestCount.lastDailyReset >= 86400000) {
+        requestCount.daily = 0;
+        requestCount.lastDailyReset = now;
+    }
+}
+
+// 检查是否超过限制
+function checkLimits() {
+    resetCounters();
+    
+    if (requestCount.daily >= REQUEST_LIMIT.dailyLimit) {
+        throw new Error('已达到每日请求限制');
+    }
+    
+    if (requestCount.minute >= REQUEST_LIMIT.minuteLimit) {
+        throw new Error('已达到每分钟请求限制');
+    }
+    
+    return true;
+}
+
+// 限制请求频率
+async function rateLimitedFetch(url, options) {
+    checkLimits();
+    
+    const now = Date.now();
+    const timeSinceLastRequest = now - lastRequestTime;
+    
+    // 如果距离上次请求时间小于最小间隔，等待
+    if (timeSinceLastRequest < REQUEST_LIMIT.rateWindow / REQUEST_LIMIT.rateLimit) {
+        const waitTime = (REQUEST_LIMIT.rateWindow / REQUEST_LIMIT.rateLimit) - timeSinceLastRequest;
+        await new Promise(resolve => setTimeout(resolve, waitTime));
+    }
+
+    lastRequestTime = Date.now();
+    requestCount.daily++;
+    requestCount.minute++;
+    
+    return fetch(url, options);
+}
+
 // 获取代币市值
 async function getTokenMarketCap(connection, tokenMint) {
     try {
@@ -556,58 +675,55 @@ async function getTokenMarketCap(connection, tokenMint) {
         const totalSupply = supply / Math.pow(10, decimals);
         logger.info(`代币供应量: ${totalSupply} (原始值: ${supply}, 小数位: ${decimals})`);
 
-        // 2. 获取代币价格
-        const BIRDEYE_API_URL = 'https://public-api.birdeye.so';
-        const BIRDEYE_API_KEY = process.env.BIRDEYE_API_KEY;
-
-        if (!BIRDEYE_API_KEY) {
-            throw new Error('未设置 BIRDEYE_API_KEY 环境变量');
+        // 2. 使用 DexScreener API 获取代币价格和市值信息
+        const dexscreenerUrl = `https://api.dexscreener.com/latest/dex/tokens/${tokenMint}`;
+        const response = await fetch(dexscreenerUrl);
+        
+        if (!response.ok) {
+            throw new Error(`DexScreener API 请求失败: ${response.status} ${response.statusText}`);
         }
 
-        const response = await fetch(`${BIRDEYE_API_URL}/defi/price?address=${tokenMint}`, {
-            method: 'GET',
-            headers: {
-                'accept': 'application/json',
-                'x-chain': 'solana',
-                'X-API-KEY': BIRDEYE_API_KEY
-            }
+        const dexscreenerData = await response.json();
+        
+        if (!dexscreenerData.pairs || dexscreenerData.pairs.length === 0) {
+            throw new Error('未找到代币交易对信息');
+        }
+
+        const tokenSymbol = dexscreenerData.pairs[0]?.baseToken?.symbol || 'Unknown';
+        const priceUsd = dexscreenerData.pairs[0]?.priceUsd || 0;
+        const change24h = dexscreenerData.pairs[0]?.priceChange?.h24 || 0;
+        const marketCap = dexscreenerData.pairs[0]?.marketCap || 0;
+
+        // 格式化市值
+        const formatMarketCap = (value) => {
+            if (value >= 1e9) return `$${(value / 1e9).toFixed(2)}B`;
+            if (value >= 1e6) return `$${(value / 1e6).toFixed(2)}M`;
+            if (value >= 1e3) return `$${(value / 1e3).toFixed(2)}K`;
+            return `$${value.toFixed(2)}`;
+        };
+
+        // 格式化供应量
+        const formattedSupply = totalSupply.toLocaleString('en-US', {
+            maximumFractionDigits: 2
         });
 
-        if (!response.ok) {
-            throw new Error(`Birdeye API 请求失败: ${response.status}`);
-        }
-
-        const data = await response.json();
-        logger.info(`Birdeye API 响应数据: ${JSON.stringify(data)}`);
-
-        if (!data.success || !data.data?.value) {
-            throw new Error('无法获取代币价格');
-        }
-
-        const price = data.data.value;
-        const priceChange24h = data.data.priceChange24h;
-        const updateTime = data.data.updateHumanTime;
-
-        // 3. 计算市值
-        const marketCap = (price * totalSupply) / 1e6; // 转换为 M
-        logger.info(`代币信息: 价格=$${price}, 供应量=${totalSupply}, 市值=$${marketCap}M`);
-
         return {
-            price: price,
-            supply: totalSupply,
-            marketCap: marketCap.toFixed(2),
-            priceChange24h: priceChange24h,
-            updateTime: updateTime
+            symbol: tokenSymbol,
+            price: priceUsd,
+            priceChange24h: change24h,
+            supply: formattedSupply,
+            marketCap: formatMarketCap(marketCap),
+            updateTime: new Date().toISOString()
         };
 
     } catch (error) {
-        logger.error(`获取代币市值失败: ${error.message}`);
+        logger.error(`获取代币市值信息失败: ${error.message}`);
         return null;
     }
 }
 
 // 发送通知
-async function sendNotifications(txInfo) {
+async function sendNotifications(txInfo, connection) {
     const MAX_RETRIES = 3;
     const RETRY_DELAY = 5000;
 
@@ -618,7 +734,7 @@ async function sendNotifications(txInfo) {
             return;
         }
 
-          // 如果没有代币合约信息，不发送通知
+        // 如果没有代币合约信息，不发送通知
         if (!txInfo.tokenContract || txInfo.tokenChange === '0') {
             logger.info('没有代币合约信息，跳过通知');
             return;
@@ -646,22 +762,26 @@ async function sendNotifications(txInfo) {
             const tokenAmount = parseFloat(txInfo.tokenChange);
             const isBuy = txInfo.operation === '买入';
             message += `\n代币变化：\n`;
+            
+            // 获取代币市值信息
+            const marketData = await getTokenMarketCap(connection, txInfo.tokenContract);
+            if (marketData && marketData.symbol) {
+                message += `-代币符号：${marketData.symbol}\n`;
+            }
+            
             message += `- 代币合约：${txInfo.tokenContract}\n`;
             message += `  数量：${Math.abs(tokenAmount).toLocaleString(undefined, {
                 minimumFractionDigits: 0,
                 maximumFractionDigits: 9
             })} ${isBuy ? '(买入)' : '(卖出)'}\n`;
 
-            // 获取代币市值信息
-            const connection = await createConnection();
-            const marketData = await getTokenMarketCap(connection, txInfo.tokenContract);
-            
+            // 添加代币市值信息
             if (marketData) {
                 message += `\n代币市值信息：\n`;
                 message += `- 当前价格：$${marketData.price}\n`;
                 message += `- 24h涨跌幅：${marketData.priceChange24h.toFixed(2)}%\n`;
-                message += `- 总供应量：${marketData.supply.toLocaleString()}\n`;
-                message += `- 市值：$${marketData.marketCap}M\n`;
+                message += `- 总供应量：${marketData.supply}\n`;
+                message += `- 市值：${marketData.marketCap}\n`;
                 message += `- 数据更新时间：${marketData.updateTime}\n`;
             }
         }
@@ -700,24 +820,35 @@ async function sendNotifications(txInfo) {
         }
 
         // 发送邮件通知
-        if (EMAIL_USER && EMAIL_PASS && EMAIL_TO) {
+        if (EMAIL_USERS.length > 0 && EMAIL_PASSWORDS.length > 0 && EMAIL_TO) {
             try {
                 logger.info('开始发送邮件通知...');
                 // 将多个邮件地址分割成数组
                 const emailRecipients = EMAIL_TO.split(',').map(email => email.trim());
                 
                 const mailOptions = {
-                    from: EMAIL_USER,
+                    from: EMAIL_USERS[0], // 使用第一个邮箱作为发件人
                     to: emailRecipients,
                     subject: `🔔 KOL交易监控 - ${nickname} ${txInfo.operation}`,
                     text: message,
                     html: message.replace(/\n/g, '<br>')
                 };
 
-                const info = await transporter.sendMail(mailOptions);
-                logger.info('✅ 邮件通知发送成功');
-                logger.info(`邮件 ID: ${info.messageId}`);
-                logger.info(`接收地址: ${emailRecipients.join(', ')}`);
+                // 尝试使用每个邮件发送器发送邮件
+                for (let i = 0; i < transporters.length; i++) {
+                    try {
+                        const info = await transporters[i].sendMail(mailOptions);
+                        logger.info(`✅ 邮件通知发送成功 (使用 ${EMAIL_USERS[i]})`);
+                        logger.info(`邮件 ID: ${info.messageId}`);
+                        logger.info(`接收地址: ${emailRecipients.join(', ')}`);
+                        break; // 如果发送成功，跳出循环
+                    } catch (error) {
+                        logger.error(`❌ 使用 ${EMAIL_USERS[i]} 发送邮件失败: ${error.message}`);
+                        if (i === transporters.length - 1) {
+                            throw error; // 如果所有发送器都失败，抛出最后一个错误
+                        }
+                    }
+                }
             } catch (error) {
                 logger.error('❌ 邮件通知发送失败:', error.message);
             }
@@ -765,7 +896,7 @@ async function testTransactionParse(signature) {
     const txInfo = await parseTransaction(connection, signature);
     if (txInfo) {
         logger.info('解析结果:', JSON.stringify(txInfo, null, 2));
-        await sendNotifications(txInfo);
+        await sendNotifications(txInfo, connection);
     } else {
         logger.error('无法解析交易');
     }
@@ -826,7 +957,7 @@ async function main() {
             dexType: null,
             operation: `❌ 监控程序出错\n时间: ${new Date().toLocaleString()}\n错误: ${error.message}`
         };
-        await sendNotifications(errorMessage);
+        await sendNotifications(errorMessage, connection);
         process.exit(1);
     }
 }

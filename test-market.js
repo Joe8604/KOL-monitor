@@ -149,126 +149,81 @@ async function getTokenMarketCap(connection, tokenMint) {
 
         const supply = mintInfo.value.data.parsed.info.supply;
         const decimals = mintInfo.value.data.parsed.info.decimals;
-        const totalSupply = supply / Math.pow(10, decimals);
-        logger.info(`代币供应量: ${totalSupply} (原始值: ${supply}, 小数位: ${decimals})`);
+        const tokenTotalSupply = supply / Math.pow(10, decimals);
+        logger.info(`代币供应量: ${tokenTotalSupply} (原始值: ${supply}, 小数位: ${decimals})`);
 
-        // 2. 获取代币价格
-        let price = null;
-        const dataSources = [
-            {
-                name: 'Birdeye',
-                url: `${BIRDEYE_API_URL}/defi/price`,
-                headers: {
-                    'accept': 'application/json',
-                    'x-chain': 'solana',
-                    'X-API-KEY': BIRDEYE_API_KEY
-                },
-                params: {
-                    address: tokenMint
-                },
-                getPrice: (data) => {
-                    logger.info(`Birdeye API 响应数据: ${JSON.stringify(data)}`);
-                    if (data.success === false) {
-                        logger.warn(`Birdeye API 返回错误: ${data.message}`);
-                        return null;
-                    }
-                    return data.data?.value || null;
-                }
-            },
-            {
-                name: 'CoinGecko',
-                url: `https://api.coingecko.com/api/v3/simple/token_price/solana`,
-                params: {
-                    contract_addresses: tokenMint,
-                    vs_currencies: 'usd'
-                },
-                getPrice: (data) => data[tokenMint.toLowerCase()]?.usd || null
-            },
-            {
-                name: 'Raydium',
-                url: `https://api.raydium.io/v2/main/price?ids=${tokenMint}`,
-                getPrice: (data) => data[tokenMint]?.price || null
-            },
-            {
-                name: 'Jupiter',
-                url: 'https://quote-api.jup.ag/v4/tokens',
-                getPrice: (data) => data.tokens[tokenMint]?.price || null
+        // 2. 获取代币符号
+        logger.info('尝试从 DexScreener 获取代币符号...');
+        const dexscreenerUrl = `https://api.dexscreener.com/latest/dex/tokens/${tokenMint}`;
+        logger.info(`发送请求到 DexScreener: ${dexscreenerUrl}`);
+
+        try {
+            const dexscreenerResponse = await fetch(dexscreenerUrl);
+            logger.info(`DexScreener API 响应状态: ${dexscreenerResponse.status}`);
+
+            if (!dexscreenerResponse.ok) {
+                const errorText = await dexscreenerResponse.text();
+                logger.error(`DexScreener API 错误响应: ${errorText}`);
+                throw new Error(`DexScreener API 请求失败: ${dexscreenerResponse.status} ${dexscreenerResponse.statusText}`);
             }
-        ];
 
-        for (const source of dataSources) {
-            try {
-                logger.info(`尝试从 ${source.name} 获取代币价格...`);
+            const dexscreenerData = await dexscreenerResponse.json();
+            logger.info(`DexScreener API 响应数据: ${JSON.stringify(dexscreenerData, null, 2)}`);
 
-                // 配置 fetch 选项
-                const fetchOptions = {
-                    method: 'GET',
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json',
-                        ...(source.headers || {})
-                    }
-                };
+            const tokenSymbol = dexscreenerData.pairs?.[0]?.baseToken?.symbol || 'Unknown';
+            const priceUsd = dexscreenerData.pairs?.[0]?.priceUsd || 0;
+            const volume24h = dexscreenerData.pairs?.[0]?.volume?.h24 || 0;
+            const liquidity = dexscreenerData.pairs?.[0]?.liquidity?.usd || 0;
+            const marketCap = dexscreenerData.pairs?.[0]?.marketCap || 0;
+            const change24h = dexscreenerData.pairs?.[0]?.priceChange?.h24 || 0;
+            const totalSupply = dexscreenerData.pairs?.[0]?.baseToken?.totalSupply || 0;
+            const decimals = dexscreenerData.pairs?.[0]?.baseToken?.decimals || 9;
 
-                // 构建请求 URL
-                let url = source.url;
-                if (source.params) {
-                    const params = new URLSearchParams(source.params);
-                    url += `?${params.toString()}`;
-                }
+            // 格式化市值
+            const formatMarketCap = (value) => {
+                if (value >= 1e9) return `$${(value / 1e9).toFixed(2)}B`;
+                if (value >= 1e6) return `$${(value / 1e6).toFixed(2)}M`;
+                if (value >= 1e3) return `$${(value / 1e3).toFixed(2)}K`;
+                return `$${value.toFixed(2)}`;
+            };
 
-                logger.info(`发送请求到 ${source.name}: ${url}`);
-                const response = await fetch(url, fetchOptions);
+            // 格式化供应量
+            const formattedSupply = (totalSupply / Math.pow(10, decimals)).toLocaleString('en-US', {
+                maximumFractionDigits: 2
+            });
 
-                logger.info(`API 响应状态: ${response.status}`);
-                if (!response.ok) {
-                    logger.warn(`从 ${source.name} 获取价格失败: HTTP ${response.status}`);
-                    const errorData = await response.text();
-                    logger.warn(`API 响应数据: ${errorData}`);
-                    continue;
-                }
+            console.log('\n代币市值信息:');
+            console.log(`- 代币符号: ${tokenSymbol}`);
+            console.log(`- 当前价格: $${priceUsd}`);
+            console.log(`- 24h涨跌幅: ${change24h > 0 ? '+' : ''}${change24h.toFixed(2)}%`);
+            console.log(`- 总供应量: ${formattedSupply}`);
+            console.log(`- 市值: ${formatMarketCap(marketCap)}`);
+            console.log(`- 数据更新时间: ${new Date().toISOString()}`);
 
-                const data = await response.json();
-                price = source.getPrice(data);
+            const result = {
+                symbol: tokenSymbol,
+                price: priceUsd,
+                change24h: change24h,
+                totalSupply: formattedSupply,
+                marketCap: formatMarketCap(marketCap),
+                timestamp: new Date().toISOString()
+            };
 
-                if (price) {
-                    logger.info(`从 ${source.name} 获取到代币价格: $${price}`);
-                    break;
-                } else {
-                    logger.warn(`从 ${source.name} 获取的价格数据无效: ${JSON.stringify(data)}`);
-                }
-            } catch (error) {
-                logger.error(`从 ${source.name} 获取代币价格失败: ${error.message}`);
-                continue;
-            }
-        }
+            // 更新缓存
+            tokenPriceCache.set(tokenMint, {
+                data: result,
+                timestamp: Date.now()
+            });
 
-        if (!price) {
-            logger.warn('无法从任何数据源获取代币价格');
+            return result;
+
+        } catch (error) {
+            logger.error(`获取代币信息失败: ${error.message}`);
             return null;
         }
 
-        // 3. 计算市值
-        const marketCap = (price * totalSupply) / 1e6; // 转换为 M
-        logger.info(`代币信息: 价格=$${price}, 供应量=${totalSupply}, 市值=$${marketCap}M`);
-
-        const result = {
-            price: price,
-            supply: totalSupply,
-            marketCap: marketCap.toFixed(2)
-        };
-
-        // 更新缓存
-        tokenPriceCache.set(tokenMint, {
-            data: result,
-            timestamp: Date.now()
-        });
-
-        return result;
-
     } catch (error) {
-        logger.error(`获取代币市值失败: ${error.message}`);
-        logger.error(`错误堆栈: ${error.stack}`);
+        logger.error(`获取代币信息失败: ${error.message}`);
         return null;
     }
 }
@@ -288,7 +243,7 @@ async function getTokenMarketData() {
             console.log(`- 代币地址: ${tokenMintAddress}`);
             console.log(`- 当前价格: $${marketData.price}`);
             console.log(`- 总供应量: ${marketData.supply.toLocaleString()}`);
-            console.log(`- 市值: $${marketData.marketCap}M`);
+            console.log(`- 市值: $${marketData.marketCap.toLocaleString()}`);
         } else {
             console.log('\n无法获取代币市值信息');
         }
