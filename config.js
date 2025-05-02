@@ -2,7 +2,7 @@
 const config = {
     telegram: {
         botToken: process.env.TELEGRAM_BOT_TOKEN,
-        chatId: process.env.TELEGRAM_CHAT_ID
+        chatIds: process.env.TELEGRAM_CHAT_IDS?.split(',')?.filter(Boolean) || []
     },
     solana: {
         rpcEndpoint: process.env.RPC_ENDPOINT,
