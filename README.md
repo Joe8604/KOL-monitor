@@ -15,8 +15,8 @@
    - `EMAIL_PASS1`: 邮件1发送密码
    - `EMAIL_USER2`: 邮件2发送账号
    - `EMAIL_PASS2`: 邮件2发送密码
-   - `EMAIL_USER3`: 邮件1发送账号
-   - `EMAIL_PASS3`: 邮件1发送密码
+   - `EMAIL_USER3`: 邮件3发送账号
+   - `EMAIL_PASS3`: 邮件3发送密码
    - `EMAIL_TO`: 接收通知的邮箱地址
 
 ## 本地开发
