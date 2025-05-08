@@ -405,3 +405,396 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
 2025-04-30 20:24:08 [ERROR] Birdeye API 错误响应: {"success":false,"message":"Your API key is either suspended or lacks sufficient permissions to access this resource. Please check your account status or upgrade to a higher plan. For assistance, contact bds.support@birdeye.so."}
 2025-04-30 20:24:08 [ERROR] 获取代币信息失败: Birdeye API 请求失败: 401 Unauthorized
 2025-04-30 20:32:16 [ERROR] 获取代币信息失败: Cannot read properties of undefined (reading 'toLocaleString')
+2025-05-01 10:55:30 [ERROR] 测量网络延迟失败 (第 1 次): 连接超时
+2025-05-01 10:55:37 [ERROR] 测量网络延迟失败 (第 2 次): 连接超时
+2025-05-01 10:55:44 [ERROR] 测量网络延迟失败 (第 3 次): 连接超时
+2025-05-01 10:55:44 [ERROR] 网络连接测试失败 (第 1 次): 连接超时
+2025-05-01 10:55:51 [ERROR] 测量网络延迟失败 (第 1 次): 连接超时
+2025-05-01 11:30:57 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:33:45 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:33:47 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:33:50 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:33:51 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:33:53 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:33:54 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:33:56 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:33:57 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:34:06 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:41:19 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:41:21 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:41:23 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:41:28 [ERROR] 解析交易失败: fetch failed
+2025-05-01 11:47:55 [ERROR] 连接测试失败:
+2025-05-01 11:47:58 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-01 11:50:40 [ERROR] Bot 状态检查失败: request to https://api.telegram.org/bot7928666221:[REDACTED]/getMe failed, reason: Client network socket disconnected before secure TLS connection was established
+2025-05-01 11:55:44 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:55:45 [ERROR] 获取代币市值信息失败: request to https://api.dexscreener.com/latest/dex/tokens/So11111111111111111111111111111111111111112 failed, reason: Client network socket disconnected before secure TLS connection was established
+2025-05-01 11:55:46 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 11:57:43 [ERROR] 发送通知失败: Bot not initialized
+2025-05-01 12:10:10 [ERROR] 端点 https://api.telegram.org 请求失败: fetch failed
+2025-05-01 12:10:13 [ERROR] 端点 https://api1.telegram.org 请求失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-05-01 12:10:15 [ERROR] 端点 https://api2.telegram.org 请求失败: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+2025-05-01 12:10:15 [ERROR] Token状态检查失败 (第 1 次): 所有API端点均不可用
+2025-05-01 12:10:30 [ERROR] HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-05-01 12:10:35 [ERROR] HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-05-01 12:10:35 [ERROR] HTTPS请求错误: socket hang up
+2025-05-01 12:10:47 [ERROR] HTTPS连接失败 (第 2 次): HTTPS请求超时
+2025-05-01 12:10:47 [ERROR] HTTPS请求错误: socket hang up
+2025-05-01 12:13:13 [ERROR] HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-05-01 12:13:23 [ERROR] HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-05-01 12:13:23 [ERROR] HTTPS请求错误: socket hang up
+2025-05-01 12:19:25 [ERROR] HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-05-01 12:19:40 [ERROR] HTTPS连接失败 (第 1 次): HTTPS请求超时
+2025-05-01 12:19:40 [ERROR] HTTPS请求错误: socket hang up
+2025-05-01 12:20:22 [ERROR] getMe测试失败: request to https://api.telegram.org/bot7928666221:[REDACTED]/getMe failed, reason: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:24:37 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:24:37 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:01 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:01 [ERROR] HTTPS连接失败 (第 2 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:25 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:25 [ERROR] HTTPS连接失败 (第 3 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:50 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:50 [ERROR] HTTPS连接失败 (第 4 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:58 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:58 [ERROR] HTTPS连接失败 (第 5 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:25:58 [ERROR] 网络连接测试失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:26:42 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:26:42 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:27:06 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:27:06 [ERROR] HTTPS连接失败 (第 2 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:27:29 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:27:29 [ERROR] HTTPS连接失败 (第 3 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:27:53 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:27:53 [ERROR] HTTPS连接失败 (第 4 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:28:16 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:28:16 [ERROR] HTTPS连接失败 (第 5 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:28:16 [ERROR] 网络连接测试失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:28:38 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:28:38 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:29:01 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:29:01 [ERROR] HTTPS连接失败 (第 2 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:29:25 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:29:25 [ERROR] HTTPS连接失败 (第 3 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:29:49 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:29:49 [ERROR] HTTPS连接失败 (第 4 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:30:12 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:30:12 [ERROR] HTTPS连接失败 (第 5 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:30:12 [ERROR] 网络连接测试失败 (第 2 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:30:36 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:30:36 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:30:59 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:30:59 [ERROR] HTTPS连接失败 (第 2 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:31:22 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:31:22 [ERROR] HTTPS连接失败 (第 3 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:48:03 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:48:03 [ERROR] HTTPS连接失败 (第 4 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:48:49 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:48:49 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:49:13 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:49:13 [ERROR] HTTPS连接失败 (第 2 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:49:36 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:49:36 [ERROR] HTTPS连接失败 (第 3 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:50:00 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:50:00 [ERROR] HTTPS连接失败 (第 4 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:50:23 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:50:23 [ERROR] HTTPS连接失败 (第 5 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:50:23 [ERROR] 网络连接测试失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:50:45 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 12:50:45 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:11:40 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:11:40 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:03 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:03 [ERROR] HTTPS连接失败 (第 2 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:26 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:26 [ERROR] HTTPS连接失败 (第 3 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:34 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:34 [ERROR] HTTPS连接失败 (第 4 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:57 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:57 [ERROR] HTTPS连接失败 (第 5 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:12:57 [ERROR] 网络连接测试失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:13:19 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:13:19 [ERROR] HTTPS连接失败 (第 1 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:13:43 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:13:43 [ERROR] HTTPS连接失败 (第 2 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:14:06 [ERROR] HTTPS请求错误: Client network socket disconnected before secure TLS connection was established
+2025-05-01 18:14:06 [ERROR] HTTPS连接失败 (第 3 次): Client network socket disconnected before secure TLS connection was established
+2025-05-01 21:06:27 [ERROR] 程序启动失败: logger is not defined
+2025-05-01 21:35:07 [ERROR] getMe 测试失败: Cannot read properties of null (reading 'telegram')
+2025-05-01 21:39:44 [ERROR] 连接测试失败:
+2025-05-01 21:39:49 [ERROR] 连接测试失败:
+2025-05-01 21:40:09 [ERROR] 连接测试失败:
+2025-05-01 21:40:29 [ERROR] 新节点 https://api.mainnet-beta.solana.com 测试失败: fetch failed
+2025-05-01 21:40:44 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-01 21:44:30 [ERROR] 发送通知失败: Bot未初始化
+2025-05-01 21:45:06 [ERROR] 解析交易失败: Cannot read properties of null (reading 'toString')
+2025-05-01 21:46:42 [ERROR] 发送通知失败: Bot未初始化
+2025-05-01 21:47:57 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 21:47:57 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:04:08 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-01 22:04:08 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:04:08 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:05:19 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:05:19 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:14:42 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:14:42 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:15:02 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:15:02 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:17:06 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-01 22:17:06 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:17:06 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:17:09 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:17:09 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:17:10 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:17:10 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:19:45 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-01 22:19:45 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:19:45 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:21:36 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-01 22:21:36 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:21:36 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:21:39 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:21:39 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:21:42 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:21:42 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:21:56 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:21:56 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:22:11 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:22:11 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:22:54 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:22:54 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:23:24 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:23:24 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:23:41 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:23:41 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:23:48 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:23:48 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:24:14 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:24:14 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:24:25 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:24:25 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:24:37 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-01 22:24:37 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:24:37 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:25:05 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:25:05 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:33:55 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:33:55 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:38:39 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-01 22:38:39 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:38:39 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:39:46 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:39:46 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:39:48 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:39:48 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:40:06 [ERROR] 发送Telegram消息失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:40:06 [ERROR] 发送通知失败: Cannot read properties of undefined (reading 'telegram')
+2025-05-01 22:52:36 [ERROR] 解析交易失败: Cannot read properties of null (reading 'toString')
+2025-05-02 00:03:57 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-02 00:33:39 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-02 00:33:41 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e0bb0f374sm8866815ad.101 - gsmtp
+2025-05-02 00:33:45 [ERROR] 发送交易通知失败 (1584537074): 400: Bad Request: can't parse entities: Tag "span" must have class "tg-spoiler" at byte offset 100
+2025-05-02 00:33:45 [ERROR] 发送交易通知失败 (-4627711652): 400: Bad Request: can't parse entities: Tag "span" must have class "tg-spoiler" at byte offset 100
+2025-05-02 00:33:59 [ERROR] 获取代币市值信息失败: 未找到代币交易对信息
+2025-05-02 00:34:01 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a4748e7fcsm1099033a91.21 - gsmtp
+2025-05-02 00:34:06 [ERROR] 发送交易通知失败 (1584537074): 400: Bad Request: can't parse entities: Tag "span" must have class "tg-spoiler" at byte offset 103
+2025-05-02 00:34:06 [ERROR] 发送交易通知失败 (-4627711652): 400: Bad Request: can't parse entities: Tag "span" must have class "tg-spoiler" at byte offset 103
+2025-05-02 00:34:48 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 41be03b00d2f7-b1f9d4799e0sm950166a12.14 - gsmtp
+2025-05-02 00:34:53 [ERROR] 发送交易通知失败 (1584537074): 400: Bad Request: can't parse entities: Tag "span" must have class "tg-spoiler" at byte offset 103
+2025-05-02 00:34:53 [ERROR] 发送交易通知失败 (-4627711652): 400: Bad Request: can't parse entities: Tag "span" must have class "tg-spoiler" at byte offset 103
+2025-05-02 00:39:13 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e0bc86d8esm8772835ad.231 - gsmtp
+2025-05-02 00:49:47 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a4745f945sm1124786a91.4 - gsmtp
+2025-05-02 00:49:55 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e0bb0496bsm9062485ad.18 - gsmtp
+2025-05-02 00:50:59 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a474921c3sm1120160a91.29 - gsmtp
+2025-05-02 00:52:50 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e0bb0752asm9101835ad.43 - gsmtp
+2025-05-02 00:52:57 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e0bb051c7sm9105865ad.42 - gsmtp
+2025-05-02 01:09:37 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d2e1a72fcca58-7404ef0d8f5sm1058915b3a.38 - gsmtp
+2025-05-02 01:11:13 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e0bc86bc5sm9147865ad.219 - gsmtp
+2025-05-02 01:11:33 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a4745f92csm1143084a91.6 - gsmtp
+2025-05-02 01:18:01 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d2e1a72fcca58-7404eeb138fsm1068598b3a.32 - gsmtp
+2025-05-02 01:25:55 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e0bc7b097sm9304395ad.179 - gsmtp
+2025-05-02 01:31:16 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e0bc7b1acsm9348335ad.182 - gsmtp
+2025-05-02 09:37:57 [ERROR] 测试失败: fetch failed
+2025-05-02 09:39:25 [ERROR] 测试失败: tx.transaction.message.isAccountSigner is not a function
+2025-05-02 10:33:48 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e10870d64sm3622025ad.106 - gsmtp
+2025-05-02 10:34:16 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a4747719dsm1712704a91.19 - gsmtp
+2025-05-02 10:34:18 [ERROR] 获取代币市值信息失败: request to https://api.dexscreener.com/latest/dex/tokens/So11111111111111111111111111111111111111112 failed, reason: Client network socket disconnected before secure TLS connection was established
+2025-05-02 10:34:22 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d2e1a72fcca58-74058dee10bsm418565b3a.76 - gsmtp
+2025-05-02 11:12:14 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a3480f0aasm4984215a91.35 - gsmtp
+2025-05-02 11:20:03 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 41be03b00d2f7-b1fa82428ebsm413409a12.14 - gsmtp
+2025-05-02 11:34:22 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e1085bddcsm4204835ad.63 - gsmtp
+2025-05-02 11:50:08 [ERROR] 连接测试失败:
+2025-05-02 11:50:09 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 11:50:22 [ERROR] 解析交易失败: fetch failed
+2025-05-02 11:53:17 [ERROR] 连接测试失败:
+2025-05-02 11:53:18 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 12:03:28 [ERROR] 连接测试失败:
+2025-05-02 12:03:28 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 12:14:39 [ERROR] 解析交易失败: fetch failed
+2025-05-02 12:14:39 [ERROR] 连接测试失败:
+2025-05-02 12:14:40 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 12:19:48 [ERROR] 连接测试失败:
+2025-05-02 12:19:48 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 12:22:55 [ERROR] 连接测试失败:
+2025-05-02 12:23:00 [ERROR] 连接测试失败:
+2025-05-02 12:23:16 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 12:33:25 [ERROR] 连接测试失败:
+2025-05-02 12:33:25 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 12:47:48 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d2e1a72fcca58-74059064baesm591261b3a.144 - gsmtp
+2025-05-02 12:54:48 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e10940618sm5181755ad.241 - gsmtp
+2025-05-02 12:54:55 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e1085da6dsm5244405ad.81 - gsmtp
+2025-05-02 12:55:13 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d2e1a72fcca58-74058d7c166sm602417b3a.22 - gsmtp
+2025-05-02 13:00:46 [ERROR] 连接测试失败:
+2025-05-02 13:00:47 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 13:06:17 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a3480f0fcsm4650388a91.32 - gsmtp
+2025-05-02 13:07:28 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a3474894fsm4652573a91.18 - gsmtp
+2025-05-02 13:17:46 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 41be03b00d2f7-b1fa85e4cabsm558579a12.47 - gsmtp
+2025-05-02 13:18:30 [ERROR] 获取代币市值信息失败: request to https://api.dexscreener.com/latest/dex/tokens/So11111111111111111111111111111111111111112 failed, reason: Client network socket disconnected before secure TLS connection was established
+2025-05-02 13:18:34 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a3476f51asm4681246a91.22 - gsmtp
+2025-05-02 13:19:11 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 98e67ed59e1d1-30a3480ea0dsm4636340a91.37 - gsmtp
+2025-05-02 13:21:19 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d2e1a72fcca58-74058df2a6csm645523b3a.81 - gsmtp
+2025-05-02 13:27:03 [ERROR] 连接测试失败:
+2025-05-02 13:27:03 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 13:33:35 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d2e1a72fcca58-740590a5a99sm656346b3a.180 - gsmtp
+2025-05-02 13:33:40 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e10845946sm5900625ad.3 - gsmtp
+2025-05-02 13:41:14 [ERROR] 连接测试失败:
+2025-05-02 13:41:14 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 13:44:10 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d2e1a72fcca58-7405902109dsm700080b3a.106 - gsmtp
+2025-05-02 13:48:34 [ERROR] 邮件发送失败 (发件人: czhu65694@gmail.com): Data command failed: 550-5.4.5 Daily user sending limit exceeded. For more information on Gmail
+550-5.4.5 sending limits go to
+550 5.4.5  https://support.google.com/a/answer/166852 d9443c01a7336-22e10915a9esm5980565ad.209 - gsmtp
+2025-05-02 13:51:23 [ERROR] 连接测试失败:
+2025-05-02 13:51:24 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 14:45:58 [ERROR] 连接测试失败:
+2025-05-02 14:45:58 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 14:50:05 [ERROR] 连接测试失败:
+2025-05-02 14:50:05 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 14:51:10 [ERROR] 连接测试失败:
+2025-05-02 14:51:11 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 14:52:16 [ERROR] 连接测试失败:
+2025-05-02 14:52:16 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 14:55:22 [ERROR] 连接测试失败:
+2025-05-02 14:55:27 [ERROR] 连接测试失败:
+2025-05-02 14:55:43 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-02 15:01:53 [ERROR] 连接测试失败:
+2025-05-02 15:01:53 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 11:30:26 [ERROR] TCP连接失败 (第 1 次): 连接超时
+2025-05-08 11:30:33 [ERROR] TCP连接失败 (第 2 次): 连接超时
+2025-05-08 12:47:18 [ERROR] 发送通知失败: config is not defined
+2025-05-08 12:49:00 [ERROR] 连接测试失败:
+2025-05-08 12:49:00 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 12:57:15 [ERROR] 解析交易失败: fetch failed
+2025-05-08 12:58:59 [ERROR] 解析交易失败: fetch failed
+2025-05-08 13:07:26 [ERROR] 解析交易失败: fetch failed
+2025-05-08 13:25:21 [ERROR] 解析交易失败: fetch failed
+2025-05-08 13:35:49 [ERROR] 连接测试失败:
+2025-05-08 13:35:50 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 13:39:11 [ERROR] 解析交易失败: fetch failed
+2025-05-08 14:23:19 [ERROR] 连接测试失败:
+2025-05-08 14:23:20 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 14:45:41 [ERROR] 连接测试失败:
+2025-05-08 14:45:42 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 15:00:01 [ERROR] 解析交易失败: fetch failed
+2025-05-08 15:00:51 [ERROR] 连接测试失败:
+2025-05-08 15:00:54 [ERROR] 连接测试失败:
+2025-05-08 15:01:09 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 15:16:39 [ERROR] 连接测试失败:
+2025-05-08 15:16:40 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 15:40:33 [ERROR] 获取代币市值信息失败: request to https://api.dexscreener.com/latest/dex/tokens/So11111111111111111111111111111111111111112 failed, reason: Client network socket disconnected before secure TLS connection was established
+2025-05-08 15:42:52 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:04:25 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:15:36 [ERROR] 连接测试失败:
+2025-05-08 16:15:41 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 16:16:26 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:17:27 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:17:58 [ERROR] 连接测试失败:
+2025-05-08 16:18:04 [ERROR] 连接测试失败:
+2025-05-08 16:18:30 [ERROR] 连接测试失败:
+2025-05-08 16:18:52 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 16:19:00 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:21:04 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:21:14 [ERROR] 连接测试失败:
+2025-05-08 16:21:15 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 16:23:20 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:23:27 [ERROR] 连接测试失败:
+2025-05-08 16:23:38 [ERROR] 连接测试失败:
+2025-05-08 16:24:03 [ERROR] 连接测试失败:
+2025-05-08 16:24:11 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:24:29 [ERROR] 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-05-08 16:24:55 [ERROR] 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-05-08 16:25:20 [ERROR] 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-05-08 16:25:37 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:25:46 [ERROR] 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-05-08 16:26:12 [ERROR] 新节点 https://solana-api.projectserum.com 测试失败: fetch failed
+2025-05-08 16:26:22 [ERROR] 连接测试失败:
+2025-05-08 16:26:48 [ERROR] 连接测试失败:
+2025-05-08 16:27:13 [ERROR] 新节点 https://api.mainnet-beta.solana.com 测试失败: fetch failed
+2025-05-08 16:27:14 [ERROR] 解析交易失败: fetch failed
+2025-05-08 16:27:37 [ERROR] 连接检查失败: Assignment to constant variable.

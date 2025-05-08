@@ -582,11 +582,13 @@ async function main() {
         
         // 检查环境变量
         const botToken = process.env.TELEGRAM_BOT_TOKEN;
-        const chatId = process.env.TELEGRAM_CHAT_ID;
+        const chatIds = process.env.TELEGRAM_CHAT_IDS?.split(',').map(id => id.trim()) || [];
         
-        if (!botToken || !chatId) {
-            throw new Error('请检查环境变量配置: TELEGRAM_BOT_TOKEN 和 TELEGRAM_CHAT_ID');
+        if (!botToken || chatIds.length === 0) {
+            throw new Error('请检查环境变量配置: TELEGRAM_BOT_TOKEN 和 TELEGRAM_CHAT_IDS');
         }
+        
+        logger.info(`检测到 ${chatIds.length} 个聊天ID: ${chatIds.join(', ')}`);
         
         // 验证Bot Token格式
         logger.info('验证Bot Token格式...');
@@ -653,32 +655,37 @@ async function main() {
             throw error;
         }
         
-        // 测试getChat
-        logger.info('测试getChat...');
-        try {
-            const chat = await bot.telegram.getChat(chatId);
-            logger.info('getChat成功:');
-            logger.info(JSON.stringify(chat, null, 2));
-        } catch (error) {
-            logger.error(`getChat测试失败: ${error.message}`);
-            throw error;
-        }
-        
-        // 测试sendMessage
-        logger.info('测试sendMessage...');
-        try {
-            const message = await bot.telegram.sendMessage(
-                chatId,
-                '🔔 这是一条测试消息\n时间: ' + new Date().toLocaleString(),
-                {
-                    parse_mode: 'HTML'
-                }
-            );
-            logger.info('sendMessage成功:');
-            logger.info(JSON.stringify(message, null, 2));
-        } catch (error) {
-            logger.error(`sendMessage测试失败: ${error.message}`);
-            throw error;
+        // 测试每个chatId的getChat和sendMessage
+        for (const chatId of chatIds) {
+            logger.info(`\n测试聊天ID: ${chatId}`);
+            
+            // 测试getChat
+            logger.info('测试getChat...');
+            try {
+                const chat = await bot.telegram.getChat(chatId);
+                logger.info('getChat成功:');
+                logger.info(JSON.stringify(chat, null, 2));
+            } catch (error) {
+                logger.error(`getChat测试失败: ${error.message}`);
+                continue; // 继续测试下一个chatId
+            }
+            
+            // 测试sendMessage
+            logger.info('测试sendMessage...');
+            try {
+                const message = await bot.telegram.sendMessage(
+                    chatId,
+                    '🔔 这是一条测试消息\n时间: ' + new Date().toLocaleString(),
+                    {
+                        parse_mode: 'HTML'
+                    }
+                );
+                logger.info('sendMessage成功:');
+                logger.info(JSON.stringify(message, null, 2));
+            } catch (error) {
+                logger.error(`sendMessage测试失败: ${error.message}`);
+                continue; // 继续测试下一个chatId
+            }
         }
         
         // 测试Bot命令

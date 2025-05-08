@@ -2,12 +2,17 @@ import { Telegraf } from 'telegraf';
 import { startMonitoring } from './solana.js';
 import logger from './logger.js';
 import config from './config.js';
-import { sleep } from './utils.js';
+import { 
+    sleep, 
+    validateBotToken, 
+    checkTokenStatus, 
+    testNetworkConnection 
+} from './utils.js';
 
 let bot;
 let botConnected = false;
 const MAX_RETRIES = 3;
-const RETRY_DELAY = 2000; // 2 seconds
+const RETRY_DELAY = 2000; // 2秒
 
 // 重试函数
 async function withRetry(fn, maxRetries = MAX_RETRIES, delay = RETRY_DELAY) {
@@ -17,7 +22,7 @@ async function withRetry(fn, maxRetries = MAX_RETRIES, delay = RETRY_DELAY) {
             return await fn();
         } catch (error) {
             lastError = error;
-            logger.warn(`Attempt ${i + 1} failed: ${error.message}`);
+            logger.warn(`尝试 ${i + 1} 失败: ${error.message}`);
             if (i < maxRetries - 1) {
                 await sleep(delay);
             }
@@ -28,101 +33,122 @@ async function withRetry(fn, maxRetries = MAX_RETRIES, delay = RETRY_DELAY) {
 
 export async function initializeBot() {
     try {
-        logger.info('Initializing Telegram bot...');
-        logger.info('Bot Token:', config.telegram.botToken ? 'set' : 'not set');
-        logger.info('Chat ID:', config.telegram.chatId ? 'set' : 'not set');
-
-        if (!config.telegram.botToken || !config.telegram.chatId) {
-            throw new Error('Telegram bot token or chat ID not configured');
+        logger.info('=== Telegram Bot 初始化开始 ===');
+        
+        // 检查环境变量
+        if (!config.telegram.botToken) {
+            throw new Error('请检查环境变量配置: TELEGRAM_BOT_TOKEN');
         }
-
-        bot = new Telegraf(config.telegram.botToken);
         
-        // Command handlers
-        bot.command('start', async (ctx) => {
-            try {
-                const user = ctx.from;
-                await ctx.replyWithHTML(
-                    `🤖 Hi ${user.first_name}! I'm your Solana monitoring bot. I will notify you of any transactions on the monitored addresses.`
-                );
-                await startMonitoring(bot, config.telegram.chatId);
-            } catch (error) {
-                logger.error(`Error in /start command: ${error.message}`);
-                await ctx.reply('Sorry, an error occurred while processing your request.');
-            }
-        });
+        if (!config.telegram.chatIds || config.telegram.chatIds.length === 0) {
+            throw new Error('请检查环境变量配置: TELEGRAM_CHAT_IDS');
+        }
         
-        bot.command('help', async (ctx) => {
-            try {
-                const helpText = `
-📚 Available commands:
-/start - Start the bot and begin monitoring
-/help - Show this help message
-/status - Check bot and network status
-`;
-                await ctx.reply(helpText);
-            } catch (error) {
-                logger.error(`Error in /help command: ${error.message}`);
-                await ctx.reply('Sorry, an error occurred while processing your request.');
-            }
-        });
+        // 验证Bot Token格式
+        logger.info('验证Bot Token格式...');
+        validateBotToken(config.telegram.botToken);
+        logger.info('Bot Token格式验证: ✅ 成功');
         
-        bot.command('status', async (ctx) => {
-            try {
-                const statusText = `Network Status: ${botConnected ? '✅ Connected' : '❌ Disconnected'}\nCurrent RPC Node: ${process.env.RPC_ENDPOINT}\nMonitored Addresses: ${process.env.KOL_ADDRESSES.split(',').length}`;
-                await ctx.reply(statusText);
-            } catch (error) {
-                logger.error(`Error in /status command: ${error.message}`);
-                await ctx.reply('Sorry, an error occurred while processing your request.');
+        // 检查Token状态
+        const tokenValid = await checkTokenStatus(config.telegram.botToken);
+        if (!tokenValid) {
+            throw new Error('Token无效，请检查Token是否正确或联系 @BotFather');
+        }
+        
+        logger.info('环境变量检查: ✅ 通过');
+        
+        // 测试网络连接
+        const endpoints = [
+            'https://api.telegram.org',
+            'https://api1.telegram.org',
+            'https://api2.telegram.org',
+            'https://api3.telegram.org',
+            'https://api4.telegram.org',
+            'https://api5.telegram.org'
+        ];
+        
+        let workingEndpoint = null;
+        for (const endpoint of endpoints) {
+            logger.info(`\n测试端点 ${endpoint}...`);
+            if (await testNetworkConnection(endpoint)) {
+                workingEndpoint = endpoint;
+                logger.info(`找到可用端点: ${endpoint}`);
+                break;
             }
-        });
-
-        // 错误处理中间件
-        bot.catch(async (err, ctx) => {
-            logger.error(`Error in bot: ${err.message}`);
-            if (ctx) {
-                try {
-                    await ctx.reply('Sorry, an error occurred while processing your request.');
-                } catch (e) {
-                    logger.error(`Failed to send error message: ${e.message}`);
-                }
-            }
-        });
-
-        // 测试连接
+            await sleep(2000);
+        }
+        
+        if (!workingEndpoint) {
+            throw new Error('所有API端点连接失败');
+        }
+        
+        // 初始化Bot
+        logger.info('\n初始化Bot...');
         try {
-            const me = await withRetry(() => bot.telegram.getMe());
-            logger.info('Telegram bot connected successfully:', me.username);
-            botConnected = true;
+            bot = new Telegraf(config.telegram.botToken, {
+                telegram: {
+                    apiRoot: workingEndpoint,
+                    testEnv: false
+                }
+            });
+            logger.info('Bot初始化成功');
         } catch (error) {
-            logger.error('Failed to connect to Telegram:', error);
+            logger.error(`Bot初始化失败: ${error.message}`);
             throw error;
         }
-
+        
+        // 测试getMe
+        logger.info('测试getMe...');
+        try {
+            const me = await bot.telegram.getMe();
+            logger.info('getMe成功:');
+            logger.info(JSON.stringify(me, null, 2));
+            botConnected = true;
+        } catch (error) {
+            logger.error(`getMe测试失败: ${error.message}`);
+            throw error;
+        }
+        
+        // 测试getChat
+        logger.info('测试getChat...');
+        for (const chatId of config.telegram.chatIds) {
+            try {
+                const chat = await bot.telegram.getChat(chatId);
+                logger.info(`getChat成功 (${chatId}):`);
+                logger.info(JSON.stringify(chat, null, 2));
+            } catch (error) {
+                logger.error(`getChat测试失败 (${chatId}): ${error.message}`);
+                throw error;
+            }
+        }
+        
         // 启动机器人
+        logger.info('启动机器人...');
         await bot.launch();
-        logger.info('Telegram bot launched successfully');
-
+        logger.info('机器人启动成功');
+        
+        return bot;
     } catch (error) {
-        logger.error('Error initializing Telegram bot:', error);
+        logger.error('Telegram Bot 初始化失败:', error);
         throw error;
     }
-
-    return bot;
 }
 
-export async function sendMessage(message) {
-    if (!bot) {
-        throw new Error('Bot not initialized');
-    }
-
+export async function sendMessage(message, specificChatId = null) {
     try {
-        await withRetry(async () => {
-            await bot.telegram.sendMessage(config.telegram.chatId, message);
-            logger.info(`Telegram message sent: ${message.substring(0, 50)}...`);
-        });
+        if (specificChatId) {
+            // 发送到指定的聊天ID
+            await bot.telegram.sendMessage(specificChatId, message);
+            logger.info(`Telegram消息已发送到 ${specificChatId}: ${message.substring(0, 50)}...`);
+        } else {
+            // 发送到所有配置的聊天ID
+            for (const chatId of config.telegram.chatIds) {
+                await bot.telegram.sendMessage(chatId, message);
+                logger.info(`Telegram消息已发送到 ${chatId}: ${message.substring(0, 50)}...`);
+            }
+        }
     } catch (error) {
-        logger.error(`Error sending Telegram message: ${error.message}`);
+        logger.error(`发送Telegram消息失败: ${error.message}`);
         throw error;
     }
 } 

@@ -75,7 +75,8 @@ export async function testTCP(hostname, port = 443) {
 // 测试HTTPS连接
 export async function testHTTPS(hostname) {
     const MAX_RETRIES = 3;
-    const TIMEOUT = 5000;
+    const TIMEOUT = 15000;
+    const RETRY_DELAY = 2000;
 
     for (let i = 0; i < MAX_RETRIES; i++) {
         try {
@@ -93,6 +94,16 @@ export async function testHTTPS(hostname) {
                         'Connection': 'keep-alive'
                     }
                 };
+
+                // 如果设置了代理，使用代理
+                if (process.env.HTTP_PROXY || process.env.HTTPS_PROXY) {
+                    const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY;
+                    const proxy = new URL(proxyUrl);
+                    options.host = proxy.hostname;
+                    options.port = proxy.port;
+                    options.path = `https://${hostname}/`;
+                    options.headers['Host'] = hostname;
+                }
 
                 const req = https.request(options, (res) => {
                     logger.info(`HTTPS状态码: ${res.statusCode}`);
@@ -116,6 +127,13 @@ export async function testHTTPS(hostname) {
 
                 req.on('timeout', () => {
                     req.destroy();
+                    logger.warn('HTTPS请求超时，将重试...');
+                    reject(new Error('HTTPS请求超时'));
+                });
+
+                req.setTimeout(TIMEOUT, () => {
+                    req.destroy();
+                    logger.warn('HTTPS请求超时，将重试...');
                     reject(new Error('HTTPS请求超时'));
                 });
 
@@ -124,7 +142,8 @@ export async function testHTTPS(hostname) {
         } catch (error) {
             logger.error(`HTTPS连接失败 (第 ${i + 1} 次): ${error.message}`);
             if (i < MAX_RETRIES - 1) {
-                await sleep(2000);
+                logger.info(`等待 ${RETRY_DELAY/1000} 秒后重试...`);
+                await sleep(RETRY_DELAY);
             } else {
                 throw error;
             }
@@ -232,36 +251,35 @@ export async function testProxy(proxyUrl) {
 // 测试网络连接
 export async function testNetworkConnection(endpoint) {
     const MAX_RETRIES = 3;
+    const TIMEOUT = 15000;
+    const RETRY_DELAY = 2000;
 
     for (let i = 0; i < MAX_RETRIES; i++) {
         try {
-            const url = new URL(endpoint);
-            const hostname = url.hostname;
-
-            // 测试DNS解析
-            logger.info(`\n测试DNS解析 ${hostname}...`);
-            const addresses = await dns.promises.resolve4(hostname);
-            logger.info(`DNS解析结果: ${addresses.join(', ')}`);
-
-            // 测试网络延迟
-            logger.info(`测试网络延迟...`);
-            await testLatency(hostname);
-
+            logger.info(`\n测试网络连接 (第 ${i + 1} 次尝试)...`);
+            
+            // 解析域名
+            const hostname = new URL(endpoint).hostname;
+            const addresses = await testDNS(hostname);
+            if (!addresses || addresses.length === 0) {
+                throw new Error('DNS解析失败');
+            }
+            
             // 测试TCP连接
-            logger.info(`尝试TCP连接到 ${hostname}:443...`);
             await testTCP(hostname);
-
+            
             // 测试HTTPS连接
-            logger.info(`测试HTTPS连接...`);
             await testHTTPS(hostname);
-
+            
+            logger.info('网络连接测试成功');
             return true;
         } catch (error) {
             logger.error(`网络连接测试失败 (第 ${i + 1} 次): ${error.message}`);
             if (i < MAX_RETRIES - 1) {
-                await sleep(2000);
+                logger.info(`等待 ${RETRY_DELAY/1000} 秒后重试...`);
+                await sleep(RETRY_DELAY);
             } else {
-                throw error;
+                return false;
             }
         }
     }
@@ -303,7 +321,7 @@ export function validateBotToken(token) {
 // 检查Token状态
 export async function checkTokenStatus(token) {
     const MAX_RETRIES = 3;
-    const RETRY_DELAY = 5000;
+    const RETRY_DELAY = 2000;
 
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
         try {
@@ -318,7 +336,7 @@ export async function checkTokenStatus(token) {
             // 配置fetch选项
             const fetchOptions = {
                 method: 'GET',
-                timeout: 10000, // 增加超时时间
+                timeout: 15000,
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
@@ -326,11 +344,23 @@ export async function checkTokenStatus(token) {
                 }
             };
 
+            // 如果设置了代理，使用代理
+            if (process.env.HTTP_PROXY || process.env.HTTPS_PROXY) {
+                const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY;
+                fetchOptions.agent = new https.Agent({
+                    proxy: proxyUrl,
+                    rejectUnauthorized: false
+                });
+            }
+
             // 尝试不同的API端点
             const endpoints = [
                 'https://api.telegram.org',
                 'https://api1.telegram.org',
-                'https://api2.telegram.org'
+                'https://api2.telegram.org',
+                'https://api3.telegram.org',
+                'https://api4.telegram.org',
+                'https://api5.telegram.org'
             ];
 
             for (const endpoint of endpoints) {

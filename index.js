@@ -10,6 +10,7 @@ import logger from './logger.js';
 import dns from 'dns';
 import { Telegraf } from 'telegraf';
 import fetch from 'node-fetch';
+import config from './config.js';
 
 // Token Metadata Program ID
 const TOKEN_METADATA_PROGRAM = new PublicKey('metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s');
@@ -1137,7 +1138,16 @@ async function getTokenMarketCap(connection, tokenMint) {
             priceChange24h: change24h,
             supply: formattedSupply,
             marketCap: formatMarketCap(marketCap),
-            updateTime: new Date().toISOString()
+            updateTime: new Date().toLocaleString('zh-CN', { 
+                timeZone: 'Asia/Shanghai',
+                hour12: false,
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            })
         };
 
     } catch (error) {
@@ -1167,9 +1177,23 @@ async function sendNotifications(txInfo, connection) {
         // 获取地址对应的昵称
         const nickname = KOL_ADDRESS_MAP.get(txInfo.address);
         
+        // 获取当前时间并转换为 UTC+8
+        const now = new Date();
+        const formattedTime = now.toLocaleString('zh-CN', { 
+            timeZone: 'Asia/Shanghai',
+            hour12: false,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        });
+        
         // 构建通知消息
         let message = `🔔 检测到新交易\n\n`;
         message += `交易发起地址：${nickname} (${txInfo.address})\n`;
+        message += `时间：${formattedTime}\n`;
         message += `操作类型：${txInfo.operation}\n\n`;
         
         // 处理源代币变化
@@ -1208,25 +1232,27 @@ async function sendNotifications(txInfo, connection) {
         }
 
         // 发送邮件通知
-        if (EMAIL_TO) {
+        if (process.env.EMAIL_ENABLED === 'true' && EMAIL_TO) {
             let emailSent = false;
             let workingTransporterIndex = -1;
 
             // 首先尝试所有发件人，找到第一个可用的
-            for (let i = 0; i < transporters.length; i++) {
+            const startIndex = global.workingEmailIndex || 0;  // 如果是第一次运行，从0开始
+            for (let i = startIndex; i < transporters.length + startIndex; i++) {
+                const actualIndex = i % transporters.length;  // 确保索引在有效范围内
                 try {
-                    await transporters[i].sendMail({
-                        from: EMAIL_USERS[i],
+                    await transporters[actualIndex].sendMail({
+                        from: EMAIL_USERS[actualIndex],
                         to: EMAIL_TO,
                         subject: `🔔 KOL交易监控 - ${nickname} ${txInfo.operation}`,
                         text: message
                     });
-                    logger.info(`✅ 邮件通知已发送 (发件人: ${EMAIL_USERS[i]})`);
+                    logger.info(`✅ 邮件通知已发送 (发件人: ${EMAIL_USERS[actualIndex]})`);
                     emailSent = true;
-                    workingTransporterIndex = i;
+                    workingTransporterIndex = actualIndex;
                     break;
                 } catch (error) {
-                    logger.error(`邮件发送失败 (发件人: ${EMAIL_USERS[i]}): ${error.message}`);
+                    logger.error(`邮件发送失败 (发件人: ${EMAIL_USERS[actualIndex]}): ${error.message}`);
                 }
             }
 
