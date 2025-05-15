@@ -884,7 +884,45 @@ async function parseTransaction(connection, signature) {
         // 如果找到了源代币和目标代币，且目标代币不是源代币之一，则处理交易
         if (sourceToken && targetToken && !Object.values(SOURCE_TOKENS).includes(targetToken.mint)) {
             txInfo.sourceTokenContract = sourceToken.mint;
-            txInfo.sourceTokenChange = sourceToken.change.toString();
+            
+            // 如果源代币是 SOL，检查是否是包装的 SOL
+            if (sourceToken.mint === SOURCE_TOKENS.SOL) {
+                const wrappedSolBalance = preBalances.find(balance => 
+                    balance.mint === SOURCE_TOKENS.SOL && balance.owner === identifiedSigner
+                );
+                
+                if (wrappedSolBalance && wrappedSolBalance.uiTokenAmount) {
+                    // 如果是包装的 SOL，使用 uiTokenAmount
+                    const preAmount = wrappedSolBalance.uiTokenAmount.amount || '0';
+                    const decimals = wrappedSolBalance.uiTokenAmount.decimals || 0;
+                    const preSolBalance = parseFloat(preAmount) / Math.pow(10, decimals);
+                    
+                    const postWrappedSolBalance = postBalances.find(balance => 
+                        balance.mint === SOURCE_TOKENS.SOL && balance.owner === identifiedSigner
+                    );
+                    const postAmount = postWrappedSolBalance?.uiTokenAmount?.amount || '0';
+                    const postSolBalance = parseFloat(postAmount) / Math.pow(10, decimals);
+                    const solChange = postSolBalance - preSolBalance;
+                    
+                    txInfo.sourceTokenChange = solChange.toString();
+                    logger.info(`包装SOL作为源代币的变化: ${solChange}`);
+                } else {
+                    // 如果是原生 SOL，使用 preBalances 和 postBalances
+                    const targetAccountIndex = tx.transaction.message.accountKeys.findIndex(
+                        key => key.pubkey.toBase58() === identifiedSigner
+                    );
+                    if (targetAccountIndex !== -1) {
+                        const preSolBalance = tx.meta.preBalances[targetAccountIndex] / 1e9;
+                        const postSolBalance = tx.meta.postBalances[targetAccountIndex] / 1e9;
+                        const solChange = postSolBalance - preSolBalance;
+                        txInfo.sourceTokenChange = solChange.toString();
+                        logger.info(`原生SOL作为源代币的变化: ${solChange}`);
+                    }
+                }
+            } else {
+                txInfo.sourceTokenChange = sourceToken.change.toString();
+            }
+            
             txInfo.targetTokenContract = targetToken.mint;
             txInfo.targetTokenChange = targetToken.change.toString();
             txInfo.operation = targetToken.change > 0 ? '买入' : '卖出';
