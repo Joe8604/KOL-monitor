@@ -122,12 +122,10 @@ export async function initializeBot() {
             }
         }
         
-        // 启动机器人
-        logger.info('启动机器人...');
-        await bot.launch();
-        logger.info('机器人启动成功');
-        
+        // 不再启动机器人，直接返回
+        logger.info('Bot 初始化完成');
         return bot;
+        
     } catch (error) {
         logger.error('Telegram Bot 初始化失败:', error);
         throw error;

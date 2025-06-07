@@ -798,3 +798,69 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
 2025-05-08 16:27:13 [ERROR] 新节点 https://api.mainnet-beta.solana.com 测试失败: fetch failed
 2025-05-08 16:27:14 [ERROR] 解析交易失败: fetch failed
 2025-05-08 16:27:37 [ERROR] 连接检查失败: Assignment to constant variable.
+2025-05-08 17:04:36 [ERROR] 获取 Solana 费用失败: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+2025-05-08 17:07:45 [ERROR] 获取 Solana 费用失败: require is not defined
+2025-05-08 17:08:06 [ERROR] 获取 Solana 费用失败: The endpoint `https://api.mainnet-beta.solana.com` can only be paired with an `https.Agent`. You have, instead, supplied an `http.Agent` through `httpAgent`.
+2025-05-08 17:08:06 [ERROR] 错误详情: Error: The endpoint `https://api.mainnet-beta.solana.com` can only be paired with an `https.Agent`. You have, instead, supplied an `http.Agent` through `httpAgent`.
+    at createRpcClient (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:5023:17)
+    at new Connection (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:6099:23)
+    at getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:19:28)
+    at main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:97:29)
+    at file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:126:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+2025-05-08 17:08:41 [ERROR] 获取 Solana 费用失败: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+2025-05-08 17:08:41 [ERROR] 错误详情: Error: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+    at get lamportsPerSignature (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7132:15)
+    at getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:25:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:97:23)
+2025-05-08 17:13:47 [ERROR] 获取 Solana 费用失败: failed to get fee for message: invalid transaction message: index out of bounds
+2025-05-08 17:13:47 [ERROR] 错误详情: SolanaJSONRPCError: failed to get fee for message: invalid transaction message: index out of bounds
+    at Connection.getFeeForMessage (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7191:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:39:21)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:111:23)
+2025-05-08 17:15:29 [ERROR] 获取 Solana 费用失败: failed to get fee for message: invalid transaction message: index out of bounds
+2025-05-08 17:15:29 [ERROR] 错误详情: SolanaJSONRPCError: failed to get fee for message: invalid transaction message: index out of bounds
+    at Connection.getFeeForMessage (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7191:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:41:21)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:113:23)
+2025-05-08 18:05:53 [ERROR] 获取 Solana 费用失败: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+2025-05-08 18:05:53 [ERROR] 错误详情: Error: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+    at get lamportsPerSignature (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7132:15)
+    at getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:26:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:98:23)
+2025-05-08 18:06:24 [ERROR] 获取 Solana 费用失败: failed to get fee for message: invalid transaction message: index out of bounds
+2025-05-08 18:06:24 [ERROR] 错误详情: SolanaJSONRPCError: failed to get fee for message: invalid transaction message: index out of bounds
+    at Connection.getFeeForMessage (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7191:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:41:21)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:113:23)
+2025-05-08 18:07:34 [ERROR] 获取 Solana 费用失败: BirdEye API 请求失败: 404 Not Found
+2025-05-08 18:07:34 [ERROR] 错误详情: Error: BirdEye API 请求失败: 404 Not Found
+    at getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:31:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:90:23)
+2025-05-14 00:37:26 [ERROR] 获取 DexScreener 交易对信息失败: request to https://api.dexscreener.com/latest/dex/tokens/So11111111111111111111111111111111111111112 failed, reason: read ECONNRESET
+2025-05-14 00:40:52 [ERROR] TCP连接失败 (第 1 次): 连接超时
+2025-05-14 00:40:59 [ERROR] TCP连接失败 (第 2 次): 连接超时
+2025-05-14 00:41:06 [ERROR] TCP连接失败 (第 3 次): 连接超时
+2025-05-14 00:41:06 [ERROR] 网络连接测试失败 (第 1 次): 连接超时
+2025-05-14 00:52:45 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 00:52:46 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 00:53:53 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 00:53:53 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 00:55:43 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 00:55:43 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 00:57:01 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 00:57:01 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 08:57:38 [ERROR] 获取交易对信息失败: 所有 RPC 节点都不可用
+2025-05-14 08:57:39 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 08:58:54 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 08:58:54 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 08:59:55 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 08:59:55 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')

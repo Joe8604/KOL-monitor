@@ -65827,3 +65827,2282 @@ b.send(JSON.stringify(a));c.classList.add("feedback-hidden");d.classList.remove(
 2025-05-08 16:27:37 [INFO] 连接测试成功，节点版本:
 2025-05-08 16:27:37 [ERROR] 连接检查失败: Assignment to constant variable.
 2025-05-08 16:28:38 [INFO] 连接测试成功，节点版本:
+2025-05-08 17:04:36 [ERROR] 获取 Solana 费用失败: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+2025-05-08 17:07:45 [ERROR] 获取 Solana 费用失败: require is not defined
+2025-05-08 17:08:06 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 17:08:06 [ERROR] 获取 Solana 费用失败: The endpoint `https://api.mainnet-beta.solana.com` can only be paired with an `https.Agent`. You have, instead, supplied an `http.Agent` through `httpAgent`.
+2025-05-08 17:08:06 [ERROR] 错误详情: Error: The endpoint `https://api.mainnet-beta.solana.com` can only be paired with an `https.Agent`. You have, instead, supplied an `http.Agent` through `httpAgent`.
+    at createRpcClient (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:5023:17)
+    at new Connection (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:6099:23)
+    at getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:19:28)
+    at main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:97:29)
+    at file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:126:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:271:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:578:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5)
+2025-05-08 17:08:39 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 17:08:39 [INFO] 正在获取 Solana 区块哈希...
+2025-05-08 17:08:41 [ERROR] 获取 Solana 费用失败: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+2025-05-08 17:08:41 [ERROR] 错误详情: Error: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+    at get lamportsPerSignature (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7132:15)
+    at getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:25:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:97:23)
+2025-05-08 17:13:46 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 17:13:46 [INFO] 正在获取 Solana 区块哈希...
+2025-05-08 17:13:46 [INFO] 正在计算交易费用...
+2025-05-08 17:13:47 [ERROR] 获取 Solana 费用失败: failed to get fee for message: invalid transaction message: index out of bounds
+2025-05-08 17:13:47 [ERROR] 错误详情: SolanaJSONRPCError: failed to get fee for message: invalid transaction message: index out of bounds
+    at Connection.getFeeForMessage (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7191:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:39:21)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:111:23)
+2025-05-08 17:14:59 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 17:14:59 [INFO] 正在获取 Solana 区块哈希...
+2025-05-08 17:15:02 [INFO] 正在计算交易费用...
+2025-05-08 17:15:02 [INFO] 正在获取 SOL 价格...
+2025-05-08 17:15:28 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 17:15:28 [INFO] 正在获取 Solana 区块哈希...
+2025-05-08 17:15:29 [INFO] 正在计算交易费用...
+2025-05-08 17:15:29 [ERROR] 获取 Solana 费用失败: failed to get fee for message: invalid transaction message: index out of bounds
+2025-05-08 17:15:29 [ERROR] 错误详情: SolanaJSONRPCError: failed to get fee for message: invalid transaction message: index out of bounds
+    at Connection.getFeeForMessage (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7191:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:41:21)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:113:23)
+2025-05-08 18:05:53 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 18:05:53 [INFO] 正在获取 Solana 费用...
+2025-05-08 18:05:53 [ERROR] 获取 Solana 费用失败: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+2025-05-08 18:05:53 [ERROR] 错误详情: Error: The capability to fetch `lamportsPerSignature` using the `getRecentBlockhash` API is no longer offered by the network. Use the `getFeeForMessage` API to obtain the fee for a given message.
+    at get lamportsPerSignature (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7132:15)
+    at getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:26:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:98:23)
+2025-05-08 18:06:23 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 18:06:23 [INFO] 正在获取 Solana 区块哈希...
+2025-05-08 18:06:24 [INFO] 正在计算交易费用...
+2025-05-08 18:06:24 [ERROR] 获取 Solana 费用失败: failed to get fee for message: invalid transaction message: index out of bounds
+2025-05-08 18:06:24 [ERROR] 错误详情: SolanaJSONRPCError: failed to get fee for message: invalid transaction message: index out of bounds
+    at Connection.getFeeForMessage (C:\Users\5520\Desktop\kol-monitor\kol-monitor\node_modules\@solana\web3.js\lib\index.cjs.js:7191:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:41:21)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:113:23)
+2025-05-08 18:06:48 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 18:06:48 [INFO] 正在获取 Solana 费用...
+2025-05-08 18:06:49 [INFO] 正在获取 SOL 价格...
+2025-05-08 18:07:31 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 18:07:31 [INFO] 正在获取 Solana 费用...
+2025-05-08 18:07:32 [INFO] 正在获取 SOL 价格...
+2025-05-08 18:07:34 [ERROR] 获取 Solana 费用失败: BirdEye API 请求失败: 404 Not Found
+2025-05-08 18:07:34 [ERROR] 错误详情: Error: BirdEye API 请求失败: 404 Not Found
+    at getSolanaFee (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:31:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async main (file:///C:/Users/5520/Desktop/kol-monitor/kol-monitor/fee-calculator.js:90:23)
+2025-05-08 18:08:02 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 18:08:02 [INFO] 正在获取 Solana 费用...
+2025-05-08 18:08:03 [INFO] 正在获取 SOL 价格...
+2025-05-08 18:08:03 [INFO] Solana 费用数据获取成功
+2025-05-08 18:08:31 [INFO] 开始获取 Solana 费用数据...
+2025-05-08 18:08:31 [INFO] 正在获取 Solana 费用...
+2025-05-08 18:08:31 [INFO] 正在获取 SOL 价格...
+2025-05-08 18:08:33 [INFO] Solana 费用数据获取成功
+2025-05-14 00:37:25 [INFO] 正在从 DexScreener 获取代币 So11111111111111111111111111111111111111112 的交易对信息...
+2025-05-14 00:37:25 [INFO] 发送请求到 DexScreener: https://api.dexscreener.com/latest/dex/tokens/So11111111111111111111111111111111111111112
+2025-05-14 00:37:26 [ERROR] 获取 DexScreener 交易对信息失败: request to https://api.dexscreener.com/latest/dex/tokens/So11111111111111111111111111111111111111112 failed, reason: read ECONNRESET
+2025-05-14 00:37:50 [INFO] 正在从 DexScreener 获取代币 So11111111111111111111111111111111111111112 的交易对信息... (尝试 1/3)
+2025-05-14 00:37:50 [INFO] 发送请求到 DexScreener: https://api.dexscreener.com/latest/dex/tokens/So11111111111111111111111111111111111111112
+2025-05-14 00:37:52 [INFO] DexScreener API 响应状态: 200
+2025-05-14 00:37:52 [INFO] DexScreener API 响应数据: {
+  "schemaVersion": "1.0.0",
+  "pairs": [
+    {
+      "chainId": "solana",
+      "dexId": "orca",
+      "url": "https://dexscreener.com/solana/czfq3xzzdmsdgduyrnltrhgc47cxcztlg4crryfu44ze",
+      "pairAddress": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+      "labels": [
+        "wp"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8171",
+      "priceUsd": "176.81",
+      "txns": {
+        "m5": {
+          "buys": 136,
+          "sells": 127
+        },
+        "h1": {
+          "buys": 1644,
+          "sells": 1394
+        },
+        "h6": {
+          "buys": 9099,
+          "sells": 7402
+        },
+        "h24": {
+          "buys": 31544,
+          "sells": 26430
+        }
+      },
+      "volume": {
+        "h24": 396563065.6,
+        "h6": 136930639.01,
+        "h1": 27366295.22,
+        "m5": 1631783.59
+      },
+      "priceChange": {
+        "m5": -0.1,
+        "h1": 1.14,
+        "h6": 1.73,
+        "h24": 0.86
+      },
+      "liquidity": {
+        "usd": 37989110.82,
+        "base": 94809,
+        "quote": 21225132
+      },
+      "pairCreatedAt": 1688106058000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/8slbnzoa1cfnvmjlpfp98zlanfsycfapfjkmbixnlwxj",
+      "pairAddress": "8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj",
+      "labels": [
+        "CLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8288",
+      "priceUsd": "176.82",
+      "txns": {
+        "m5": {
+          "buys": 497,
+          "sells": 402
+        },
+        "h1": {
+          "buys": 5552,
+          "sells": 6623
+        },
+        "h6": {
+          "buys": 31764,
+          "sells": 31234
+        },
+        "h24": {
+          "buys": 109387,
+          "sells": 109285
+        }
+      },
+      "volume": {
+        "h24": 162824307.15,
+        "h6": 51764722.59,
+        "h1": 9742666.07,
+        "m5": 724294.57
+      },
+      "priceChange": {
+        "m5": -0.12,
+        "h1": 1.16,
+        "h6": 1.8,
+        "h24": 0.81
+      },
+      "liquidity": {
+        "usd": 5142327.66,
+        "base": 15633,
+        "quote": 2377945
+      },
+      "pairCreatedAt": 1723699294000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/htvjzsfx3yu6buodcjz5vzkuraxmdtrbs3cjaq43ashr",
+      "pairAddress": "HTvjzsfX3yU6BUodCjZ5vZkUrAxMDTrBs3CJaq43ashR",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8559",
+      "priceUsd": "176.85",
+      "txns": {
+        "m5": {
+          "buys": 77,
+          "sells": 126
+        },
+        "h1": {
+          "buys": 1642,
+          "sells": 1629
+        },
+        "h6": {
+          "buys": 8353,
+          "sells": 8124
+        },
+        "h24": {
+          "buys": 30385,
+          "sells": 29591
+        }
+      },
+      "volume": {
+        "h24": 20688496.25,
+        "h6": 6532598.02,
+        "h1": 1678596.55,
+        "m5": 123086.04
+      },
+      "priceChange": {
+        "m5": -0.08,
+        "h1": 1.15,
+        "h6": 1.8,
+        "h24": 0.82
+      },
+      "liquidity": {
+        "usd": 801427.06,
+        "base": 2269.3075,
+        "quote": 400086
+      },
+      "pairCreatedAt": 1708122440000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/3nmfwzxwy1s1m5s8vyahqd4wgs4isxxe4lroummyqegf",
+      "pairAddress": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+      "labels": [
+        "CLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "name": "USDT",
+        "symbol": "USDT"
+      },
+      "priceNative": "176.8098",
+      "priceUsd": "176.80",
+      "txns": {
+        "m5": {
+          "buys": 260,
+          "sells": 168
+        },
+        "h1": {
+          "buys": 3227,
+          "sells": 3149
+        },
+        "h6": {
+          "buys": 16287,
+          "sells": 14731
+        },
+        "h24": {
+          "buys": 51900,
+          "sells": 50797
+        }
+      },
+      "volume": {
+        "h24": 14090267.04,
+        "h6": 4895942.18,
+        "h1": 1016760.34,
+        "m5": 68487.82
+      },
+      "priceChange": {
+        "m5": -0.12,
+        "h1": 1.16,
+        "h6": 1.81,
+        "h24": 0.81
+      },
+      "liquidity": {
+        "usd": 1137324.42,
+        "base": 3297.7097,
+        "quote": 554256
+      },
+      "pairCreatedAt": 1723699294000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "orca",
+      "url": "https://dexscreener.com/solana/fwewvm8u6tfpgewayhmwaqad9hmf7mvqxk4mj7inqqgc",
+      "pairAddress": "FwewVm8u6tFPGewAyHmWAqad9hmF7mvqxK4mJ7iNqqGC",
+      "labels": [
+        "wp"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "name": "USDT",
+        "symbol": "USDT"
+      },
+      "priceNative": "176.7915",
+      "priceUsd": "176.79",
+      "txns": {
+        "m5": {
+          "buys": 157,
+          "sells": 127
+        },
+        "h1": {
+          "buys": 2352,
+          "sells": 2191
+        },
+        "h6": {
+          "buys": 12563,
+          "sells": 11220
+        },
+        "h24": {
+          "buys": 41703,
+          "sells": 37895
+        }
+      },
+      "volume": {
+        "h24": 41071482.48,
+        "h6": 13760780.79,
+        "h1": 2650402.36,
+        "m5": 179476.75
+      },
+      "priceChange": {
+        "m5": -0.14,
+        "h1": 1.16,
+        "h6": 1.8,
+        "h24": 0.78
+      },
+      "liquidity": {
+        "usd": 1430950.32,
+        "base": 3283.2538,
+        "quote": 850498
+      },
+      "pairCreatedAt": 1704391570000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/excbwu8fgpdjiaf1b1z3ieef38sjqjks8xvj6m85ppy6",
+      "pairAddress": "ExcBWu8fGPdJiaF1b1z3iEef38sjQJks8xvj6M85pPY6",
+      "labels": [
+        "CLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "name": "USDT",
+        "symbol": "USDT"
+      },
+      "priceNative": "176.8667",
+      "priceUsd": "176.86",
+      "txns": {
+        "m5": {
+          "buys": 152,
+          "sells": 160
+        },
+        "h1": {
+          "buys": 1567,
+          "sells": 1749
+        },
+        "h6": {
+          "buys": 7690,
+          "sells": 7679
+        },
+        "h24": {
+          "buys": 25695,
+          "sells": 25207
+        }
+      },
+      "volume": {
+        "h24": 12175444.35,
+        "h6": 4487060.05,
+        "h1": 1134816.55,
+        "m5": 80058.82
+      },
+      "priceChange": {
+        "m5": -0.08,
+        "h1": 1.19,
+        "h6": 1.83,
+        "h24": 0.84
+      },
+      "liquidity": {
+        "usd": 522185.91,
+        "base": 1106.4036,
+        "quote": 326499
+      },
+      "pairCreatedAt": 1723699296000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "orca",
+      "url": "https://dexscreener.com/solana/fpcmfdfgyotvufj7hrfhsweiiqcgbklctwhidnh7o28q",
+      "pairAddress": "FpCMFDFGYotvufJ7HrFHsWEiiQCGbkLCtwHiDnh7o28Q",
+      "labels": [
+        "wp"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8839",
+      "priceUsd": "176.88",
+      "txns": {
+        "m5": {
+          "buys": 110,
+          "sells": 124
+        },
+        "h1": {
+          "buys": 1516,
+          "sells": 1661
+        },
+        "h6": {
+          "buys": 7709,
+          "sells": 7753
+        },
+        "h24": {
+          "buys": 26287,
+          "sells": 25545
+        }
+      },
+      "volume": {
+        "h24": 3402082.18,
+        "h6": 1120495.5,
+        "h1": 227021.85,
+        "m5": 17251.48
+      },
+      "priceChange": {
+        "m5": -0.08,
+        "h1": 1.21,
+        "h6": 1.83,
+        "h24": 0.87
+      },
+      "liquidity": {
+        "usd": 403413.55,
+        "base": 810.1675,
+        "quote": 260107
+      },
+      "pairCreatedAt": 1688106028000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/3ucnos4nbumplznwztqghnffgkhermbqavemeeomsuxv",
+      "pairAddress": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+      "labels": [
+        "CLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8814",
+      "priceUsd": "176.88",
+      "txns": {
+        "m5": {
+          "buys": 83,
+          "sells": 66
+        },
+        "h1": {
+          "buys": 961,
+          "sells": 828
+        },
+        "h6": {
+          "buys": 5055,
+          "sells": 4319
+        },
+        "h24": {
+          "buys": 18393,
+          "sells": 16277
+        }
+      },
+      "volume": {
+        "h24": 59951977.7,
+        "h6": 17379206.09,
+        "h1": 3352189,
+        "m5": 248564.85
+      },
+      "priceChange": {
+        "m5": -0.1,
+        "h1": 1.21,
+        "h6": 1.81,
+        "h24": 0.85
+      },
+      "liquidity": {
+        "usd": 8183485.81,
+        "base": 14023,
+        "quote": 5703033
+      },
+      "pairCreatedAt": 1723699295000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/5rcf1dm8ljktw4yqhnolcngyzyennqqztsctogyhas6",
+      "pairAddress": "5rCf1DM8LjKTw4YqhnoLcngyZYeNnQqztScTogYHAS6",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8460",
+      "priceUsd": "176.84",
+      "txns": {
+        "m5": {
+          "buys": 17,
+          "sells": 16
+        },
+        "h1": {
+          "buys": 260,
+          "sells": 249
+        },
+        "h6": {
+          "buys": 1368,
+          "sells": 1298
+        },
+        "h24": {
+          "buys": 4674,
+          "sells": 4445
+        }
+      },
+      "volume": {
+        "h24": 79136237.51,
+        "h6": 31593281.88,
+        "h1": 6108960.09,
+        "m5": 534306.89
+      },
+      "priceChange": {
+        "m5": -0.08,
+        "h1": 1.12,
+        "h6": 1.77,
+        "h24": 0.84
+      },
+      "liquidity": {
+        "usd": 4765382.75,
+        "base": 10728,
+        "quote": 2868109
+      },
+      "pairCreatedAt": 1711827392000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "coinchef",
+      "url": "https://dexscreener.com/solana/dbuvwpulvh8uy2b1skuu18acd2qpcvfzdfdtdrzztbd2",
+      "pairAddress": "DbuvwPuLvH8uy2B1sKuu18aCd2QpCvfZdfDtdRZztBd2",
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "177.2208",
+      "priceUsd": "177.22",
+      "txns": {
+        "m5": {
+          "buys": 103,
+          "sells": 70
+        },
+        "h1": {
+          "buys": 1470,
+          "sells": 1330
+        },
+        "h6": {
+          "buys": 9574,
+          "sells": 8215
+        },
+        "h24": {
+          "buys": 29051,
+          "sells": 22483
+        }
+      },
+      "volume": {
+        "h24": 333409.83,
+        "h6": 150891.84,
+        "h1": 24428.07,
+        "m5": 1066.24
+      },
+      "priceChange": {
+        "m5": 0.15,
+        "h1": 1.39,
+        "h6": 2,
+        "h24": 1.03
+      },
+      "liquidity": {
+        "usd": 91354.41,
+        "base": 257.7463,
+        "quote": 45676
+      },
+      "pairCreatedAt": 1715099880000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "orca",
+      "url": "https://dexscreener.com/solana/83v8ipyzihdejddy8rdzddyznyutxngz69lgo9kt5d6d",
+      "pairAddress": "83v8iPyZihDEjDdY8RdZddyZNyUtXngz69Lgo9Kt5d6d",
+      "labels": [
+        "wp"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8425",
+      "priceUsd": "176.84",
+      "txns": {
+        "m5": {
+          "buys": 95,
+          "sells": 95
+        },
+        "h1": {
+          "buys": 937,
+          "sells": 1008
+        },
+        "h6": {
+          "buys": 5118,
+          "sells": 4901
+        },
+        "h24": {
+          "buys": 19048,
+          "sells": 17935
+        }
+      },
+      "volume": {
+        "h24": 235709.91,
+        "h6": 66678.31,
+        "h1": 13628.44,
+        "m5": 1775.9
+      },
+      "priceChange": {
+        "m5": -0.13,
+        "h1": 1.17,
+        "h6": 1.83,
+        "h24": 0.84
+      },
+      "liquidity": {
+        "usd": 28686,
+        "base": 98.1248,
+        "quote": 11333
+      },
+      "pairCreatedAt": 1669662780000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/cybd9ratoymtwka7qzyolahnhdwq553vm62lh6qwtuxq",
+      "pairAddress": "CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq",
+      "labels": [
+        "CLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8588",
+      "priceUsd": "176.85",
+      "txns": {
+        "m5": {
+          "buys": 88,
+          "sells": 77
+        },
+        "h1": {
+          "buys": 1139,
+          "sells": 1053
+        },
+        "h6": {
+          "buys": 6230,
+          "sells": 5448
+        },
+        "h24": {
+          "buys": 22541,
+          "sells": 20012
+        }
+      },
+      "volume": {
+        "h24": 10383959.38,
+        "h6": 3110595.06,
+        "h1": 590994.51,
+        "m5": 46335.94
+      },
+      "priceChange": {
+        "m5": -0.09,
+        "h1": 1.18,
+        "h6": 1.82,
+        "h24": 0.85
+      },
+      "liquidity": {
+        "usd": 2249519.72,
+        "base": 3626.05004,
+        "quote": 1608220
+      },
+      "pairCreatedAt": 1723699294000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "orca",
+      "url": "https://dexscreener.com/solana/7qbrf6ysyguluvs6y1q64bdvrfe4zcuuz1jrdovnujnm",
+      "pairAddress": "7qbRF6YsyGuLUVs6Y1q64bdVrfe4ZcUUz1JRdoVNUJnm",
+      "labels": [
+        "wp"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8868",
+      "priceUsd": "176.88",
+      "txns": {
+        "m5": {
+          "buys": 18,
+          "sells": 31
+        },
+        "h1": {
+          "buys": 346,
+          "sells": 372
+        },
+        "h6": {
+          "buys": 1854,
+          "sells": 1784
+        },
+        "h24": {
+          "buys": 6089,
+          "sells": 5770
+        }
+      },
+      "volume": {
+        "h24": 402219.21,
+        "h6": 148217.9,
+        "h1": 32451.13,
+        "m5": 1945.88
+      },
+      "priceChange": {
+        "m5": -0.09,
+        "h1": 1.14,
+        "h6": 1.88,
+        "h24": 0.94
+      },
+      "liquidity": {
+        "usd": 356394.88,
+        "base": 1099.622,
+        "quote": 161886
+      },
+      "pairCreatedAt": 1669602308000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/exhyqxmsttcvlpwjennxcpz8gmljjyhtnbnakcfefkmn",
+      "pairAddress": "EXHyQxMSttcvLPwjENnXCPZ8GmLjJYHtNBnAkcFeFKMn",
+      "labels": [
+        "CLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.9369",
+      "priceUsd": "176.93",
+      "txns": {
+        "m5": {
+          "buys": 64,
+          "sells": 71
+        },
+        "h1": {
+          "buys": 848,
+          "sells": 941
+        },
+        "h6": {
+          "buys": 5007,
+          "sells": 5037
+        },
+        "h24": {
+          "buys": 17529,
+          "sells": 17166
+        }
+      },
+      "volume": {
+        "h24": 293681.08,
+        "h6": 98898.38,
+        "h1": 17178.94,
+        "m5": 1262.16
+      },
+      "priceChange": {
+        "m5": -0.07,
+        "h1": 1.18,
+        "h6": 1.86,
+        "h24": 0.88
+      },
+      "liquidity": {
+        "usd": 20655.29,
+        "base": 84.3841,
+        "quote": 5724.6178
+      },
+      "pairCreatedAt": 1723699297000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/djfoqn5ynvtoehoxikqmyfxowqcpjsvb3baavecdei7s",
+      "pairAddress": "DJFoQN5yNVtoEhoXiKqmYFXowQcPJSvB3BAavEcdEi7s",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8843",
+      "priceUsd": "176.88",
+      "txns": {
+        "m5": {
+          "buys": 121,
+          "sells": 114
+        },
+        "h1": {
+          "buys": 1077,
+          "sells": 1065
+        },
+        "h6": {
+          "buys": 6227,
+          "sells": 5729
+        },
+        "h24": {
+          "buys": 17508,
+          "sells": 15388
+        }
+      },
+      "volume": {
+        "h24": 2249594.06,
+        "h6": 866506.28,
+        "h1": 124496.83,
+        "m5": 13877.02
+      },
+      "priceChange": {
+        "m5": -0.1,
+        "h1": 1.2,
+        "h6": 1.96,
+        "h24": 0.87
+      },
+      "liquidity": {
+        "usd": 45265.19,
+        "base": 48.8899,
+        "quote": 36617
+      },
+      "pairCreatedAt": 1715610549000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/g2yjfyebt3yxiwfmf8oyfhqyjgvdj4wlr3nkcczpyels",
+      "pairAddress": "G2YJfYeBT3YXiwfMF8oyFhqYjGVDj4WLr3NKcCzpyELS",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8523",
+      "priceUsd": "176.85",
+      "txns": {
+        "m5": {
+          "buys": 97,
+          "sells": 92
+        },
+        "h1": {
+          "buys": 677,
+          "sells": 728
+        },
+        "h6": {
+          "buys": 2715,
+          "sells": 2812
+        },
+        "h24": {
+          "buys": 8532,
+          "sells": 7696
+        }
+      },
+      "volume": {
+        "h24": 4615295.94,
+        "h6": 1732623.38,
+        "h1": 377193.47,
+        "m5": 34927.76
+      },
+      "priceChange": {
+        "m5": -0.1,
+        "h1": 1.21,
+        "h6": 1.81,
+        "h24": 0.9
+      },
+      "liquidity": {
+        "usd": 202913.3,
+        "base": 481.2251,
+        "quote": 117807
+      },
+      "pairCreatedAt": 1717153555000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/7tsbddxxupmijmvq7o1ufynyodq6sqeteoxywpejuaec",
+      "pairAddress": "7tSbDdxxUPMiJmVQ7o1ufynyodQ6SQetEoxYWPEjuAec",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8604",
+      "priceUsd": "176.86",
+      "txns": {
+        "m5": {
+          "buys": 41,
+          "sells": 51
+        },
+        "h1": {
+          "buys": 668,
+          "sells": 589
+        },
+        "h6": {
+          "buys": 3009,
+          "sells": 2550
+        },
+        "h24": {
+          "buys": 10118,
+          "sells": 8299
+        }
+      },
+      "volume": {
+        "h24": 2261954.83,
+        "h6": 673398.08,
+        "h1": 198844.04,
+        "m5": 33660.17
+      },
+      "priceChange": {
+        "m5": -0.08,
+        "h1": 1.13,
+        "h6": 1.85,
+        "h24": 0.86
+      },
+      "liquidity": {
+        "usd": 183005.27,
+        "base": 447.2075,
+        "quote": 103911
+      },
+      "pairCreatedAt": 1715735378000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/5bkxfwmbmybaewvypzs9espducuba9gqymjtlcfbaqyf",
+      "pairAddress": "5BKxfWMbmYBAEWvyPZS9esPducUba9GqyMjtLCfbaqyF",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8640",
+      "priceUsd": "176.86",
+      "txns": {
+        "m5": {
+          "buys": 22,
+          "sells": 33
+        },
+        "h1": {
+          "buys": 249,
+          "sells": 246
+        },
+        "h6": {
+          "buys": 1669,
+          "sells": 1467
+        },
+        "h24": {
+          "buys": 6151,
+          "sells": 5017
+        }
+      },
+      "volume": {
+        "h24": 85857.56,
+        "h6": 20550.88,
+        "h1": 3011.41,
+        "m5": 429.57
+      },
+      "priceChange": {
+        "m5": -0.11,
+        "h1": 1.19,
+        "h6": 1.82,
+        "h24": 0.85
+      },
+      "liquidity": {
+        "usd": 146206.63,
+        "base": 645.08294,
+        "quote": 32114
+      },
+      "pairCreatedAt": 1708122994000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/8gj7uwbomeq6z6aqwfp3cazwsyg8udvs2uesycbh79r7",
+      "pairAddress": "8gJ7UWboMeQ6z6AQwFP3cAZwSYG8udVS2UesyCbH79r7",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8646",
+      "priceUsd": "176.86",
+      "txns": {
+        "m5": {
+          "buys": 110,
+          "sells": 116
+        },
+        "h1": {
+          "buys": 772,
+          "sells": 775
+        },
+        "h6": {
+          "buys": 2458,
+          "sells": 2244
+        },
+        "h24": {
+          "buys": 6679,
+          "sells": 5741
+        }
+      },
+      "volume": {
+        "h24": 357250.87,
+        "h6": 217532.72,
+        "h1": 108559.96,
+        "m5": 12130.74
+      },
+      "priceChange": {
+        "m5": -0.15,
+        "h1": 1.16,
+        "h6": 1.81,
+        "h24": 0.84
+      },
+      "liquidity": {
+        "usd": 161587.01,
+        "base": 810.1862,
+        "quote": 18293
+      },
+      "pairCreatedAt": 1716054856000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/5yuefgbjjpmfnk2iiyblspv1azxq7f9aukkzkertycvs",
+      "pairAddress": "5yuefgbJJpmFNK2iiYbLSpv1aZXq7F9AUKkZKErTYCvs",
+      "labels": [
+        "DYN"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.9204",
+      "priceUsd": "176.92",
+      "txns": {
+        "m5": {
+          "buys": 0,
+          "sells": 3
+        },
+        "h1": {
+          "buys": 57,
+          "sells": 42
+        },
+        "h6": {
+          "buys": 193,
+          "sells": 149
+        },
+        "h24": {
+          "buys": 765,
+          "sells": 625
+        }
+      },
+      "volume": {
+        "h24": 22084.12,
+        "h6": 5646.04,
+        "h1": 1615.84,
+        "m5": 51.91
+      },
+      "priceChange": {
+        "m5": -0.47,
+        "h1": 1.01,
+        "h6": 1.77,
+        "h24": 1.01
+      },
+      "liquidity": {
+        "usd": 199872.21,
+        "base": 564.3531,
+        "quote": 100026
+      },
+      "fdv": 106267431849,
+      "marketCap": 106267431849,
+      "pairCreatedAt": 1703167204000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/6kt4mhdqkrkwikagpfcvysk45bukxee2gtpngar1ycjs",
+      "pairAddress": "6kT4MhDqKrkWikaGpFCvYsk45BUKXEe2gTpNGAR1YcjS",
+      "labels": [
+        "CLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "name": "USDT",
+        "symbol": "USDT"
+      },
+      "priceNative": "176.9045",
+      "priceUsd": "176.90",
+      "txns": {
+        "m5": {
+          "buys": 31,
+          "sells": 32
+        },
+        "h1": {
+          "buys": 375,
+          "sells": 274
+        },
+        "h6": {
+          "buys": 1845,
+          "sells": 1431
+        },
+        "h24": {
+          "buys": 6397,
+          "sells": 5015
+        }
+      },
+      "volume": {
+        "h24": 281759.9,
+        "h6": 89422.96,
+        "h1": 24150.93,
+        "m5": 2184.62
+      },
+      "priceChange": {
+        "m5": -0.1,
+        "h1": 1.18,
+        "h6": 1.84,
+        "h24": 0.93
+      },
+      "liquidity": {
+        "usd": 197144.36,
+        "base": 372.8674,
+        "quote": 131182
+      },
+      "pairCreatedAt": 1723699294000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/htoit8xk8ghgat4n3ogxadc7opdappwsbcl9tfrya3rg",
+      "pairAddress": "HToiT8XK8GHgAT4N3oGXadc7opdApPwsbCL9tFRYa3Rg",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "name": "USDT",
+        "symbol": "USDT"
+      },
+      "priceNative": "176.6974",
+      "priceUsd": "176.69",
+      "txns": {
+        "m5": {
+          "buys": 36,
+          "sells": 33
+        },
+        "h1": {
+          "buys": 527,
+          "sells": 457
+        },
+        "h6": {
+          "buys": 2639,
+          "sells": 2304
+        },
+        "h24": {
+          "buys": 8153,
+          "sells": 6408
+        }
+      },
+      "volume": {
+        "h24": 1360950.08,
+        "h6": 455837.01,
+        "h1": 76148.77,
+        "m5": 6445.58
+      },
+      "priceChange": {
+        "m5": -0.32,
+        "h1": 1.06,
+        "h6": 1.82,
+        "h24": 0.74
+      },
+      "liquidity": {
+        "usd": 199624.43,
+        "base": 132.6867,
+        "quote": 176179
+      },
+      "pairCreatedAt": 1715746720000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/4yvluzgehsjfswuxrbo6h18vl297hyrhtrlve8bwpycw",
+      "pairAddress": "4YVLUZGEhsjfsWuxRbo6h18vL297HYRHTrLVE8bwpyCW",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.7206",
+      "priceUsd": "176.72",
+      "txns": {
+        "m5": {
+          "buys": 145,
+          "sells": 152
+        },
+        "h1": {
+          "buys": 1364,
+          "sells": 1343
+        },
+        "h6": {
+          "buys": 5263,
+          "sells": 5039
+        },
+        "h24": {
+          "buys": 14515,
+          "sells": 14338
+        }
+      },
+      "volume": {
+        "h24": 898225.07,
+        "h6": 339122.12,
+        "h1": 88376.79,
+        "m5": 7494.29
+      },
+      "priceChange": {
+        "m5": -0.16,
+        "h1": 1.1,
+        "h6": 1.61,
+        "h24": 0.96
+      },
+      "liquidity": {
+        "usd": 33189.06,
+        "base": 62.6196,
+        "quote": 22122
+      },
+      "pairCreatedAt": 1709313512000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/fbkx1h2yts171cema4grv7xbaiqt5zsmv2cjfywxxjdp",
+      "pairAddress": "FbkX1h2YTs171cEMa4GrV7XbAiQt5zSmV2CjfYWxXJDP",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.9805",
+      "priceUsd": "176.98",
+      "txns": {
+        "m5": {
+          "buys": 5,
+          "sells": 15
+        },
+        "h1": {
+          "buys": 413,
+          "sells": 337
+        },
+        "h6": {
+          "buys": 2107,
+          "sells": 2013
+        },
+        "h24": {
+          "buys": 6282,
+          "sells": 6057
+        }
+      },
+      "volume": {
+        "h24": 1079322.93,
+        "h6": 404086.58,
+        "h1": 59826.92,
+        "m5": 5147.32
+      },
+      "priceChange": {
+        "m5": -0.15,
+        "h1": 1.2,
+        "h6": 1.83,
+        "h24": 0.8
+      },
+      "liquidity": {
+        "usd": 157274.63,
+        "base": 512.7928,
+        "quote": 66520
+      },
+      "pairCreatedAt": 1715680449000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/jddenq9gy3e1avnra9plojxyqvafjpi9l2xrnzmurhxb",
+      "pairAddress": "JDDeNq9GY3E1AVnra9PLoJXyqVaFJPi9L2xrNzMURHXB",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "name": "USDT",
+        "symbol": "USDT"
+      },
+      "priceNative": "176.8526",
+      "priceUsd": "176.85",
+      "txns": {
+        "m5": {
+          "buys": 62,
+          "sells": 53
+        },
+        "h1": {
+          "buys": 618,
+          "sells": 464
+        },
+        "h6": {
+          "buys": 2779,
+          "sells": 2254
+        },
+        "h24": {
+          "buys": 10085,
+          "sells": 7764
+        }
+      },
+      "volume": {
+        "h24": 2238367.52,
+        "h6": 575463.56,
+        "h1": 123929.07,
+        "m5": 12792.91
+      },
+      "priceChange": {
+        "m5": -0.1,
+        "h1": 1.25,
+        "h6": 1.81,
+        "h24": 0.74
+      },
+      "liquidity": {
+        "usd": 55861.73,
+        "base": 69.07988,
+        "quote": 43644
+      },
+      "pairCreatedAt": 1742821561000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/9copby6iqbazkahhqanfy7g4vxzkx9zkm8aispd5ufay",
+      "pairAddress": "9CopBY6iQBaZKAhhQANfy7g4VXZkx9zKm8AisPd5Ufay",
+      "labels": [
+        "DYN"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "name": "USDT",
+        "symbol": "USDT"
+      },
+      "priceNative": "176.6121",
+      "priceUsd": "176.61",
+      "txns": {
+        "m5": {
+          "buys": 0,
+          "sells": 4
+        },
+        "h1": {
+          "buys": 57,
+          "sells": 28
+        },
+        "h6": {
+          "buys": 194,
+          "sells": 130
+        },
+        "h24": {
+          "buys": 762,
+          "sells": 451
+        }
+      },
+      "volume": {
+        "h24": 10745.42,
+        "h6": 3669.03,
+        "h1": 811.3,
+        "m5": 81.72
+      },
+      "priceChange": {
+        "m5": -0.63,
+        "h1": 0.89,
+        "h6": 1.52,
+        "h24": 0.81
+      },
+      "liquidity": {
+        "usd": 88640.96,
+        "base": 250.8106,
+        "quote": 44344
+      },
+      "fdv": 106082226340,
+      "marketCap": 106082226340,
+      "pairCreatedAt": 1703167204000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/58oqchx4ywmvkdwllzzbi4chocc2fqcuwbkwmihlyqo2",
+      "pairAddress": "58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2",
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.8305",
+      "priceUsd": "176.83",
+      "txns": {
+        "m5": {
+          "buys": 4,
+          "sells": 28
+        },
+        "h1": {
+          "buys": 185,
+          "sells": 330
+        },
+        "h6": {
+          "buys": 1166,
+          "sells": 1129
+        },
+        "h24": {
+          "buys": 3285,
+          "sells": 4141
+        }
+      },
+      "volume": {
+        "h24": 3377719.29,
+        "h6": 1187631.48,
+        "h1": 385927.09,
+        "m5": 12351.67
+      },
+      "priceChange": {
+        "m5": -0.09,
+        "h1": 1.62,
+        "h6": 1.5,
+        "h24": 0.93
+      },
+      "liquidity": {
+        "usd": 13490021.88,
+        "base": 38093,
+        "quote": 6753990
+      },
+      "pairCreatedAt": 1669602450000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "raydium",
+      "url": "https://dexscreener.com/solana/2qdhepnkrtljjsqpl1ptknwqrukolee5gqs8bvzhrdmv",
+      "pairAddress": "2QdhepnKRTLjjSqPL1PtKNwqrUkoLee5Gqs8bvZhRdMv",
+      "labels": [
+        "CLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "176.9217",
+      "priceUsd": "176.92",
+      "txns": {
+        "m5": {
+          "buys": 28,
+          "sells": 29
+        },
+        "h1": {
+          "buys": 388,
+          "sells": 400
+        },
+        "h6": {
+          "buys": 1827,
+          "sells": 1935
+        },
+        "h24": {
+          "buys": 6190,
+          "sells": 6223
+        }
+      },
+      "volume": {
+        "h24": 1079177.5,
+        "h6": 364957.76,
+        "h1": 68340.71,
+        "m5": 5466.94
+      },
+      "priceChange": {
+        "m5": -0.06,
+        "h1": 1.18,
+        "h6": 1.83,
+        "h24": 0.91
+      },
+      "liquidity": {
+        "usd": 599445.91,
+        "base": 1349.5936,
+        "quote": 360673
+      },
+      "pairCreatedAt": 1723699294000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/gmgh4ntwrgauf1rr2kcxd7ly1jou1qfaussqekp5ow4a",
+      "pairAddress": "GMgh4NtWrGaUf1RR2kcXD7LY1jou1qFAuSsQeKp5ow4a",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "177.04367",
+      "priceUsd": "177.043",
+      "txns": {
+        "m5": {
+          "buys": 30,
+          "sells": 17
+        },
+        "h1": {
+          "buys": 378,
+          "sells": 304
+        },
+        "h6": {
+          "buys": 2978,
+          "sells": 2695
+        },
+        "h24": {
+          "buys": 10012,
+          "sells": 8533
+        }
+      },
+      "volume": {
+        "h24": 187157.77,
+        "h6": 59994.51,
+        "h1": 3177.78,
+        "m5": 118.04
+      },
+      "priceChange": {
+        "h1": 1.27,
+        "h6": 1.93,
+        "h24": 1.04
+      },
+      "liquidity": {
+        "usd": 5300.43,
+        "base": 9.01009,
+        "quote": 3705.2592
+      },
+      "pairCreatedAt": 1715381617000
+    },
+    {
+      "chainId": "solana",
+      "dexId": "meteora",
+      "url": "https://dexscreener.com/solana/5xrqv7lcoc5fhwkk5jn8n4kcrjs3e4kh1xsyzkemd5nt",
+      "pairAddress": "5XRqv7LCoC5FhWKk5JN8n4kCrJs3e4KH1XsYzKeMd5Nt",
+      "labels": [
+        "DLMM"
+      ],
+      "baseToken": {
+        "address": "So11111111111111111111111111111111111111112",
+        "name": "Wrapped SOL",
+        "symbol": "SOL"
+      },
+      "quoteToken": {
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "name": "USD Coin",
+        "symbol": "USDC"
+      },
+      "priceNative": "177.07271",
+      "priceUsd": "177.072",
+      "txns": {
+        "m5": {
+          "buys": 2,
+          "sells": 3
+        },
+        "h1": {
+          "buys": 340,
+          "sells": 384
+        },
+        "h6": {
+          "buys": 1456,
+          "sells": 2009
+        },
+        "h24": {
+          "buys": 5653,
+          "sells": 7624
+        }
+      },
+      "volume": {
+        "h24": 1041913.52,
+        "h6": 351424.92,
+        "h1": 79443.39,
+        "m5": 14516.42
+      },
+      "priceChange": {
+        "m5": 0.01,
+        "h1": 0.84,
+        "h6": 1.91,
+        "h24": 0.9
+      },
+      "liquidity": {
+        "usd": 522989.62,
+        "base": 1425.6182,
+        "quote": 270551
+      },
+      "pairCreatedAt": 1708568204000
+    }
+  ]
+}
+2025-05-14 00:40:47 [INFO] === 启动监控程序 ===
+2025-05-14 00:40:47 [INFO] 
+初始化 Telegram Bot...
+2025-05-14 00:40:47 [INFO] 验证Bot Token格式...
+2025-05-14 00:40:47 [INFO] Bot Token格式验证: ✅ 成功
+2025-05-14 00:40:47 [INFO] 
+检查Token状态 (第 1 次尝试)...
+2025-05-14 00:40:47 [INFO] 
+测试网络连接 (第 1 次尝试)...
+2025-05-14 00:40:47 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-05-14 00:40:47 [INFO] DNS解析结果: 69.171.229.11
+2025-05-14 00:40:52 [ERROR] TCP连接失败 (第 1 次): 连接超时
+2025-05-14 00:40:59 [ERROR] TCP连接失败 (第 2 次): 连接超时
+2025-05-14 00:41:06 [ERROR] TCP连接失败 (第 3 次): 连接超时
+2025-05-14 00:41:06 [ERROR] 网络连接测试失败 (第 1 次): 连接超时
+2025-05-14 00:41:06 [INFO] 等待 2 秒后重试...
+2025-05-14 00:41:08 [INFO] 
+测试网络连接 (第 2 次尝试)...
+2025-05-14 00:41:08 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-05-14 00:41:08 [INFO] DNS解析结果: 69.171.229.11
+2025-05-14 00:41:08 [INFO] TCP连接成功，本地端口: 56309
+2025-05-14 00:41:09 [INFO] HTTPS状态码: 302
+2025-05-14 00:41:09 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Tue, 13 May 2025 16:41:09 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-05-14 00:41:09 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-05-14 00:41:09 [INFO] 测试重定向目标: core.telegram.org
+2025-05-14 00:41:11 [INFO] HTTPS状态码: 200
+2025-05-14 00:41:11 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Tue, 13 May 2025 16:41:11 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-05-14 00:41:11 [INFO] 网络连接测试成功
+2025-05-14 00:41:11 [INFO] 尝试使用端点: https://api.telegram.org
+2025-05-14 00:41:12 [INFO] Token状态: ✅ 有效
+2025-05-14 00:41:12 [INFO] Bot信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-05-14 00:41:12 [INFO] 环境变量检查: ✅ 通过
+2025-05-14 00:41:12 [INFO] 
+测试端点 https://api.telegram.org...
+2025-05-14 00:41:12 [INFO] 
+测试网络连接 (第 1 次尝试)...
+2025-05-14 00:41:12 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-05-14 00:41:12 [INFO] DNS解析结果: 69.171.229.11
+2025-05-14 00:41:12 [INFO] TCP连接成功，本地端口: 56329
+2025-05-14 00:41:13 [INFO] HTTPS状态码: 302
+2025-05-14 00:41:13 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Tue, 13 May 2025 16:41:13 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-05-14 00:41:13 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-05-14 00:41:13 [INFO] 测试重定向目标: core.telegram.org
+2025-05-14 00:41:14 [INFO] HTTPS状态码: 200
+2025-05-14 00:41:14 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Tue, 13 May 2025 16:41:14 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-05-14 00:41:14 [INFO] 网络连接测试成功
+2025-05-14 00:41:14 [INFO] 找到可用端点: https://api.telegram.org
+2025-05-14 00:41:14 [INFO] 
+初始化Bot...
+2025-05-14 00:41:14 [INFO] Bot初始化成功
+2025-05-14 00:41:14 [INFO] 测试getMe...
+2025-05-14 00:41:15 [INFO] getMe成功:
+2025-05-14 00:41:15 [INFO] {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-05-14 00:41:15 [INFO] 
+测试聊天ID: 1584537074
+2025-05-14 00:41:16 [INFO] getChat成功:
+2025-05-14 00:41:16 [INFO] {
+  "id": 1584537074,
+  "first_name": "Joe",
+  "last_name": "S",
+  "username": "joe2140",
+  "type": "private",
+  "can_send_gift": true,
+  "active_usernames": [
+    "joe2140"
+  ],
+  "has_private_forwards": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": true,
+    "limited_gifts": true,
+    "unique_gifts": true,
+    "premium_subscription": true
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 1
+}
+2025-05-14 00:41:16 [INFO] 
+测试聊天ID: -4627711652
+2025-05-14 00:41:16 [INFO] getChat成功:
+2025-05-14 00:41:16 [INFO] {
+  "id": -4627711652,
+  "title": "KOL监控",
+  "type": "group",
+  "invite_link": "https://t.me/+GAP7ZyfNF-AxNGRl",
+  "permissions": {
+    "can_send_messages": true,
+    "can_send_media_messages": true,
+    "can_send_audios": true,
+    "can_send_documents": true,
+    "can_send_photos": true,
+    "can_send_videos": true,
+    "can_send_video_notes": true,
+    "can_send_voice_notes": true,
+    "can_send_polls": true,
+    "can_send_other_messages": true,
+    "can_add_web_page_previews": true,
+    "can_change_info": true,
+    "can_invite_users": true,
+    "can_pin_messages": true,
+    "can_manage_topics": true
+  },
+  "all_members_are_administrators": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": false,
+    "limited_gifts": false,
+    "unique_gifts": false,
+    "premium_subscription": false
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 4
+}
+2025-05-14 00:41:16 [INFO] 启动Bot...
+2025-05-14 00:41:17 [INFO] Bot启动成功
+2025-05-14 00:41:17 [INFO] 
+检查 Bot 状态...
+2025-05-14 00:41:17 [INFO] 验证 Bot Token 格式...
+2025-05-14 00:41:17 [INFO] Bot Token 格式验证: ✅ 成功
+2025-05-14 00:41:17 [INFO] 
+检查Token状态 (第 1 次尝试)...
+2025-05-14 00:41:17 [INFO] 
+测试网络连接 (第 1 次尝试)...
+2025-05-14 00:41:17 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-05-14 00:41:17 [INFO] DNS解析结果: 69.171.229.11
+2025-05-14 00:41:17 [INFO] TCP连接成功，本地端口: 56355
+2025-05-14 00:41:18 [INFO] HTTPS状态码: 302
+2025-05-14 00:41:18 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Tue, 13 May 2025 16:41:18 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-05-14 00:41:18 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-05-14 00:41:18 [INFO] 测试重定向目标: core.telegram.org
+2025-05-14 00:41:19 [INFO] HTTPS状态码: 200
+2025-05-14 00:41:19 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Tue, 13 May 2025 16:41:19 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37487",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-05-14 00:41:19 [INFO] 网络连接测试成功
+2025-05-14 00:41:20 [INFO] 尝试使用端点: https://api.telegram.org
+2025-05-14 00:41:21 [INFO] Token状态: ✅ 有效
+2025-05-14 00:41:21 [INFO] Bot信息: {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-05-14 00:41:21 [INFO] 环境变量检查: ✅ 通过
+2025-05-14 00:41:21 [INFO] 
+测试端点 https://api.telegram.org...
+2025-05-14 00:41:21 [INFO] 
+测试网络连接 (第 1 次尝试)...
+2025-05-14 00:41:21 [INFO] 
+测试DNS解析 api.telegram.org...
+2025-05-14 00:41:21 [INFO] DNS解析结果: 69.171.229.11
+2025-05-14 00:41:21 [INFO] TCP连接成功，本地端口: 56378
+2025-05-14 00:41:22 [INFO] HTTPS状态码: 302
+2025-05-14 00:41:22 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Tue, 13 May 2025 16:41:21 GMT",
+  "content-type": "text/html",
+  "content-length": "145",
+  "connection": "keep-alive",
+  "location": "https://core.telegram.org/bots",
+  "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+  "access-control-allow-origin": "*",
+  "access-control-allow-methods": "GET, POST, OPTIONS",
+  "access-control-expose-headers": "Content-Length,Content-Type,Date,Server,Connection"
+}
+2025-05-14 00:41:22 [INFO] 检测到重定向: https://core.telegram.org/bots
+2025-05-14 00:41:22 [INFO] 测试重定向目标: core.telegram.org
+2025-05-14 00:41:23 [INFO] HTTPS状态码: 200
+2025-05-14 00:41:23 [INFO] HTTPS响应头: {
+  "server": "nginx/1.18.0",
+  "date": "Tue, 13 May 2025 16:41:23 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "content-length": "37488",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-store",
+  "x-frame-options": "SAMEORIGIN",
+  "strict-transport-security": "max-age=35768000"
+}
+2025-05-14 00:41:23 [INFO] 网络连接测试成功
+2025-05-14 00:41:23 [INFO] 找到可用端点: https://api.telegram.org
+2025-05-14 00:41:23 [INFO] 测试 getMe...
+2025-05-14 00:41:23 [INFO] getMe 成功:
+2025-05-14 00:41:23 [INFO] {
+  "id": 7928666221,
+  "is_bot": true,
+  "first_name": "Tracker Bot",
+  "username": "tokenskol_tracker_bot",
+  "can_join_groups": true,
+  "can_read_all_group_messages": false,
+  "supports_inline_queries": false,
+  "can_connect_to_business": false,
+  "has_main_web_app": false
+}
+2025-05-14 00:41:23 [INFO] 测试 getChat...
+2025-05-14 00:41:24 [INFO] getChat 成功 (1584537074):
+2025-05-14 00:41:24 [INFO] {
+  "id": 1584537074,
+  "first_name": "Joe",
+  "last_name": "S",
+  "username": "joe2140",
+  "type": "private",
+  "can_send_gift": true,
+  "active_usernames": [
+    "joe2140"
+  ],
+  "has_private_forwards": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": true,
+    "limited_gifts": true,
+    "unique_gifts": true,
+    "premium_subscription": true
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 1
+}
+2025-05-14 00:41:24 [INFO] getChat 成功 (-4627711652):
+2025-05-14 00:41:24 [INFO] {
+  "id": -4627711652,
+  "title": "KOL监控",
+  "type": "group",
+  "invite_link": "https://t.me/+GAP7ZyfNF-AxNGRl",
+  "permissions": {
+    "can_send_messages": true,
+    "can_send_media_messages": true,
+    "can_send_audios": true,
+    "can_send_documents": true,
+    "can_send_photos": true,
+    "can_send_videos": true,
+    "can_send_video_notes": true,
+    "can_send_voice_notes": true,
+    "can_send_polls": true,
+    "can_send_other_messages": true,
+    "can_add_web_page_previews": true,
+    "can_change_info": true,
+    "can_invite_users": true,
+    "can_pin_messages": true,
+    "can_manage_topics": true
+  },
+  "all_members_are_administrators": true,
+  "accepted_gift_types": {
+    "unlimited_gifts": false,
+    "limited_gifts": false,
+    "unique_gifts": false,
+    "premium_subscription": false
+  },
+  "max_reaction_count": 11,
+  "accent_color_id": 4
+}
+2025-05-14 00:41:24 [INFO] 发送状态检查消息...
+2025-05-14 00:41:24 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:24 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:24 [INFO] 状态检查消息已发送到 1584537074
+2025-05-14 00:41:25 [INFO] 状态检查消息已发送到 -4627711652
+2025-05-14 00:41:25 [INFO] Bot 状态检查: ✅ 通过
+2025-05-14 00:41:25 [INFO] 
+检查 Solana 连接...
+2025-05-14 00:41:25 [INFO] 尝试连接到 RPC 节点: https://silent-quiet-leaf.solana-mainnet.quiknode.pro/0f5a74209a458203d8c55b249e5826fd92a03e34/
+2025-05-14 00:41:26 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:26 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:26 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:41:26 [INFO] 
+开始监控地址...
+2025-05-14 00:41:26 [INFO] 开始监控地址...
+2025-05-14 00:41:26 [INFO] 添加监控地址: Ansem|AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm
+2025-05-14 00:41:26 [INFO] 添加监控地址: 王五|GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW
+2025-05-14 00:41:26 [INFO] 添加监控地址: 小筑|6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP
+2025-05-14 00:41:26 [INFO] 添加监控地址: 搞钱小猫|EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE
+2025-05-14 00:41:26 [INFO] 添加监控地址: 凉粉小刀|3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi
+2025-05-14 00:41:26 [INFO] 添加监控地址: robo|Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu
+2025-05-14 00:41:26 [INFO] 添加监控地址: 学长|Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd
+2025-05-14 00:41:26 [INFO] 添加监控地址: 王小二|71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC
+2025-05-14 00:41:26 [INFO] 添加监控地址: 川木|CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT
+2025-05-14 00:41:26 [INFO] 添加监控地址: POW|8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd
+2025-05-14 00:41:26 [INFO] 添加监控地址: CryptoD|G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc
+2025-05-14 00:41:26 [INFO] 添加监控地址: 女王XX|3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1
+2025-05-14 00:41:26 [INFO] 添加监控地址: 冷静|Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH
+2025-05-14 00:41:26 [INFO] 添加监控地址: MeisterDog|zrdWJB8Y7dsuy3DtYHc17k2DXMyJJwCNpaDjhNRP3FG
+2025-05-14 00:41:26 [INFO] 添加监控地址: Mario|EnsrFiZaXBhBwPncgCofBL6X7ccmwr34f3skNetrhMko
+2025-05-14 00:41:26 [INFO] 添加监控地址: gake|DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm
+2025-05-14 00:41:26 [INFO] 添加监控地址: 0xsun|HUpPyLU8KWisCAr3mzWy2FKT6uuxQ2qGgJQxyTpDoes5
+2025-05-14 00:41:26 [INFO] 开始订阅交易日志...
+2025-05-14 00:41:26 [INFO] 已订阅地址 AVAZvHLR2PcWpDf8BXY4rVxNHYRBytycHkcB5z5QNXYm 的交易日志，订阅 ID: 0
+2025-05-14 00:41:27 [INFO] 已订阅地址 GQMRL4crtPe4uwAwtZB9BcXL4GRPSY5Z4EpLid8bWbuW 的交易日志，订阅 ID: 1
+2025-05-14 00:41:28 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:28 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:28 [INFO] 已订阅地址 6BqTPZzgNZx7XYK2u1fdFSqGfAj6sFk9rMhznYY171qP 的交易日志，订阅 ID: 2
+2025-05-14 00:41:29 [INFO] 已订阅地址 EfbbhahGNuhqEraRZXrwETfsaKxScngEttdQixWAW4WE 的交易日志，订阅 ID: 3
+2025-05-14 00:41:29 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:29 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:30 [INFO] 已订阅地址 3SYQn32YG7XowiCzXKuXqnqBWtFvQDp3WeK36eE8rTEi 的交易日志，订阅 ID: 4
+2025-05-14 00:41:31 [INFO] 等待 1 秒后继续下一批订阅...
+2025-05-14 00:41:32 [INFO] 已订阅地址 Gv7CnRo2L2SJ583XEfoKHKbmWK3wNoBDxVoJqMKJR4Nu 的交易日志，订阅 ID: 5
+2025-05-14 00:41:33 [INFO] 已订阅地址 Gf9XgdmvNHt8fUTFsWAccNbKeyDXsgJyZN8iFJKg5Pbd 的交易日志，订阅 ID: 6
+2025-05-14 00:41:33 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:33 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:34 [INFO] 已订阅地址 71CPXu3TvH3iUKaY1bNkAAow24k6tjH473SsKprQBABC 的交易日志，订阅 ID: 7
+2025-05-14 00:41:35 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:35 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:35 [INFO] 已订阅地址 CdFjn99C4VUjpqayV4fnf2w5JUiF254LJTamkhdwEqqT 的交易日志，订阅 ID: 8
+2025-05-14 00:41:36 [INFO] 已订阅地址 8zFZHuSRuDpuAR7J6FzwyF3vKNx4CVW3DFHJerQhc7Zd 的交易日志，订阅 ID: 9
+2025-05-14 00:41:37 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:37 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:37 [INFO] 等待 1 秒后继续下一批订阅...
+2025-05-14 00:41:38 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:38 [WARN] HTTPS请求超时，将重试...
+2025-05-14 00:41:38 [INFO] 已订阅地址 G1pRtSyKuWSjTqRDcazzKBDzqEF96i1xSURpiXj3yFcc 的交易日志，订阅 ID: 10
+2025-05-14 00:41:39 [INFO] 已订阅地址 3JbCsBJbRncrJbwmKYo5ww3uMuRgZ2LkS9LY7pZxu5v1 的交易日志，订阅 ID: 11
+2025-05-14 00:41:40 [INFO] 已订阅地址 Ay9wnuZCRTceZJuRpGZnuwYZuWdsviM4cMiCwFoSQiPH 的交易日志，订阅 ID: 12
+2025-05-14 00:41:41 [INFO] 已订阅地址 zrdWJB8Y7dsuy3DtYHc17k2DXMyJJwCNpaDjhNRP3FG 的交易日志，订阅 ID: 13
+2025-05-14 00:41:42 [INFO] 已订阅地址 EnsrFiZaXBhBwPncgCofBL6X7ccmwr34f3skNetrhMko 的交易日志，订阅 ID: 14
+2025-05-14 00:41:43 [INFO] 等待 1 秒后继续下一批订阅...
+2025-05-14 00:41:44 [INFO] 已订阅地址 DNfuF1L62WWyW3pNakVkyGGFzVVhj4Yr52jSmdTyeBHm 的交易日志，订阅 ID: 15
+2025-05-14 00:41:45 [INFO] 已订阅地址 HUpPyLU8KWisCAr3mzWy2FKT6uuxQ2qGgJQxyTpDoes5 的交易日志，订阅 ID: 16
+2025-05-14 00:41:46 [INFO] 监控程序正在运行...
+2025-05-14 00:42:47 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:43:47 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:44:48 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:45:48 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:46:49 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:47:49 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:48:49 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:49:50 [INFO] 连接测试成功，节点版本:
+2025-05-14 00:50:02 [INFO] 请求: https://api.dexscreener.com/latest/dex/search/?q=4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK
+2025-05-14 00:50:03 [WARN] 未找到交易对信息
+2025-05-14 00:50:03 [INFO] 请求: https://api.dexscreener.com/latest/dex/search/?q=5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp
+2025-05-14 00:50:04 [WARN] 未找到交易对信息
+2025-05-14 00:50:19 [INFO] 请求: https://api.dexscreener.com/latest/dex/search/?q=4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK
+2025-05-14 00:50:19 [WARN] 未找到交易对信息
+2025-05-14 00:50:19 [INFO] 请求: https://api.dexscreener.com/latest/dex/search/?q=5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp
+2025-05-14 00:50:19 [WARN] 未找到交易对信息
+2025-05-14 00:51:35 [INFO] 正在从 Solana 获取交易 4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK 的详情...
+2025-05-14 00:51:36 [INFO] 正在从 DexScreener 获取交易对信息: https://api.dexscreener.com/latest/dex/search/?q=4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK
+2025-05-14 00:51:37 [INFO] DexScreener 响应数据: {
+  "schemaVersion": "1.0.0",
+  "pairs": []
+}
+2025-05-14 00:51:37 [WARN] DexScreener 未找到交易对信息
+2025-05-14 00:51:37 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 00:51:38 [INFO] 正在从 DexScreener 获取交易对信息: https://api.dexscreener.com/latest/dex/search/?q=5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp
+2025-05-14 00:51:39 [INFO] DexScreener 响应数据: {
+  "schemaVersion": "1.0.0",
+  "pairs": []
+}
+2025-05-14 00:51:39 [WARN] DexScreener 未找到交易对信息
+2025-05-14 00:51:46 [INFO] 正在从 Solana 获取交易 4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK 的详情...
+2025-05-14 00:51:46 [INFO] 正在从 DexScreener 获取交易对信息: https://api.dexscreener.com/latest/dex/search/?q=4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK
+2025-05-14 00:51:47 [INFO] DexScreener 响应数据: {
+  "schemaVersion": "1.0.0",
+  "pairs": []
+}
+2025-05-14 00:51:47 [WARN] DexScreener 未找到交易对信息
+2025-05-14 00:51:47 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 00:51:49 [INFO] 正在从 DexScreener 获取交易对信息: https://api.dexscreener.com/latest/dex/search/?q=5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp
+2025-05-14 00:51:49 [INFO] DexScreener 响应数据: {
+  "schemaVersion": "1.0.0",
+  "pairs": []
+}
+2025-05-14 00:51:49 [WARN] DexScreener 未找到交易对信息
+2025-05-14 00:52:45 [INFO] 正在从 Solana 获取交易 4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK 的详情...
+2025-05-14 00:52:45 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 00:52:46 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 00:52:46 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 00:53:52 [INFO] 正在从 Solana 获取交易 4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK 的详情...
+2025-05-14 00:53:53 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 00:53:53 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 00:53:53 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 00:55:43 [INFO] 正在从 Solana 获取交易 4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK 的详情...
+2025-05-14 00:55:43 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 00:55:43 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 00:55:43 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 00:57:01 [INFO] 正在从 Solana 获取交易 4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK 的详情...
+2025-05-14 00:57:01 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 00:57:01 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 00:57:01 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 08:57:04 [WARN] RPC 节点 https://api.mainnet-beta.solana.com 不可用: fetch failed
+2025-05-14 08:57:15 [WARN] RPC 节点 https://solana-api.projectserum.com 不可用: fetch failed
+2025-05-14 08:57:25 [WARN] RPC 节点 https://rpc.ankr.com/solana 不可用: fetch failed
+2025-05-14 08:57:36 [WARN] RPC 节点 https://solana.public-rpc.com 不可用: fetch failed
+2025-05-14 08:57:36 [WARN] RPC 节点 https://api.rpcpool.com 不可用: 403 Forbidden:  {"jsonrpc":"2.0","error":{"code": 403, "message":"Access forbidden"}, "id": "ef82b877-4e98-4ec2-88bd-e3e9e6717198" } 
+
+2025-05-14 08:57:38 [WARN] RPC 节点 https://solana-mainnet.rpc.extrnode.com 不可用: 401 Unauthorized: {"message":"Usage without a token is no longer available. For future use, register and receive a free API token https://app.extrnode.com"}
+
+2025-05-14 08:57:38 [ERROR] 获取交易对信息失败: 所有 RPC 节点都不可用
+2025-05-14 08:57:39 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 08:57:39 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 08:58:53 [INFO] 正在从 Solana 获取交易 4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK 的详情...
+2025-05-14 08:58:54 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 08:58:54 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 08:58:54 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
+2025-05-14 08:59:55 [INFO] 正在从 Solana 获取交易 4gDiXX4FaFhoV6ypVC749embby8vb6ehdnHg8zdqHVopJpyRxA7MBMhKPmNveAVStPTfWV9gpd4y9YCZYJ2RU3WK 的详情...
+2025-05-14 08:59:55 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '3')
+2025-05-14 08:59:55 [INFO] 正在从 Solana 获取交易 5B9kX6Shz9x7yNbWq2rcx84mKbgK3TUmeyU9ux73mBnRbqiNdBysnzE4GLo1tQg65P5mbmbhHehM3a4dqH3uZvqp 的详情...
+2025-05-14 08:59:55 [ERROR] 获取交易对信息失败: Cannot read properties of undefined (reading '2')
