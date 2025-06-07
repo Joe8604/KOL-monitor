@@ -9,7 +9,8 @@ import { sleep, testLatency, testTCP, testHTTPS, validateBotToken, checkTokenSta
 import logger from './logger.js';
 import dns from 'dns';
 import { Telegraf } from 'telegraf';
-import fetch from 'node-fetch';
+import pkg from 'node-fetch';
+const { default: fetch } = pkg;
 import config from './config.js';
 
 // Token Metadata Program ID
