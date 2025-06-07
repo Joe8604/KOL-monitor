@@ -9,9 +9,14 @@ import { sleep, testLatency, testTCP, testHTTPS, validateBotToken, checkTokenSta
 import logger from './logger.js';
 import dns from 'dns';
 import { Telegraf } from 'telegraf';
-import pkg from 'node-fetch';
-const { default: fetch } = pkg;
 import config from './config.js';
+
+// 动态导入 node-fetch
+let fetch;
+(async () => {
+    const nodeFetch = await import('node-fetch');
+    fetch = nodeFetch.default;
+})();
 
 // Token Metadata Program ID
 const TOKEN_METADATA_PROGRAM = new PublicKey('metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s');
