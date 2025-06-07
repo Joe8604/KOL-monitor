@@ -1,9 +1,40 @@
 const { Connection, PublicKey } = require('@solana/web3.js');
 const axios = require('axios');
 require('dotenv').config();
+const logger = require('./logger');
 
 // 初始化 Solana 连接
 const connection = new Connection(process.env.RPC_ENDPOINT, 'confirmed');
+
+// 获取代币市值信息
+async function getTokenMarketData(tokenAddress) {
+  try {
+    // 使用 CoinGecko API 获取代币信息
+    const response = await axios.get(`https://api.coingecko.com/api/v3/coins/solana/contract/${tokenAddress}`, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    });
+    
+    if (!response.data || !response.data.market_data) {
+      logger.warn(`无法获取代币市值信息: 数据格式不正确`);
+      return null;
+    }
+
+    const marketData = response.data.market_data;
+    
+    return {
+      price: marketData.current_price?.usd || 0,
+      marketCap: marketData.market_cap?.usd || 0,
+      volume24h: marketData.total_volume?.usd || 0,
+      priceChange24h: marketData.price_change_percentage_24h || 0
+    };
+  } catch (error) {
+    logger.warn(`无法获取代币市值信息: ${error.message}`);
+    return null;
+  }
+}
 
 // 修改交易解析函数
 async function parseTransaction(signature, address) {
@@ -13,7 +44,7 @@ async function parseTransaction(signature, address) {
     });
     
     if (!tx || !tx.meta || !tx.transaction) {
-      console.log('无法获取交易详情');
+      logger.warn(`无法获取交易详情: ${signature}`);
       return null;
     }
 
@@ -79,22 +110,30 @@ async function parseTransaction(signature, address) {
       }
     }
 
+    // 获取代币市值信息
+    const tokenContract = Object.keys(tokenChanges).find(mint => mint !== solMint);
+    let marketData = null;
+    if (tokenContract) {
+      marketData = await getTokenMarketData(tokenContract);
+    }
+
     // 构建交易信息对象
     const tradeInfo = {
       address: address,
       transactionType: transactionType,
       solChange: tokenChanges[solMint] ? (tokenChanges[solMint].post - tokenChanges[solMint].pre) : 0,
-      tokenContract: Object.keys(tokenChanges).find(mint => mint !== solMint) || 'N/A',
+      tokenContract: tokenContract || 'N/A',
       tokenChange: Object.entries(tokenChanges)
         .filter(([mint]) => mint !== solMint)
         .map(([_, change]) => change.post - change.pre)
-        .find(change => change !== 0) || 0
+        .find(change => change !== 0) || 0,
+      marketData: marketData
     };
 
     return tradeInfo;
 
   } catch (error) {
-    console.error(`解析交易失败: ${error.message}`);
+    logger.error(`解析交易失败: ${error.message}`);
     return null;
   }
 }
@@ -108,14 +147,20 @@ async function sendNotification(tradeInfo) {
     transactionType: tradeInfo.transactionType,
     solChange: tradeInfo.solChange,
     tokenContract: tradeInfo.tokenContract,
-    tokenChange: tradeInfo.tokenChange
+    tokenChange: tradeInfo.tokenChange,
+    marketData: tradeInfo.marketData ? {
+      price: tradeInfo.marketData.price,
+      marketCap: tradeInfo.marketData.marketCap,
+      volume24h: tradeInfo.marketData.volume24h,
+      priceChange24h: tradeInfo.marketData.priceChange24h
+    } : null
   };
 
   try {
     await axios.post(process.env.NOTIFICATION_URL, message);
-    console.log('通知发送成功:', message);
+    logger.info(`通知发送成功: ${JSON.stringify(message)}`);
   } catch (error) {
-    console.error('发送通知失败:', error.message);
+    logger.error(`发送通知失败: ${error.message}`);
   }
 }
 
@@ -131,17 +176,17 @@ async function monitorTransactions() {
             await sendNotification(tradeInfo);
           }
         } catch (error) {
-          console.error('处理交易失败:', error.message);
+          logger.error(`处理交易失败: ${error.message}`);
         }
       },
       'confirmed'
     );
 
-    console.log('开始监控交易...');
+    logger.info(`已订阅地址 ${process.env.MONITOR_ADDRESS} 的交易日志，订阅 ID: ${subscription}`);
     return subscription;
 
   } catch (error) {
-    console.error('启动监控失败:', error.message);
+    logger.error(`启动监控失败: ${error.message}`);
     return null;
   }
 }
@@ -149,31 +194,31 @@ async function monitorTransactions() {
 // 启动监控
 async function startMonitoring() {
   try {
-    console.log('正在连接到 Solana 节点...');
+    logger.info('正在连接到 Solana 节点...');
     const version = await connection.getVersion();
-    console.log('成功连接到 Solana 节点，版本:', version);
+    logger.info(`成功连接到 Solana 节点，版本: ${version}`);
 
     // 验证监控地址
     try {
       const monitorAddress = new PublicKey(process.env.MONITOR_ADDRESS);
-      console.log('监控地址有效:', monitorAddress.toBase58());
+      logger.info(`监控地址有效: ${monitorAddress.toBase58()}`);
     } catch (error) {
-      console.error('无效的监控地址:', error.message);
+      logger.error(`无效的监控地址: ${error.message}`);
       return;
     }
 
     // 开始监控交易
     const subscription = await monitorTransactions();
     if (!subscription) {
-      console.error('无法启动交易监控');
+      logger.error('无法启动交易监控');
       return;
     }
 
-    console.log('交易监控已启动');
+    logger.info('交易监控已启动');
     
     // 处理程序退出
     process.on('SIGINT', async () => {
-      console.log('正在停止监控...');
+      logger.info('正在停止监控...');
       if (subscription) {
         await subscription.unsubscribe();
       }
@@ -181,7 +226,7 @@ async function startMonitoring() {
     });
 
   } catch (error) {
-    console.error('启动监控失败:', error.message);
+    logger.error(`启动监控失败: ${error.message}`);
   }
 }
 

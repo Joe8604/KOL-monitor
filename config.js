@@ -2,19 +2,17 @@
 const config = {
     telegram: {
         botToken: process.env.TELEGRAM_BOT_TOKEN,
-        chatId: process.env.TELEGRAM_CHAT_ID
+        chatIds: process.env.TELEGRAM_CHAT_IDS?.split(',')?.filter(Boolean) || []
     },
     solana: {
         rpcEndpoint: process.env.RPC_ENDPOINT,
         wsEndpoint: process.env.WS_ENDPOINT
     },
     email: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        enabled: process.env.EMAIL_ENABLED === 'true',
+        user: process.env.EMAIL_USER_1,
+        pass: process.env.EMAIL_PASS_1,
         to: process.env.EMAIL_TO
-    },
-    proxy: {
-        url: process.env.PROXY_URL
     }
 };
 

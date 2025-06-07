@@ -12,7 +12,15 @@ const logDir = path.join(__dirname, 'logs');
 const logFormat = winston.format.combine(
     winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
     winston.format.printf(({ timestamp, level, message }) => {
-        return `${timestamp} [${level.toUpperCase()}]: ${message}`;
+        // 为不同级别的日志添加不同的前缀
+        const prefix = {
+            info: '[INFO]',
+            error: '[ERROR]',
+            warn: '[WARN]',
+            debug: '[DEBUG]'
+        }[level] || '[LOG]';
+        
+        return `${timestamp} ${prefix} ${message}`;
     })
 );
 

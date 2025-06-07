@@ -1,4 +1,22 @@
-node_modules/
+# 环境变量文件
 .env
+.env.*
+
+# 日志文件
+logs/
+*.log
+
+# 依赖目录
+node_modules/
+
+# IDE 配置
+.vscode/
+.idea/
+
+# 操作系统文件
 .DS_Store
-*.log 
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp 
